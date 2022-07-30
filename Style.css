@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  background: linear-gradient(141deg, #fff 0%, #eaeaea 51%, #fff 75%);
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.hero {
+  /*
+  display: table;
+  display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;
+  clear: both;*/
+}/*# sourceMappingURL=Style.css.map */

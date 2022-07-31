@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  background: linear-gradient(141deg, #fff 0%, #eaeaea 51%, #fff 75%);
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1400px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: montserrat-bold;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: montserrat-semibold;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: montserrat-medium;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: whitney-semibold;
+  src: url(../../Assets/fonts/whitney/whitneysemibold.otf);
+}
+@font-face {
+  font-family: whitney-book;
+  src: url(../../Assets/fonts/whitney/whitneybook.otf);
+}
+@font-face {
+  font-family: whitney-book-italic;
+  src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+}
+.hero {
+  /*
+  display: table;
+  display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;display: table;
+  clear: both;
+  clear: both;*/
+}
+
+@font-face {
+  font-family: montserrat-bold;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: montserrat-semibold;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: montserrat-medium;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: whitney-semibold;
+  src: url(../../Assets/fonts/whitney/whitneysemibold.otf);
+}
+@font-face {
+  font-family: whitney-book;
+  src: url(../../Assets/fonts/whitney/whitneybook.otf);
+}
+@font-face {
+  font-family: whitney-book-italic;
+  src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+}
+.title {
+  color: #000000;
+}/*# sourceMappingURL=Style.css.map */

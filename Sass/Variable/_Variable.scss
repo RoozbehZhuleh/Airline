@@ -1,0 +1,35 @@
+$black--clr: #000000;
+$neon__blue--clr: #1f51ff;
+$gray__80--clr: #464646;
+$gray__60--clr: #989898;
+$gray__30--clr: #c9c9c9;
+$gray__10--clr: #f2f8ff;
+$primary__red--clr: #ea0c31;
+$primary__orange--clr: #fc6334;
+
+//fonts
+@font-face {
+    font-family: montserrat-bold;
+    src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: montserrat-semibold;
+    src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: montserrat-medium;
+    src: url(../../Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: whitney-semibold;
+    src: url(../../Assets/fonts/whitney/whitneysemibold.otf);
+}
+@font-face {
+    font-family: whitney-book;
+    src: url(../../Assets/fonts/whitney/whitneybook.otf);
+}
+@font-face {
+    font-family: whitney-book-italic;
+    src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+}
+

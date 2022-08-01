@@ -19,6 +19,36 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  width: 1400px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: montserrat-bold;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: montserrat-semibold;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: montserrat-medium;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: whitney-semibold;
+  src: url(../../Assets/fonts/whitney/whitneysemibold.otf);
+}
+@font-face {
+  font-family: whitney-book;
+  src: url(../../Assets/fonts/whitney/whitneybook.otf);
+}
+@font-face {
+  font-family: whitney-book-italic;
+  src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+}
 .hero {
   /*
   display: table;
@@ -37,4 +67,134 @@ body {
   clear: both;display: table;
   clear: both;
   clear: both;*/
-} /*# sourceMappingURL=Style.css.map */
+}
+
+#benefits {
+  background-color: black;
+  background: url(/Assets/2-benefits/backgroundBenefits.svg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 4rem 0;
+}
+#benefits h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: montserrat-bold;
+}
+
+.total {
+  margin: 0 auto;
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  margin-top: 5rem;
+  padding: 0 10rem;
+}
+.total .number {
+  color: #1F51FF;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: whitney-semibold;
+}
+.total .total__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: flex-start;
+  gap: 1.5rem;
+  font-family: whitney-bold;
+}
+.total .text__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  gap: 1rem;
+}
+.total .text__title h3 {
+  font-family: whitney-book;
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+.total .text__title p {
+  color: #989898;
+  font-size: 1.5rem;
+}
+.total .first-col {
+  align-items: flex-end;
+}
+.total .first-col, .total .third-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: none;
+  gap: 7rem;
+}
+.total .total__img {
+  width: 80%;
+}
+.total .vector_img {
+  width: 60%;
+}
+.total .second-col {
+  background: url(/Assets/2-benefits/Line.svg) no-repeat;
+  background-size: 8rem;
+  background-position: cover;
+  margin-top: 3rem;
+}
+.total .second-col .yellow_line {
+  position: relative;
+}
+.total .second-col .yellow_line .bluedot_container {
+  background: url(/Assets/2-benefits/Ellipse2.svg) no-repeat;
+  background-image: center;
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  top: 5rem;
+  right: 14rem;
+}
+.total .second-col .yellow_line .bluedot_container, .total .second-col .yellow_line .bluedot {
+  position: absolute;
+}
+.total .second-col .yellow_line .bluedot-1 {
+  right: -4.5rem;
+  top: 20rem;
+}
+.total .second-col .yellow_line .bluedot-2 {
+  left: 6.5rem;
+  top: 35rem;
+}
+.total .second-col .yellow_line .bluedot-4 {
+  left: -1.2rem;
+  top: 66rem;
+}
+
+@font-face {
+  font-family: montserrat-bold;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: montserrat-semibold;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: montserrat-medium;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: whitney-semibold;
+  src: url(../../Assets/fonts/whitney/whitneysemibold.otf);
+}
+@font-face {
+  font-family: whitney-book;
+  src: url(../../Assets/fonts/whitney/whitneybook.otf);
+}
+@font-face {
+  font-family: whitney-book-italic;
+  src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+}
+.title {
+  color: #000000;
+}/*# sourceMappingURL=Style.css.map */

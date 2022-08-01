@@ -1,19 +1,127 @@
-.hero {
-     /*
-     display: table;
-     display: table;
-     clear: both;display: table;
-     clear: both;display: table;
-     clear: both;display: table;
-     clear: both;display: table;
-     clear: both;display: table;
-     clear: both;display: table;
-     clear: both;display: table;
-     clear: both;display: table;
-     clear: both;display: table;
-     clear: both;display: table;
-     clear: both;display: table;
-     clear: both;display: table;
-     clear: both;
-     clear: both;*/
+.hero{
+     background: 0;
+     background-image: url("../../Assets/1-home/background.svg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: left;
+     .hero__container{
+          .hero__header {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               padding: 2rem 0;
+               img {
+                    width: 10rem;
+               }
+          }
+          .hero__wrapper {
+               display: flex;
+               flex-direction: column;
+               margin-top: 4rem;
+               .hero--book {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit , minmax(42rem , 1fr));
+                    align-items: center;
+                    .left--side , .right--side {
+                         height: 100%;
+                         display: flex;
+                         flex-direction: column;
+                         align-items: center;
+                         justify-content: center;
+                    }
+                    .left--side {
+                         .left--side__container {
+                              .hero--title {
+                                   font-size: 4rem;
+                                   font-weight: 700;
+                              }
+                              .hero--button {
+                                   margin-top: 4rem;
+                                   border: .2rem solid $neon__blue--clr;
+                                   color: $neon__blue--clr;
+                                   padding: 1rem 3rem;
+                                   border-radius: 100rem;
+                                   font-size: 1.5rem;
+                                   font-weight: 375;
+                              }
+                         }
+                    }
+                    .right--side {
+                         height: 30rem;
+                    }
+               }
+               .hero--platform {
+                    margin-top: 5rem;
+                    .platform--title {
+                         display: flex;
+                         justify-content: center;
+                         text-align: center;
+                         color: white;
+                    }
+                    .platform__container {
+                         display: flex;
+                         gap: 4rem;
+                         justify-content: center;
+                         align-items: flex-start;
+                         flex-wrap: wrap;
+                         margin-top: 3rem;
+                         .platform--card {
+                              width: 28rem;
+                              background-color: white;
+                              border-radius: 3rem;
+                              padding: 2rem 1rem;
+                              .platform--card__image {
+                                   height: 20rem;
+                                   width: 100%;
+                              }
+                              .platform--detail {
+                                   display: flex;
+                                   flex-direction: column;
+                                   align-items: center;
+                                   gap: 2rem;
+                                   margin-top: 1rem;
+                                   .platform--card__name {
+                                        p{
+                                             font-size: 2rem;
+                                        }
+                                   }
+                                   .platform--card__description {
+                                        p{
+                                             font-size: 2rem;
+                                        }
+                                   }
+                              }
+                         }
+                         .flight {
+                              .platform--card__description {
+                                   color: $primary__orange--clr;
+                              }
+                         }
+                         .hotels {
+                              margin-top: 3rem;
+                              .platform--card__description {
+                                   color: $neon__blue--clr;
+                              }
+                         }
+                         .tours {
+                              .platform--card__description {
+                                   color: $primary__orange--clr;    
+                              }
+                         }
+                    }
+               }
+          }
+          .hero__description {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               margin-top: 2rem;
+               padding-bottom: 10rem;
+               p {
+                    font-size: 2rem;
+                    color: white;
+                    margin-top: 3rem;
+               }
+          }
+     }
 }

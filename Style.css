@@ -19,22 +19,185 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  width: 1400px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+@font-face {
+  font-family: montserrat-bold;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: montserrat-semibold;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: montserrat-medium;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: whitney-semibold;
+  src: url(../../Assets/fonts/whitney/whitneysemibold.otf);
+}
+@font-face {
+  font-family: whitney-book;
+  src: url(../../Assets/fonts/whitney/whitneybook.otf);
+}
+@font-face {
+  font-family: whitney-book-italic;
+  src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+}
 .hero {
-  /*
-  display: table;
-  display: table;
-  clear: both;display: table;
-  clear: both;display: table;
-  clear: both;display: table;
-  clear: both;display: table;
-  clear: both;display: table;
-  clear: both;display: table;
-  clear: both;display: table;
-  clear: both;display: table;
-  clear: both;display: table;
-  clear: both;display: table;
-  clear: both;display: table;
-  clear: both;display: table;
-  clear: both;
-  clear: both;*/
-} /*# sourceMappingURL=Style.css.map */
+  background: 0;
+  background-image: url("../../Assets/1-home/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+.hero .hero__container .hero__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.hero .hero__container .hero__header img {
+  width: 10rem;
+}
+.hero .hero__container .hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.hero .hero__container .hero__wrapper .hero--book {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(42rem, 1fr));
+  align-items: center;
+}
+.hero .hero__container .hero__wrapper .hero--book .left--side, .hero .hero__container .hero__wrapper .hero--book .right--side {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero .hero__container .hero__wrapper .hero--book .left--side .left--side__container .hero--title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.hero .hero__container .hero__wrapper .hero--book .left--side .left--side__container .hero--button {
+  margin-top: 4rem;
+  border: 0.2rem solid #1f51ff;
+  color: #1f51ff;
+  padding: 1rem 3rem;
+  border-radius: 100rem;
+  font-size: 1.5rem;
+  font-weight: 375;
+}
+.hero .hero__container .hero__wrapper .hero--book .right--side {
+  height: 30rem;
+}
+.hero .hero__container .hero__wrapper .hero--platform {
+  margin-top: 5rem;
+}
+.hero .hero__container .hero__wrapper .hero--platform .platform--title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.hero .hero__container .hero__wrapper .hero--platform .platform__container {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+.hero .hero__container .hero__wrapper .hero--platform .platform__container .platform--card {
+  width: 28rem;
+  background-color: white;
+  border-radius: 3rem;
+  padding: 2rem 1rem;
+}
+.hero .hero__container .hero__wrapper .hero--platform .platform__container .platform--card .platform--card__image {
+  height: 20rem;
+  width: 100%;
+}
+.hero .hero__container .hero__wrapper .hero--platform .platform__container .platform--card .platform--detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.hero .hero__container .hero__wrapper .hero--platform .platform__container .platform--card .platform--detail .platform--card__name p {
+  font-size: 2rem;
+}
+.hero .hero__container .hero__wrapper .hero--platform .platform__container .platform--card .platform--detail .platform--card__description p {
+  font-size: 2rem;
+}
+.hero .hero__container .hero__wrapper .hero--platform .platform__container .flight .platform--card__description {
+  color: #fc6334;
+}
+.hero .hero__container .hero__wrapper .hero--platform .platform__container .hotels {
+  margin-top: 3rem;
+}
+.hero .hero__container .hero__wrapper .hero--platform .platform__container .hotels .platform--card__description {
+  color: #1f51ff;
+}
+.hero .hero__container .hero__wrapper .hero--platform .platform__container .tours .platform--card__description {
+  color: #fc6334;
+}
+.hero .hero__container .hero__description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-bottom: 10rem;
+}
+.hero .hero__container .hero__description p {
+  font-size: 2rem;
+  color: white;
+  margin-top: 3rem;
+}
+
+@font-face {
+  font-family: montserrat-bold;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: montserrat-semibold;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: montserrat-medium;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: whitney-semibold;
+  src: url(../../Assets/fonts/whitney/whitneysemibold.otf);
+}
+@font-face {
+  font-family: whitney-book;
+  src: url(../../Assets/fonts/whitney/whitneybook.otf);
+}
+@font-face {
+  font-family: whitney-book-italic;
+  src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+}
+.title {
+  color: #000000;
+}/*# sourceMappingURL=Style.css.map */

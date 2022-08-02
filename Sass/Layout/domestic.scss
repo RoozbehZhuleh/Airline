@@ -96,3 +96,62 @@ body {
     margin-top: -10rem;
 }
 
+@media screen and (max-width: 768px) {
+   .total {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   }
+.china_total {
+    grid-column:1/2 ;
+    grid-row: 1/2;
+}
+.japan_total {
+    grid-column:1/2 ;
+    grid-row: 2/3;
+    // margin-top: -4rem;
+}
+.us_total {
+    grid-column:1/2;
+    grid-row: 3/4;
+}
+.russia_total {
+    grid-column:1/2;
+    grid-row: 4/5;
+}
+.korea_total {
+    grid-column:1/2;
+    grid-row: 5/6;
+    // margin-top: -3rem;
+}
+.turkey_total {
+    grid-column:1/2;
+    grid-row: 6/7;
+    // margin-top: -10rem;
+}
+.european_total {
+    grid-column: 1/2;
+    grid-row: 7/8;
+    // margin-top: -13rem;  
+}
+.asia_total {
+    grid-column: 1/2;
+    grid-row: 8/-1;
+    // margin-top: -10rem;
+}
+ .img_container {  
+  img {
+            width: 100%;
+            object-fit: cover;
+            padding: 0 1rem;
+        }
+
+    }
+    .text {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+}

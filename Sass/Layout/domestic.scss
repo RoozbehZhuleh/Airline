@@ -1,0 +1,53 @@
+@import '../Reset/Reset';
+@import '../Variable/Variable';
+
+// #domestic {
+    
+// }
+body {
+    background-image: none;
+}
+.container {
+    width: 98%;
+    margin: 0 auto;
+    h2 {
+        margin-top: 2rem;
+    }
+}   
+.total {
+    padding: 2rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5rem;
+    gap: 2rem;
+    // h2 {
+        
+    // }
+   
+    .img_container {
+        position: relative;
+        img {
+            width: 100%;
+        }
+        span {
+            position: absolute;
+            right: -0.5rem;
+            top: -0.5rem;
+            color: $gray__10--clr;
+            padding: 0.5rem;
+            background-color: $neon__blue--clr;
+            border-radius: 0 1rem 0 1rem;
+        }
+        .cheap {
+            background-color: $primary__orange--clr;
+        }
+    }
+    
+}
+.text {
+    font-size: 2rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+}

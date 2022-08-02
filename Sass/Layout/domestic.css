@@ -1,0 +1,115 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  background: linear-gradient(141deg, #fff 0%, #eaeaea 51%, #fff 75%);
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1400px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: montserrat-bold;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: montserrat-semibold;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: montserrat-medium;
+  src: url(../../Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: whitney-semibold;
+  src: url(../../Assets/fonts/whitney/whitneysemibold.otf);
+}
+
+@font-face {
+  font-family: whitney-book;
+  src: url(../../Assets/fonts/whitney/whitneybook.otf);
+}
+
+@font-face {
+  font-family: whitney-book-italic;
+  src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+}
+
+body {
+  background-image: none;
+}
+
+.container {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.container h2 {
+  margin-top: 2rem;
+}
+
+.total {
+  padding: 2rem 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin-top: 5rem;
+  gap: 2rem;
+}
+
+.total .img_container {
+  position: relative;
+}
+
+.total .img_container img {
+  width: 100%;
+}
+
+.total .img_container span {
+  position: absolute;
+  right: -0.5rem;
+  top: -0.5rem;
+  color: #f2f8ff;
+  padding: 0.5rem;
+  background-color: #1f51ff;
+  border-radius: 0 1rem 0 1rem;
+}
+
+.total .img_container .cheap {
+  background-color: #fc6334;
+}
+
+.text {
+  font-size: 2rem;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+/*# sourceMappingURL=domestic.css.map */

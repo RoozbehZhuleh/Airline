@@ -33,6 +33,15 @@ button {
   background-color: transparent;
 }
 
+a {
+  color: #464646;
+  text-decoration: none;
+}
+a:focus {
+  color: #464646;
+  text-decoration: none;
+}
+
 @font-face {
   font-family: montserrat-bold;
   src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
@@ -547,4 +556,89 @@ button {
   color: #989898;
   font-family: montserrat-medium;
   text-align: center;
+}
+
+.footer .footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 10%;
+  gap: 3rem;
+}
+.footer .footer__container .footer--left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+}
+.footer .footer__container .footer--left .footer--description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: whitney-book;
+  font-size: 1.8rem;
+  color: #989898;
+  gap: 6rem;
+}
+.footer .footer__container .footer--left .footer--description::after {
+  width: 40%;
+  display: table;
+  clear: both;
+  content: "";
+  border-bottom: 0.3rem solid #c9c9c9;
+}
+.footer .footer__container .footer--left .footer--copyright {
+  margin-top: 7rem;
+  font-family: whitney-book;
+  font-size: 1.8rem;
+  color: #989898;
+}
+.footer .footer__container .footer--right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6rem;
+}
+.footer .footer__container .footer--right .footer--right__title {
+  font-family: whitney-semibold;
+  font-size: 2.5rem;
+  color: #000000;
+}
+.footer .footer__container .footer--right .contact__container {
+  display: grid;
+  gap: 2rem;
+}
+.footer .footer__container .footer--right .contact__container .contact {
+  display: flex;
+  align-items: center;
+  font-family: whitney-book;
+  font-size: 1.8rem;
+  color: #464646;
+  gap: 2rem;
+}
+.footer .footer__container .footer--right .contact__container .contact::before {
+  display: table;
+  clear: both;
+  content: "";
+  background-size: 4rem;
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../../Assets/15-contact/location.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer .footer__container .footer--right .contact__container .phone::before {
+  background-image: url("../../Assets/15-contact/phone.svg");
+}
+.footer .footer__container .footer--right .contact__container .mail::before {
+  background-image: url("../../Assets/15-contact/mail.svg");
+}
+.footer .footer__container .footer--right .socialmedia {
+  display: flex;
+  gap: 1rem;
+}
+.footer .footer__container .footer--right .socialmedia .socail {
+  width: 4rem;
+  height: 4rem;
 }/*# sourceMappingURL=Style.css.map */

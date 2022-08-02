@@ -1,0 +1,86 @@
+.footer{
+     .footer__container{
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          padding: 0 10%;
+          gap: 3rem;
+          .footer--left {
+               display: flex;
+               flex-direction: column;
+               align-items: flex-start;
+               gap: 4rem;
+               .footer--description {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    font-family: whitney-book;
+                    font-size: 1.8rem;
+                    color: $gray__60--clr;
+                    gap: 6rem;
+                    &::after{
+                         width: 40%;
+                         display: table;
+                         clear: both;
+                         content: "";
+                         border-bottom: .3rem solid $gray__30--clr;
+                    }
+               }
+               .footer--copyright {
+                    margin-top: 7rem;
+                    font-family: whitney-book;
+                    font-size: 1.8rem;
+                    color: $gray__60--clr;
+               }
+          }
+          .footer--right {
+               display: flex;
+               flex-direction: column;
+               align-items: flex-start;
+               gap: 6rem;
+               .footer--right__title{
+                    font-family: whitney-semibold;
+                    font-size: 2.5rem;
+                    color: $black--clr;
+               }
+               .contact__container {
+                    display: grid;
+                    gap: 2rem;
+                    .contact{
+                         display: flex;
+                         align-items: center;
+                         font-family: whitney-book;
+                         font-size: 1.8rem;
+                         color: $gray__80--clr;
+                         gap: 2rem;
+                         &::before {
+                              display: table;
+                              clear: both;
+                              content: ''; 
+                              background-size: 4rem ;
+                              width: 3rem;
+                              height: 3rem;
+                              background-image: url('../../Assets/15-contact/location.svg');
+                              background-position: center;
+                              background-size: cover;
+                              background-repeat: no-repeat;
+                         }
+                    }
+                    .phone::before{
+                         background-image: url('../../Assets/15-contact/phone.svg');
+                    }
+                    .mail::before {
+                         background-image: url('../../Assets/15-contact/mail.svg');
+                    }
+               }
+               .socialmedia {
+                    display: flex;
+                    gap: 1rem;
+                    .socail {
+                         width: 4rem;
+                         height: 4rem;
+                    }
+               }
+          }
+     }
+}

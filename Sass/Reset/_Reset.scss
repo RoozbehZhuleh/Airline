@@ -31,3 +31,11 @@ button {
   outline: 0;
   background-color: transparent;
 }
+a{
+  color: #464646;
+  text-decoration: none;
+  &:focus{
+    color: #464646;
+    text-decoration: none;
+  }
+}

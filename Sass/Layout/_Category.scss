@@ -31,6 +31,7 @@
                               position: relative;
                               font-family: montserrat-bold;
                               font-size: 3rem;
+                              text-align: center;
                               &::after {
                                    display: table;
                                    clear: both;
@@ -47,11 +48,13 @@
                               font-family: montserrat-bold;
                               font-size: 2rem;
                               color: $neon__blue--clr;
+                              text-align: center;
                          }
                          .category__description {
                               font-size: 1.5rem;
                               color: $gray__60--clr;
                               font-family: montserrat-medium;
+                              text-align: center;
                          }
                     }
                }

@@ -68,6 +68,7 @@ body {
 
 .container h2 {
   margin-top: 2rem;
+  font-size: 3rem;
 }
 
 .total {
@@ -75,16 +76,14 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  margin-top: 5rem;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  margin-top: 10rem;
   gap: 2rem;
 }
 
 .total .img_container {
   position: relative;
-}
-
-.total .img_container img {
-  width: 100%;
 }
 
 .total .img_container span {
@@ -112,5 +111,78 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-bottom: 1.5rem;
+}
+
+.china_total {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.japan_total {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin-top: -4rem;
+}
+
+.us_total {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.russia_total {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.korea_total {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin-top: -3rem;
+}
+
+.turkey_total {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin-top: -10rem;
+}
+
+.european_total {
+  grid-column: 4/-1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin-top: -13rem;
+}
+
+.asia_total {
+  grid-column: 4/-1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin-top: -10rem;
 }
 /*# sourceMappingURL=domestic.css.map */

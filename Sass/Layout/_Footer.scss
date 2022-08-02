@@ -1,19 +1,21 @@
 .footer{
      .footer__container{
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          padding: 0 10%;
+          display: grid;
+          grid-template-columns: repeat(auto-fit , minmax(40rem , 1fr));
           gap: 3rem;
+          justify-items: center;
+          align-items: flex-start;
+          position: relative;
           .footer--left {
-               display: flex;
-               flex-direction: column;
-               align-items: flex-start;
+               display: grid;
+               justify-content: flex-start;
                gap: 4rem;
+               .footer--logo {
+                    height: 6rem;
+               }
                .footer--description {
                     position: relative;
-                    display: flex;
-                    flex-direction: column;
+                    display: grid;
                     font-family: whitney-book;
                     font-size: 1.8rem;
                     color: $gray__60--clr;
@@ -34,9 +36,7 @@
                }
           }
           .footer--right {
-               display: flex;
-               flex-direction: column;
-               align-items: flex-start;
+               display: grid;
                gap: 6rem;
                .footer--right__title{
                     font-family: whitney-semibold;
@@ -47,8 +47,10 @@
                     display: grid;
                     gap: 2rem;
                     .contact{
-                         display: flex;
+                         display: grid;
+                         grid-template-columns: auto auto;
                          align-items: center;
+                         justify-content: flex-start;
                          font-family: whitney-book;
                          font-size: 1.8rem;
                          color: $gray__80--clr;

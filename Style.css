@@ -484,4 +484,67 @@ button {
 @font-face {
   font-family: whitney-book-italic;
   src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+}
+.category {
+  background-color: #F8FAFB;
+}
+.category .category__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: montserrat-semibold;
+  font-size: 2.5rem;
+}
+.category .category__container {
+  margin-top: 5rem;
+}
+.category .category__container .categor__card__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+.category .category__container .categor__card__container .category__card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.category .category__container .categor__card__container .category__card .category__image {
+  padding: 1rem;
+}
+.category .category__container .categor__card__container .category__card .category__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.category .category__container .categor__card__container .category__card .category__wrapper .category__title {
+  position: relative;
+  font-family: montserrat-bold;
+  font-size: 3rem;
+  text-align: center;
+}
+.category .category__container .categor__card__container .category__card .category__wrapper .category__title::after {
+  display: table;
+  clear: both;
+  content: "+";
+  position: absolute;
+  top: -20%;
+  left: 110%;
+  font-size: 2.5rem;
+  color: #989898;
+}
+.category .category__container .categor__card__container .category__card .category__wrapper .category__type {
+  margin-top: 1.5rem;
+  font-family: montserrat-bold;
+  font-size: 2rem;
+  color: #1f51ff;
+  text-align: center;
+}
+.category .category__container .categor__card__container .category__card .category__wrapper .category__description {
+  font-size: 1.5rem;
+  color: #989898;
+  font-family: montserrat-medium;
+  text-align: center;
 }/*# sourceMappingURL=Style.css.map */

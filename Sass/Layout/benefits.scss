@@ -40,8 +40,8 @@
 #benefits {
     background-color: black;
     background: url(/Assets/2-benefits/backgroundBenefits.svg) no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: left;
+    background-size: contain;
     @include paddingXY(4rem,0);
      h2 {
         text-align: center;
@@ -70,25 +70,25 @@
     .total__text__01 {
         grid-row: 1/2;
         grid-column: 1/2;
-        justify-self: center;
+        justify-self: end;
         align-self: center;
     }
     .total__text__02 {
         grid-row: 2/3;
         grid-column: 3/-1;
-        justify-self: center;
+        justify-self: start;
         align-self: center;
     }
     .total__text__03 {
         grid-row: 3/4;
         grid-column: 1/2;
-        justify-self: center;
+        justify-self: end;
         align-self: center;
     }
     .total__text__04 {
         grid-row: 4/-1;
         grid-column: 3/-1;
-        justify-self: center;
+        justify-self: start;
         align-self: center;
     }
     .total__img__01 {
@@ -154,7 +154,7 @@
             background-position: center;
             position: relative;
             z-index: 30;
-            margin-top: -30rem;
+            margin-top: -15rem;
             .circle_container {
                 background: url('/Assets/2-benefits/Ellipse2.svg') no-repeat center/cover;
                 position: relative;
@@ -167,19 +167,19 @@
                 }
             }
             .cc-1{
-                top: 43rem;
+                top: 25rem;
                 right: -3.2rem;
             }
             .cc-2{
-                top: 72rem;
-                right: -10.5rem;
+                top: 51rem;
+                right: -10.8rem;
             }
             .cc-3{
-                top: 100rem;
-                right: -4rem;
+                top: 77rem;
+                right: -3rem;
             }
             .cc-4{
-                top: 118rem;
+                top: 102rem;
                 right: -10.8rem;
             }
 

@@ -2,41 +2,6 @@
 @import '../Reset/Reset';
 @import '../Variable/Variable';
 
-@mixin flex ($direction,$justify,$align,$gap) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-    gap: $gap;
-}
-@mixin paddingT($pl,$pt,$pr,$pd) {
-    padding-left: $pl;
-    padding-top: $pt;
-    padding-right: $pr;
-    padding-bottom: $pd;
-}
-@mixin paddingXY ($paddingX,$paddingY){
-    padding: $paddingX $paddingY;
-}
-@mixin marginT($ml,$mt,$mr,$md) {
-    margin-left: $ml;
-    margin-top: $mt;
-    margin-right: $mr;
-    margin-bottom: $md;
-}
-@mixin marginXY ($marginX,$marginY){
-    margin: $marginX $marginY;
-}
-
-@mixin font ($fontsize,$fontweight) {
-    font-size: $fontsize;
-    font-weight: $fontweight;
-}
-
-@mixin size ($width,$height) {
-    width: $width;
-    height: $height;
-}
 
 
 #benefits {

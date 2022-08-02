@@ -15,6 +15,7 @@ $primary__orange--clr: #fc6334;
 @font-face {
     font-family: montserrat-semibold;
     src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
+    // src: url(/Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
 }
 @font-face {
     font-family: montserrat-medium;
@@ -32,4 +33,41 @@ $primary__orange--clr: #fc6334;
     font-family: whitney-book-italic;
     src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
 }
+
+@mixin flex ($direction,$justify,$align,$gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+@mixin paddingT($pl,$pt,$pr,$pd) {
+    padding-left: $pl;
+    padding-top: $pt;
+    padding-right: $pr;
+    padding-bottom: $pd;
+}
+@mixin paddingXY ($paddingX,$paddingY){
+    padding: $paddingX $paddingY;
+}
+@mixin marginT($ml,$mt,$mr,$md) {
+    margin-left: $ml;
+    margin-top: $mt;
+    margin-right: $mr;
+    margin-bottom: $md;
+}
+@mixin marginXY ($marginX,$marginY){
+    margin: $marginX $marginY;
+}
+
+@mixin font ($fontsize,$fontweight) {
+    font-size: $fontsize;
+    font-weight: $fontweight;
+}
+
+@mixin size ($width,$height) {
+    width: $width;
+    height: $height;
+}
+
 

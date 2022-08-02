@@ -3,8 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -30,62 +29,58 @@ body {
   font-family: montserrat-bold;
   src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
 }
-
 @font-face {
   font-family: montserrat-semibold;
   src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
 }
-
 @font-face {
   font-family: montserrat-medium;
   src: url(../../Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
 }
-
 @font-face {
   font-family: whitney-semibold;
   src: url(../../Assets/fonts/whitney/whitneysemibold.otf);
 }
-
 @font-face {
   font-family: whitney-book;
   src: url(../../Assets/fonts/whitney/whitneybook.otf);
 }
-
 @font-face {
   font-family: whitney-book-italic;
   src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
 }
-
 body {
   background-image: none;
-  font-family: 'montserrat';
+  font-family: montserrat;
 }
 
 .container {
   width: 98%;
   margin: 0 auto;
 }
-
 .container h2 {
   margin-top: 2rem;
   font-size: 3rem;
+  font-family: montserrat-semibold;
+  position: relative;
+  top: 3rem;
 }
 
 .total {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
   margin-top: 10rem;
   gap: 2rem;
 }
-
 .total .img_container {
   position: relative;
 }
-
+.total .img_container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .total .img_container span {
   position: absolute;
   right: -0.5rem;
@@ -94,172 +89,108 @@ body {
   padding: 0.5rem;
   background-color: #1f51ff;
   border-radius: 0 1rem 0 1rem;
+  font-family: montserrat-medium;
 }
-
 .total .img_container .cheap {
   background-color: #fc6334;
 }
 
 .text {
-  font-size: 2rem;
-  font-weight: 400;
-  font-family: 'montserrat';
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-size: 2.2rem;
+  font-weight: 500;
+  font-family: montserrat-medium;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-bottom: 1.5rem;
+  justify-content: flex-end;
+  margin: 1.5rem 0;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .china_total {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
   grid-column: 1/2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
   grid-row: 1/2;
 }
 
 .japan_total {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
   grid-column: 1/2;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
   grid-row: 2/3;
   margin-top: -4rem;
 }
 
 .us_total {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
   grid-row: 1/2;
 }
 
 .russia_total {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
   grid-row: 2/3;
 }
 
 .korea_total {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
   grid-column: 3/4;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
   grid-row: 1/2;
   margin-top: -3rem;
 }
 
 .turkey_total {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
   grid-column: 3/4;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
   grid-row: 2/3;
-  margin-top: -10rem;
+  margin-top: -13rem;
 }
 
 .european_total {
   grid-column: 4/-1;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
   grid-row: 1/2;
   margin-top: -13rem;
 }
 
 .asia_total {
   grid-column: 4/-1;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
   grid-row: 2/3;
-  margin-top: -10rem;
+  margin-top: -13rem;
 }
 
 @media screen and (max-width: 768px) {
   .total {
     width: 100%;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[8];
-        grid-template-rows: repeat(8, 1fr);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
   }
   .china_total {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
   .japan_total {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
   .us_total {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
     grid-row: 3/4;
   }
   .russia_total {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
     grid-row: 4/5;
   }
   .korea_total {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 1;
     grid-row: 5/6;
   }
   .turkey_total {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 1;
     grid-row: 6/7;
   }
   .european_total {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 7;
-    -ms-grid-row-span: 1;
     grid-row: 7/8;
   }
   .asia_total {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     grid-column: 1/2;
     grid-row: 8/-1;
   }
@@ -273,5 +204,4 @@ body {
     margin-top: 1rem;
     font-size: 2rem;
   }
-}
-/*# sourceMappingURL=domestic.css.map */
+}/*# sourceMappingURL=domestic.css.map */

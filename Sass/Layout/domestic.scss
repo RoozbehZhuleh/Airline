@@ -6,6 +6,7 @@
 // }
 body {
     background-image: none;
+    font-family: 'montserrat';
 }
 .container {
     width: 98%;
@@ -15,7 +16,7 @@ body {
     }
 }   
 .total {
-    padding: 2rem 5rem;
+    // padding: 2rem 5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 5rem;
@@ -26,6 +27,7 @@ body {
    
     .img_container {
         position: relative;
+        
         img {
             width: 100%;
         }
@@ -37,6 +39,7 @@ body {
             padding: 0.5rem;
             background-color: $neon__blue--clr;
             border-radius: 0 1rem 0 1rem;
+            
         }
         .cheap {
             background-color: $primary__orange--clr;
@@ -47,6 +50,7 @@ body {
 .text {
     font-size: 2rem;
     font-weight: 400;
+    font-family: 'montserrat';
     display: flex;
     justify-content: flex-end;
     margin-bottom: 1.5rem;

@@ -58,6 +58,7 @@ body {
 
 body {
   background-image: none;
+  font-family: 'montserrat';
 }
 
 .container {
@@ -70,7 +71,6 @@ body {
 }
 
 .total {
-  padding: 2rem 5rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -104,6 +104,7 @@ body {
 .text {
   font-size: 2rem;
   font-weight: 400;
+  font-family: 'montserrat';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

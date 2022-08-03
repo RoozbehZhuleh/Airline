@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/css/Style.css">
     <script src="./swiper.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
     <title>Airlines</title>
 </head>
 <body>
@@ -20,161 +25,247 @@
                     
                 </div>
                 <div class="airlines__link">
-                    <img src="./Assets/5-airlines/arrowRight.svg" alt="arrow right">
+                    <div class="airlines__link__img" src="./Assets/5-airlines/arrowRight.svg" alt="arrow right">
+                    </div>
                     <p>
                         View all Airlines
                     </p>
                 </div>
-                <div class="swiper">
-                    <div class="airlines__items swiper-wrapper">
-                        <div class="airlines__items__box swiper-slide">
-                            <div class="comm">
-                                <div class="comm__percent">
-                                    <p>5%</p>
-                                </div>
-                                <div class="comm__word">
-                                    <p>comm</p>
-                                </div>
-                            </div>
-                            <div class="item__title">
-                                <div class="item__title__img">
-                                    <img src="./Assets/5-airlines/jetstar.svg" alt="Jetstar Logo">
-                                </div>
-                                <div class="item__title__text">
-                                    <p class="airline__name">Jetstar</p>
-                                    <p class="airline__country">Australia</p>
-                                </div>
-                            </div>
-                            <div class="item__bottom">
-                                <div class="item__bottom__region">
-                                    <div class="jq">
-                                        JQ
-                                    </div>
-                                    <div class="region">
-                                        Pacific
-                                    </div>
-                                </div>
-                                <div class="item__bottom__options">
-                                    <img src="./Assets/5-airlines/rectangles.svg" alt="Clipboard" class="options">
-                                    <img src="./Assets/5-airlines/magnifier.svg" alt="magnifier" class="options">
-                                    <img src="./Assets/5-airlines/arrows.svg" alt="arrows" class="options">
-                                    <img src="./Assets/5-airlines/person.svg" alt="person" class="options">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="airlines__items__box swiper-slide">
-                            <div class="comm">
-                                <div class="comm__percent">
-                                    <p>7%</p>
-                                </div>
-                                <div class="comm__word">
-                                    <p>comm</p>
-                                </div>
-                            </div>
-                            <div class="item__title">
-                                <div class="item__title__img">
-                                    <img src="./Assets/5-airlines/singapore.svg" alt="Singapore Logo">
-                                </div>
-                                <div class="item__title__text">
-                                    <p class="airline__name">Singapore</p>
-                                    <p class="airline__country">Singapore</p>
-                                </div>
-                            </div>
-                            <div class="item__bottom">
-                                <div class="item__bottom__region">
-                                    <div class="jq">
-                                        SQ
-                                    </div>
-                                    <div class="region">
-                                        Asia | Star Alliance
-                                    </div>
-                                </div>
-                                <div class="item__bottom__options">
-                                    <img src="./Assets/5-airlines/rectangles.svg" alt="Clipboard" class="options">
-                                    <img src="./Assets/5-airlines/magnifier.svg" alt="magnifier" class="options">
-                                    <img src="./Assets/5-airlines/arrows.svg" alt="arrows" class="options">
-                                    <img src="./Assets/5-airlines/person.svg" alt="person" class="options">
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="airlines__items__box swiper-slide">
-                            <div class="comm">
-                                <div class="comm__percent">
-                                    <p>9%</p>
-                                </div>
-                                <div class="comm__word">
-                                    <p>comm</p>
-                                </div>
-                            </div>
-                            <div class="item__title">
-                                <div class="item__title__img">
-                                    <img src="./Assets/5-airlines/argentina.svg" alt="Argentina Logo">
-                                </div>
-                                <div class="item__title__text">
-                                    <p class="airline__name">Aerolíneas Argentinas</p>
-                                    <p class="airline__country">Argentina</p>
-                                </div>
-                            </div>
-                            <div class="item__bottom">
-                                <div class="item__bottom__region">
-                                    <div class="jq">
-                                        AR
+                <div class="swiper__container">
+                    <div class="swiper">
+                        <div class="airlines__items swiper-wrapper">
+                            <div class="airlines__items__box swiper-slide">
+                                <div class="comm">
+                                    <div class="comm__percent">
+                                        <p>5%</p>
                                     </div>
-                                    <div class="region">
-                                        Americas
+                                    <div class="comm__word">
+                                        <p>comm</p>
                                     </div>
                                 </div>
-                                <div class="item__bottom__options">
-                                    <img src="./Assets/5-airlines/rectangles.svg" alt="Clipboard" class="options">
-                                    <img src="./Assets/5-airlines/magnifier.svg" alt="magnifier" class="options">
-                                    <img src="./Assets/5-airlines/arrows.svg" alt="arrows" class="options">
-                                    <img src="./Assets/5-airlines/briefcase.svg" alt="arrows" class="options">
-                                    <img src="./Assets/5-airlines/person.svg" alt="person" class="options">
-                                    <img src="./Assets/5-airlines/tag.svg" alt="person" class="options">
-                                    <img src="./Assets/5-airlines/creditCard.svg" alt="person" class="options">
+                                <div class="item__title">
+                                    <div class="item__title__img">
+                                        <img src="./Assets/5-airlines/jetstar.svg" alt="Jetstar Logo">
+                                    </div>
+                                    <div class="item__title__text">
+                                        <p class="airline__name">Jetstar</p>
+                                        <p class="airline__country">Australia</p>
+                                    </div>
+                                </div>
+                                <div class="item__bottom">
+                                    <div class="item__bottom__region">
+                                        <div class="jq">
+                                            JQ
+                                        </div>
+                                        <div class="region">
+                                            Pacific
+                                        </div>
+                                    </div>
+                                    <div class="item__bottom__options">
+                                        <img src="./Assets/5-airlines/rectangles.svg" alt="Clipboard" class="options">
+                                        <img src="./Assets/5-airlines/magnifier.svg" alt="magnifier" class="options">
+                                        <img src="./Assets/5-airlines/arrows.svg" alt="arrows" class="options">
+                                        <img src="./Assets/5-airlines/person.svg" alt="person" class="options">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="airlines__items__box swiper-slide">
+                                <div class="comm">
+                                    <div class="comm__percent">
+                                        <p>7%</p>
+                                    </div>
+                                    <div class="comm__word">
+                                        <p>comm</p>
+                                    </div>
+                                </div>
+                                <div class="item__title">
+                                    <div class="item__title__img">
+                                        <img src="./Assets/5-airlines/singapore.svg" alt="Singapore Logo">
+                                    </div>
+                                    <div class="item__title__text">
+                                        <p class="airline__name">Singapore</p>
+                                        <p class="airline__country">Singapore</p>
+                                    </div>
+                                </div>
+                                <div class="item__bottom">
+                                    <div class="item__bottom__region">
+                                        <div class="jq">
+                                            SQ
+                                        </div>
+                                        <div class="region">
+                                            Asia | Star Alliance
+                                        </div>
+                                    </div>
+                                    <div class="item__bottom__options">
+                                        <img src="./Assets/5-airlines/rectangles.svg" alt="Clipboard" class="options">
+                                        <img src="./Assets/5-airlines/magnifier.svg" alt="magnifier" class="options">
+                                        <img src="./Assets/5-airlines/arrows.svg" alt="arrows" class="options">
+                                        <img src="./Assets/5-airlines/person.svg" alt="person" class="options">
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="airlines__items__box swiper-slide">
+                                <div class="comm">
+                                    <div class="comm__percent">
+                                        <p>9%</p>
+                                    </div>
+                                    <div class="comm__word">
+                                        <p>comm</p>
+                                    </div>
+                                </div>
+                                <div class="item__title">
+                                    <div class="item__title__img">
+                                        <img src="./Assets/5-airlines/argentina.svg" alt="Argentina Logo">
+                                    </div>
+                                    <div class="item__title__text">
+                                        <p class="airline__name">Aerolíneas Argentinas</p>
+                                        <p class="airline__country">Argentina</p>
+                                    </div>
+                                </div>
+                                <div class="item__bottom">
+                                    <div class="item__bottom__region">
+                                        <div class="jq">
+                                            AR
+                                        </div>
+                                        <div class="region">
+                                            Americas
+                                        </div>
+                                    </div>
+                                    <div class="item__bottom__options">
+                                        <img src="./Assets/5-airlines/rectangles.svg" alt="Clipboard" class="options">
+                                        <img src="./Assets/5-airlines/magnifier.svg" alt="magnifier" class="options">
+                                        <img src="./Assets/5-airlines/arrows.svg" alt="arrows" class="options">
+                                        <img src="./Assets/5-airlines/briefcase.svg" alt="arrows" class="options">
+                                        <img src="./Assets/5-airlines/person.svg" alt="person" class="options">
+                                        <img src="./Assets/5-airlines/tag.svg" alt="person" class="options">
+                                        <img src="./Assets/5-airlines/creditCard.svg" alt="person" class="options">
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="airlines__items__box swiper-slide">
+                                <div class="comm">
+                                    <div class="comm__percent">
+                                        <p>8%</p>
+                                    </div>
+                                    <div class="comm__word">
+                                        <p>comm</p>
+                                    </div>
+                                </div>
+                                <div class="item__title">
+                                    <div class="item__title__img">
+                                        <img src="./Assets/5-airlines/united.svg" alt="United Logo">
+                                    </div>
+                                    <div class="item__title__text">
+                                        <p class="airline__name">United</p>
+                                        <p class="airline__country">United States</p>
+                                    </div>
+                                </div>
+                                <div class="item__bottom">
+                                    <div class="item__bottom__region">
+                                        <div class="jq">
+                                            UA
+                                        </div>
+                                        <div class="region">
+                                            Americas | Star Alliance
+                                        </div>
+                                    </div>
+                                    <div class="item__bottom__options">
+                                        <img src="./Assets/5-airlines/rectangles.svg" alt="Clipboard" class="options">
+                                        <img src="./Assets/5-airlines/magnifier.svg" alt="magnifier" class="options">
+                                        <img src="./Assets/5-airlines/arrows.svg" alt="arrows" class="options">
+                                        <img src="./Assets/5-airlines/person.svg" alt="person" class="options">
+                                        <img src="./Assets/5-airlines/creditCard.svg" alt="person" class="options">
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="airlines__items__box swiper-slide">
+                                <div class="comm">
+                                    <div class="comm__percent">
+                                        <p>9%</p>
+                                    </div>
+                                    <div class="comm__word">
+                                        <p>comm</p>
+                                    </div>
+                                </div>
+                                <div class="item__title">
+                                    <div class="item__title__img">
+                                        <img src="./Assets/5-airlines/argentina.svg" alt="Argentina Logo">
+                                    </div>
+                                    <div class="item__title__text">
+                                        <p class="airline__name">Aerolíneas Argentinas</p>
+                                        <p class="airline__country">Argentina</p>
+                                    </div>
+                                </div>
+                                <div class="item__bottom">
+                                    <div class="item__bottom__region">
+                                        <div class="jq">
+                                            AR
+                                        </div>
+                                        <div class="region">
+                                            Americas
+                                        </div>
+                                    </div>
+                                    <div class="item__bottom__options">
+                                        <img src="./Assets/5-airlines/rectangles.svg" alt="Clipboard" class="options">
+                                        <img src="./Assets/5-airlines/magnifier.svg" alt="magnifier" class="options">
+                                        <img src="./Assets/5-airlines/arrows.svg" alt="arrows" class="options">
+                                        <img src="./Assets/5-airlines/briefcase.svg" alt="arrows" class="options">
+                                        <img src="./Assets/5-airlines/person.svg" alt="person" class="options">
+                                        <img src="./Assets/5-airlines/tag.svg" alt="person" class="options">
+                                        <img src="./Assets/5-airlines/creditCard.svg" alt="person" class="options">
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="airlines__items__box swiper-slide">
+                                <div class="comm">
+                                    <div class="comm__percent">
+                                        <p>9%</p>
+                                    </div>
+                                    <div class="comm__word">
+                                        <p>comm</p>
+                                    </div>
+                                </div>
+                                <div class="item__title">
+                                    <div class="item__title__img">
+                                        <img src="./Assets/5-airlines/argentina.svg" alt="Argentina Logo">
+                                    </div>
+                                    <div class="item__title__text">
+                                        <p class="airline__name">Aerolíneas Argentinas</p>
+                                        <p class="airline__country">Argentina</p>
+                                    </div>
+                                </div>
+                                <div class="item__bottom">
+                                    <div class="item__bottom__region">
+                                        <div class="jq">
+                                            AR
+                                        </div>
+                                        <div class="region">
+                                            Americas
+                                        </div>
+                                    </div>
+                                    <div class="item__bottom__options">
+                                        <img src="./Assets/5-airlines/rectangles.svg" alt="Clipboard" class="options">
+                                        <img src="./Assets/5-airlines/magnifier.svg" alt="magnifier" class="options">
+                                        <img src="./Assets/5-airlines/arrows.svg" alt="arrows" class="options">
+                                        <img src="./Assets/5-airlines/briefcase.svg" alt="arrows" class="options">
+                                        <img src="./Assets/5-airlines/person.svg" alt="person" class="options">
+                                        <img src="./Assets/5-airlines/tag.svg" alt="person" class="options">
+                                        <img src="./Assets/5-airlines/creditCard.svg" alt="person" class="options">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="airlines__items__box swiper-slide">
-                            <div class="comm">
-                                <div class="comm__percent">
-                                    <p>8%</p>
-                                </div>
-                                <div class="comm__word">
-                                    <p>comm</p>
-                                </div>
-                            </div>
-                            <div class="item__title">
-                                <div class="item__title__img">
-                                    <img src="./Assets/5-airlines/united.svg" alt="United Logo">
-                                </div>
-                                <div class="item__title__text">
-                                    <p class="airline__name">United</p>
-                                    <p class="airline__country">United States</p>
-                                </div>
-                            </div>
-                            <div class="item__bottom">
-                                <div class="item__bottom__region">
-                                    <div class="jq">
-                                        UA
-                                    </div>
-                                    <div class="region">
-                                        Americas | Star Alliance
-                                    </div>
-                                </div>
-                                <div class="item__bottom__options">
-                                    <img src="./Assets/5-airlines/rectangles.svg" alt="Clipboard" class="options">
-                                    <img src="./Assets/5-airlines/magnifier.svg" alt="magnifier" class="options">
-                                    <img src="./Assets/5-airlines/arrows.svg" alt="arrows" class="options">
-                                    <img src="./Assets/5-airlines/person.svg" alt="person" class="options">
-                                    <img src="./Assets/5-airlines/creditCard.svg" alt="person" class="options">
-                                </div>
-                            </div>
-                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>

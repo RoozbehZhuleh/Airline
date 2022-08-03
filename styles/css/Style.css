@@ -496,6 +496,12 @@ a:focus {
   src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
 }
 @media (min-width: 1200px) {
+  .swiper-wrapper {
+    width: 0px !important;
+  }
+  .swiper__container {
+    width: 100%;
+  }
   #airlines {
     background-image: url(../../Assets/5-airlines/backgroundAirlines.svg);
     background-size: cover;
@@ -517,10 +523,30 @@ a:focus {
   }
   .airlines__link {
     display: flex;
+    width: 30rem;
+    border-radius: 5rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     cursor: pointer;
+    transition: all 0.2s linear;
+  }
+  .airlines__link__img {
+    background-image: url(../../Assets/5-airlines/arrowRight.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    width: 10%;
+    height: 5rem;
+  }
+  .airlines__link:hover .airlines__link__img {
+    background-image: url(../../Assets/5-airlines/arrowWhite.svg);
+  }
+  .airlines__link:hover {
+    background-color: #1f51ff;
+  }
+  .airlines__link:hover p {
+    color: #fff;
   }
   .airlines__link p {
     font-family: montserrat-semibold;
@@ -674,10 +700,30 @@ a:focus {
   }
   .airlines__link {
     display: flex;
+    width: 30rem;
+    border-radius: 5rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     cursor: pointer;
+    transition: all 0.2s linear;
+  }
+  .airlines__link__img {
+    background-image: url(../../Assets/5-airlines/arrowRight.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    width: 10%;
+    height: 5rem;
+  }
+  .airlines__link:hover .airlines__link__img {
+    background-image: url(../../Assets/5-airlines/arrowWhite.svg);
+  }
+  .airlines__link:hover {
+    background-color: #1f51ff;
+  }
+  .airlines__link:hover p {
+    color: #fff;
   }
   .airlines__link p {
     font-family: montserrat-semibold;
@@ -834,10 +880,30 @@ a:focus {
   }
   .airlines__link {
     display: flex;
+    width: 30rem;
+    border-radius: 5rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     cursor: pointer;
+    transition: all 0.2s linear;
+  }
+  .airlines__link__img {
+    background-image: url(../../Assets/5-airlines/arrowRight.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    width: 10%;
+    height: 5rem;
+  }
+  .airlines__link:hover .airlines__link__img {
+    background-image: url(../../Assets/5-airlines/arrowWhite.svg);
+  }
+  .airlines__link:hover {
+    background-color: #1f51ff;
+  }
+  .airlines__link:hover p {
+    color: #fff;
   }
   .airlines__link p {
     font-family: montserrat-semibold;
@@ -994,10 +1060,30 @@ a:focus {
   }
   .airlines__link {
     display: flex;
+    width: 30rem;
+    border-radius: 5rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     cursor: pointer;
+    transition: all 0.2s linear;
+  }
+  .airlines__link__img {
+    background-image: url(../../Assets/5-airlines/arrowRight.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    width: 10%;
+    height: 5rem;
+  }
+  .airlines__link:hover .airlines__link__img {
+    background-image: url(../../Assets/5-airlines/arrowWhite.svg);
+  }
+  .airlines__link:hover {
+    background-color: #1f51ff;
+  }
+  .airlines__link:hover p {
+    color: #fff;
   }
   .airlines__link p {
     font-family: montserrat-semibold;
@@ -1154,10 +1240,30 @@ a:focus {
   }
   .airlines__link {
     display: flex;
+    width: 30rem;
+    border-radius: 5rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     cursor: pointer;
+    transition: all 0.2s linear;
+  }
+  .airlines__link__img {
+    background-image: url(../../Assets/5-airlines/arrowRight.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    width: 10%;
+    height: 5rem;
+  }
+  .airlines__link:hover .airlines__link__img {
+    background-image: url(../../Assets/5-airlines/arrowWhite.svg);
+  }
+  .airlines__link:hover {
+    background-color: #1f51ff;
+  }
+  .airlines__link:hover p {
+    color: #fff;
   }
   .airlines__link p {
     font-family: montserrat-semibold;

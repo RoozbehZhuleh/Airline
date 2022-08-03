@@ -1,6 +1,21 @@
 @import "../Variable/Variable";
 
 @media (min-width: 1200px) {
+
+  // .swiper{
+  //   width: 90%;
+  //   height:100%;
+  //   padding: 10rem;
+  // }
+
+    .swiper-wrapper{
+      width: 0px !important;
+    }
+
+    .swiper__container{
+      width: 100%;
+    }
+
   #airlines {
     background-image: url(../../Assets/5-airlines/backgroundAirlines.svg);
     background-size: cover;
@@ -24,10 +39,33 @@
 
     &__link {
       display: flex;
+      width: 30rem;
+      border-radius: 5rem;
       justify-content: center;
       align-items: center;
       gap: 1rem;
       cursor: pointer;
+      transition: all 0.2s linear;
+
+      &__img {
+        background-image: url(../../Assets/5-airlines/arrowRight.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 90%;
+        width: 10%;
+        height: 5rem;
+      }
+
+      &:hover .airlines__link__img {
+        background-image: url(../../Assets/5-airlines/arrowWhite.svg);
+      }
+      &:hover {
+        background-color: $neon__blue--clr;
+      }
+
+      &:hover p {
+        color: $white--clr;
+      }
 
       p {
         font-family: montserrat-semibold;
@@ -210,12 +248,35 @@
       text-align: center;
     }
 
-    &__link {
+   &__link {
       display: flex;
+      width: 30rem;
+      border-radius: 5rem;
       justify-content: center;
       align-items: center;
       gap: 1rem;
       cursor: pointer;
+      transition: all 0.2s linear;
+
+      &__img {
+        background-image: url(../../Assets/5-airlines/arrowRight.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 90%;
+        width: 10%;
+        height: 5rem;
+      }
+
+      &:hover .airlines__link__img {
+        background-image: url(../../Assets/5-airlines/arrowWhite.svg);
+      }
+      &:hover {
+        background-color: $neon__blue--clr;
+      }
+
+      &:hover p {
+        color: $white--clr;
+      }
 
       p {
         font-family: montserrat-semibold;
@@ -403,10 +464,33 @@
 
     &__link {
       display: flex;
+      width: 30rem;
+      border-radius: 5rem;
       justify-content: center;
       align-items: center;
       gap: 1rem;
       cursor: pointer;
+      transition: all 0.2s linear;
+
+      &__img {
+        background-image: url(../../Assets/5-airlines/arrowRight.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 90%;
+        width: 10%;
+        height: 5rem;
+      }
+
+      &:hover .airlines__link__img {
+        background-image: url(../../Assets/5-airlines/arrowWhite.svg);
+      }
+      &:hover {
+        background-color: $neon__blue--clr;
+      }
+
+      &:hover p {
+        color: $white--clr;
+      }
 
       p {
         font-family: montserrat-semibold;
@@ -594,10 +678,33 @@
 
     &__link {
       display: flex;
+      width: 30rem;
+      border-radius: 5rem;
       justify-content: center;
       align-items: center;
       gap: 1rem;
       cursor: pointer;
+      transition: all 0.2s linear;
+
+      &__img {
+        background-image: url(../../Assets/5-airlines/arrowRight.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 90%;
+        width: 10%;
+        height: 5rem;
+      }
+
+      &:hover .airlines__link__img {
+        background-image: url(../../Assets/5-airlines/arrowWhite.svg);
+      }
+      &:hover {
+        background-color: $neon__blue--clr;
+      }
+
+      &:hover p {
+        color: $white--clr;
+      }
 
       p {
         font-family: montserrat-semibold;
@@ -783,12 +890,35 @@
       text-align: center;
     }
 
-    &__link {
+   &__link {
       display: flex;
+      width: 30rem;
+      border-radius: 5rem;
       justify-content: center;
       align-items: center;
       gap: 1rem;
       cursor: pointer;
+      transition: all 0.2s linear;
+
+      &__img {
+        background-image: url(../../Assets/5-airlines/arrowRight.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 90%;
+        width: 10%;
+        height: 5rem;
+      }
+
+      &:hover .airlines__link__img {
+        background-image: url(../../Assets/5-airlines/arrowWhite.svg);
+      }
+      &:hover {
+        background-color: $neon__blue--clr;
+      }
+
+      &:hover p {
+        color: $white--clr;
+      }
 
       p {
         font-family: montserrat-semibold;

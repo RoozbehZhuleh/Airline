@@ -14,6 +14,9 @@ html {
 
 body {
   font-size: 1.5rem;
+  background: linear-gradient(141deg, #fff 0%, #eaeaea 51%, #fff 75%);
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .container {
@@ -250,6 +253,10 @@ button {
   font-family: whitney-book-italic;
   src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
 }
+<<<<<<< HEAD
+.title {
+  color: #000000;
+=======
 @media screen and (min-width: 1200px) {
   #features {
     padding: 0 0 5rem 0;
@@ -1343,4 +1350,5 @@ button {
     font-size: 1.2rem;
     color: #989898;
   }
+>>>>>>> 87d69350c0051ba86342d36e8d7c603d06698a44
 }/*# sourceMappingURL=Style.css.map */

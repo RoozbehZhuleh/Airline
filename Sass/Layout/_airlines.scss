@@ -7,11 +7,11 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-
+  
   .airlines {
-    padding: 10rem 0 0 0;
+    transform: translateY(10%);
     display: flex;
-    gap: 8rem;
+    gap: 7rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -62,13 +62,28 @@
           border: 1px solid $neon__blue--clr;
           border-radius: 0 1rem 0 1rem;
           color: $neon__blue--clr;
-          // width: 5rem;
           position: absolute;
           left: 85%;
           top: -3%;
           background-color: $white--clr;
           z-index: 2;
           padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          &__percent{
+            p{
+              font-family: whitney-semibold;
+              font-size: 2rem;
+            }
+          }
+
+          &__word{
+            font-family: whitney-semibold;
+            font-size: 1rem;
+          }
         }
 
         .item__title {

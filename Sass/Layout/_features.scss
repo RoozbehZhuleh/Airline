@@ -1031,7 +1031,7 @@
 }
 
 @media (max-width: 600px) {
- #features {
+  #features {
     padding: 0 0 5rem 0;
     margin: 2rem 0 0 0;
     // width: 100vw;
@@ -1077,7 +1077,6 @@
           align-items: center;
           gap: 10rem;
           align-items: center;
-
 
           .advanced-search {
             display: flex;
@@ -1283,5 +1282,5 @@
       border-radius: 2.5rem;
       z-index: -1;
     }
-  } 
+  }
 }

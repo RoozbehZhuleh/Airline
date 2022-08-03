@@ -5,6 +5,10 @@
      background-size: cover;
      background-position: left;
      .hero__container{
+          img {
+               width: 100%;
+               max-height: 100%;
+             }
           .hero__header {
                display: flex;
                align-items: center;

@@ -33,6 +33,15 @@ button {
   background-color: transparent;
 }
 
+a {
+  color: #464646;
+  text-decoration: none;
+}
+a:focus {
+  color: #464646;
+  text-decoration: none;
+}
+
 @font-face {
   font-family: montserrat-bold;
   src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
@@ -484,4 +493,152 @@ button {
 @font-face {
   font-family: whitney-book-italic;
   src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+}
+.category {
+  background-color: #F8FAFB;
+}
+.category .category__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: montserrat-semibold;
+  font-size: 2.5rem;
+}
+.category .category__container {
+  margin-top: 5rem;
+}
+.category .category__container .categor__card__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+.category .category__container .categor__card__container .category__card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.category .category__container .categor__card__container .category__card .category__image {
+  padding: 1rem;
+}
+.category .category__container .categor__card__container .category__card .category__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.category .category__container .categor__card__container .category__card .category__wrapper .category__title {
+  position: relative;
+  font-family: montserrat-bold;
+  font-size: 3rem;
+  text-align: center;
+}
+.category .category__container .categor__card__container .category__card .category__wrapper .category__title::after {
+  display: table;
+  clear: both;
+  content: "+";
+  position: absolute;
+  top: -20%;
+  left: 110%;
+  font-size: 2.5rem;
+  color: #989898;
+}
+.category .category__container .categor__card__container .category__card .category__wrapper .category__type {
+  margin-top: 1.5rem;
+  font-family: montserrat-bold;
+  font-size: 2rem;
+  color: #1f51ff;
+  text-align: center;
+}
+.category .category__container .categor__card__container .category__card .category__wrapper .category__description {
+  font-size: 1.5rem;
+  color: #989898;
+  font-family: montserrat-medium;
+  text-align: center;
+}
+
+.footer .footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 10%;
+  gap: 10rem;
+}
+.footer .footer__container .footer--left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+}
+.footer .footer__container .footer--left .footer--description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: whitney-book;
+  font-size: 1.8rem;
+  color: #989898;
+  gap: 6rem;
+}
+.footer .footer__container .footer--left .footer--description::after {
+  width: 40%;
+  display: table;
+  clear: both;
+  content: "";
+  border-bottom: 0.3rem solid #c9c9c9;
+}
+.footer .footer__container .footer--left .footer--copyright {
+  margin-top: 6.5rem;
+  font-family: whitney-book;
+  font-size: 1.8rem;
+  color: #989898;
+}
+.footer .footer__container .footer--right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6rem;
+}
+.footer .footer__container .footer--right .footer--right__title {
+  font-family: whitney-semibold;
+  font-size: 2.5rem;
+  color: #000000;
+}
+.footer .footer__container .footer--right .contact__container {
+  display: grid;
+  gap: 2rem;
+}
+.footer .footer__container .footer--right .contact__container .contact {
+  display: flex;
+  align-items: center;
+  font-family: whitney-book;
+  font-size: 1.8rem;
+  color: #464646;
+  gap: 2rem;
+}
+.footer .footer__container .footer--right .contact__container .contact::before {
+  display: table;
+  clear: both;
+  content: "";
+  background-size: 4rem;
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../../Assets/15-contact/location.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer .footer__container .footer--right .contact__container .phone::before {
+  background-image: url("../../Assets/15-contact/phone.svg");
+}
+.footer .footer__container .footer--right .contact__container .mail::before {
+  background-image: url("../../Assets/15-contact/mail.svg");
+}
+.footer .footer__container .footer--right .socialmedia {
+  display: flex;
+  gap: 1rem;
+}
+.footer .footer__container .footer--right .socialmedia .socail {
+  width: 4rem;
+  height: 4rem;
 }/*# sourceMappingURL=Style.css.map */

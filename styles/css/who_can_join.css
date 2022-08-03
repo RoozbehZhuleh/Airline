@@ -105,11 +105,13 @@ body {
   .total .blue-col {
     font-size: 1.2rem !important;
   }
+
   .total__grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     margin-top: 2rem !important;
   }
+
   .grid__items {
     grid-column: 1/-1;
     margin-top: 3rem;
@@ -117,16 +119,22 @@ body {
   .grid__items .grid__items__bottom {
     margin-top: 1rem;
   }
+
   .grid__items__1 {
     grid-row: 1/2;
   }
+
   .grid__items__2 {
     grid-row: 2/3;
   }
+
   .grid__items__3 {
     grid-row: 3/4;
   }
+
   .grid__items__4 {
     grid-row: 4/5;
   }
-}/*# sourceMappingURL=who_can_join.css.map */
+}
+
+/*# sourceMappingURL=who_can_join.css.map */

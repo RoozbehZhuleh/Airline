@@ -179,7 +179,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            // gap: 2px;
+            gap: 3px;
             width: 30%;
           }
         }
@@ -187,7 +187,6 @@
     }
   }
 }
-
 
 @media (min-width: 991px) and (max-width: 1199px) {
   #airlines {
@@ -371,7 +370,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            // gap: 2px;
+            gap: 3px;
             width: 30%;
           }
         }
@@ -380,10 +379,7 @@
   }
 }
 
-
-
 @media (min-width: 768px) and (max-width: 990px) {
-
   #airlines {
     background-image: url(../../Assets/5-airlines/backgroundAirlines.svg);
     background-size: cover;
@@ -565,7 +561,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            // gap: 2px;
+            gap: 3px;
             width: 30%;
           }
         }
@@ -756,7 +752,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            // gap: 2px;
+            gap: 3px;
             width: 30%;
           }
         }
@@ -947,7 +943,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            // gap: 2px;
+            gap: 3px;
             width: 30%;
           }
         }

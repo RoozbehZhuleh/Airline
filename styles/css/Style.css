@@ -648,6 +648,7 @@ a:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 3px;
     width: 30%;
   }
 }
@@ -807,6 +808,7 @@ a:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 3px;
     width: 30%;
   }
 }
@@ -966,6 +968,7 @@ a:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 3px;
     width: 30%;
   }
 }
@@ -1125,6 +1128,7 @@ a:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 3px;
     width: 30%;
   }
 }
@@ -1284,6 +1288,7 @@ a:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 3px;
     width: 30%;
   }
 }

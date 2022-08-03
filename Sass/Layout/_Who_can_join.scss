@@ -1,12 +1,11 @@
-@import '../Reset/Reset';
-@import '../Variable/Variable';
+
 body {
     background-image: none;
 }
 #who_can_join {
     width: 98%;
     margin: 0 auto;
-    .total {
+    .total_container {
         padding: 5rem;
     }
     h2 {

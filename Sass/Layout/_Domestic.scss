@@ -1,94 +1,497 @@
-.container {
-    width: 98%;
-    margin: 0 auto;
-    margin-top: 10rem;
-    h2 {
-        margin-top: 2rem;
-        font-size: 3rem;
-        font-family: montserrat-semibold;
-        position: relative;
-        top: 3rem;
+
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 10rem;
+        h2 {
+            margin-top: 2rem;
+            font-size: 3rem;
+            font-family: montserrat-semibold;
+            position: relative;
+            top: 3rem;
+        }
+    }   
+    .total {
+        // padding: 2rem 5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        margin-top: 10rem;
+        gap: 2rem;
+        // h2 {
+            
+        // }
+       
+        .img_container {
+            position: relative;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            span {
+                position: absolute;
+                right: -0.5rem;
+                top: -0.5rem;
+                color: $gray__10--clr;
+                padding: 0.5rem;
+                background-color: $neon__blue--clr;
+                border-radius: 0 1rem 0 1rem;
+                font-family: montserrat-medium;
+            }
+            .cheap {
+                background-color: $primary__orange--clr;
+            }
+        }
+        
     }
-}   
-.total {
-    // padding: 2rem 5rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
-    margin-top: 10rem;
-    gap: 2rem;
-    // h2 {
+    .text {
+        font-size: 2.2rem;
+        font-weight: 500;
+        font-family: montserrat-medium;
+        display: flex;
+        justify-content: flex-end;
+        margin: 1.5rem 0;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .china_total {
+        grid-column:1/2 ;
+        grid-row: 1/2;
+    }
+    .japan_total {
+        grid-column:1/2 ;
+        grid-row: 2/3;
+        margin-top: -4rem;
+    }
+    .us_total {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .russia_total {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .korea_total {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin-top: -3rem;
+    }
+    .turkey_total {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .european_total {
+        grid-column: 4/-1;
+        grid-row: 1/2;
+        margin-top: -13rem;
+    }
+    .asia_total {
+        grid-column: 4/-1;
+        grid-row: 2/3;
+        margin-top: -13rem;
+    }
+    
+    
+}
+
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    .container {
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 10rem;
+        h2 {
+            margin-top: 2rem;
+            font-size: 3rem;
+            font-family: montserrat-semibold;
+            position: relative;
+            top: 3rem;
+        }
+    }   
+    .total {
+        // padding: 2rem 5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        margin-top: 10rem;
+        gap: 2rem;
+        // h2 {
+            
+        // }
+       
+        .img_container {
+            position: relative;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            span {
+                position: absolute;
+                right: -0.5rem;
+                top: -0.5rem;
+                color: $gray__10--clr;
+                padding: 0.5rem;
+                background-color: $neon__blue--clr;
+                border-radius: 0 1rem 0 1rem;
+                font-family: montserrat-medium;
+            }
+            .cheap {
+                background-color: $primary__orange--clr;
+            }
+        }
         
-    // }
-   
-    .img_container {
-        position: relative;
-        
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        span {
-            position: absolute;
-            right: -0.5rem;
-            top: -0.5rem;
-            color: $gray__10--clr;
-            padding: 0.5rem;
-            background-color: $neon__blue--clr;
-            border-radius: 0 1rem 0 1rem;
-            font-family: montserrat-medium;
-        }
-        .cheap {
-            background-color: $primary__orange--clr;
-        }
+    }
+    .text {
+        font-size: 2.2rem;
+        font-weight: 500;
+        font-family: montserrat-medium;
+        display: flex;
+        justify-content: flex-end;
+        margin: 1.5rem 0;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .china_total {
+        grid-column:1/2 ;
+        grid-row: 1/2;
+    }
+    .japan_total {
+        grid-column:1/2 ;
+        grid-row: 2/3;
+        margin-top: -4rem;
+    }
+    .us_total {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .russia_total {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .korea_total {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin-top: -3rem;
+    }
+    .turkey_total {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .european_total {
+        grid-column: 4/-1;
+        grid-row: 1/2;
+        margin-top: -13rem;
+    }
+    .asia_total {
+        grid-column: 4/-1;
+        grid-row: 2/3;
+        margin-top: -13rem;
     }
     
 }
-.text {
-    font-size: 2.2rem;
-    font-weight: 500;
-    font-family: montserrat-medium;
-    display: flex;
-    justify-content: flex-end;
-    margin: 1.5rem 0;
+
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .container {
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 10rem;
+        h2 {
+            margin-top: 2rem;
+            font-size: 3rem;
+            font-family: montserrat-semibold;
+            position: relative;
+            top: 3rem;
+        }
+    }   
+    .total {
+        // padding: 2rem 5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        margin-top: 10rem;
+        gap: 2rem;
+        // h2 {
+            
+        // }
+       
+        .img_container {
+            position: relative;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            span {
+                position: absolute;
+                right: -0.5rem;
+                top: -0.5rem;
+                color: $gray__10--clr;
+                padding: 0.5rem;
+                background-color: $neon__blue--clr;
+                border-radius: 0 1rem 0 1rem;
+                font-family: montserrat-medium;
+            }
+            .cheap {
+                background-color: $primary__orange--clr;
+            }
+        }
+        
+    }
+    .text {
+        font-size: 2.2rem;
+        font-weight: 500;
+        font-family: montserrat-medium;
+        display: flex;
+        justify-content: flex-end;
+        margin: 1.5rem 0;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .china_total {
+        grid-column:1/2 ;
+        grid-row: 1/2;
+    }
+    .japan_total {
+        grid-column:1/2 ;
+        grid-row: 2/3;
+        margin-top: -4rem;
+    }
+    .us_total {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .russia_total {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .korea_total {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin-top: -3rem;
+    }
+    .turkey_total {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .european_total {
+        grid-column: 4/-1;
+        grid-row: 1/2;
+        margin-top: -13rem;
+    }
+    .asia_total {
+        grid-column: 4/-1;
+        grid-row: 2/3;
+        margin-top: -13rem;
+    }
+    
 }
-.text-right {
-    text-align: right;
+
+
+@media (min-width: 601px) and (max-width: 767px) {
+    .container {
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 10rem;
+        h2 {
+            margin-top: 2rem;
+            font-size: 3rem;
+            font-family: montserrat-semibold;
+            position: relative;
+            top: 3rem;
+        }
+    }   
+    .total {
+        // padding: 2rem 5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        margin-top: 10rem;
+        gap: 2rem;
+        // h2 {
+            
+        // }
+       
+        .img_container {
+            position: relative;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            span {
+                position: absolute;
+                right: -0.5rem;
+                top: -0.5rem;
+                color: $gray__10--clr;
+                padding: 0.5rem;
+                background-color: $neon__blue--clr;
+                border-radius: 0 1rem 0 1rem;
+                font-family: montserrat-medium;
+            }
+            .cheap {
+                background-color: $primary__orange--clr;
+            }
+        }
+        
+    }
+    .text {
+        font-size: 2.2rem;
+        font-weight: 500;
+        font-family: montserrat-medium;
+        display: flex;
+        justify-content: flex-end;
+        margin: 1.5rem 0;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .china_total {
+        grid-column:1/2 ;
+        grid-row: 1/2;
+    }
+    .japan_total {
+        grid-column:1/2 ;
+        grid-row: 2/3;
+        margin-top: -4rem;
+    }
+    .us_total {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .russia_total {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .korea_total {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin-top: -3rem;
+    }
+    .turkey_total {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .european_total {
+        grid-column: 4/-1;
+        grid-row: 1/2;
+        margin-top: -13rem;
+    }
+    .asia_total {
+        grid-column: 4/-1;
+        grid-row: 2/3;
+        margin-top: -13rem;
+    }
+    
 }
-.china_total {
-    grid-column:1/2 ;
-    grid-row: 1/2;
-}
-.japan_total {
-    grid-column:1/2 ;
-    grid-row: 2/3;
-    margin-top: -4rem;
-}
-.us_total {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-.russia_total {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-.korea_total {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    margin-top: -3rem;
-}
-.turkey_total {
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-.european_total {
-    grid-column: 4/-1;
-    grid-row: 1/2;
-    margin-top: -13rem;
-}
-.asia_total {
-    grid-column: 4/-1;
-    grid-row: 2/3;
-    margin-top: -13rem;
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 10rem;
+        h2 {
+            margin-top: 2rem;
+            font-size: 3rem;
+            font-family: montserrat-semibold;
+            position: relative;
+            top: 3rem;
+        }
+    }   
+    .total {
+        // padding: 2rem 5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        margin-top: 10rem;
+        gap: 2rem;
+        // h2 {
+            
+        // }
+       
+        .img_container {
+            position: relative;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            span {
+                position: absolute;
+                right: -0.5rem;
+                top: -0.5rem;
+                color: $gray__10--clr;
+                padding: 0.5rem;
+                background-color: $neon__blue--clr;
+                border-radius: 0 1rem 0 1rem;
+                font-family: montserrat-medium;
+            }
+            .cheap {
+                background-color: $primary__orange--clr;
+            }
+        }
+        
+    }
+    .text {
+        font-size: 2.2rem;
+        font-weight: 500;
+        font-family: montserrat-medium;
+        display: flex;
+        justify-content: flex-end;
+        margin: 1.5rem 0;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .china_total {
+        grid-column:1/2 ;
+        grid-row: 1/2;
+    }
+    .japan_total {
+        grid-column:1/2 ;
+        grid-row: 2/3;
+        margin-top: -4rem;
+    }
+    .us_total {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .russia_total {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .korea_total {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin-top: -3rem;
+    }
+    .turkey_total {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .european_total {
+        grid-column: 4/-1;
+        grid-row: 1/2;
+        margin-top: -13rem;
+    }
+    .asia_total {
+        grid-column: 4/-1;
+        grid-row: 2/3;
+        margin-top: -13rem;
+    }
+    
 }

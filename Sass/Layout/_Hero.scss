@@ -89,6 +89,10 @@
                     .right--side {
                          height: 30rem;
                          animation: flow 6s linear infinite ;  
+                         img {
+                              width: 100%;
+                              height: 100%;
+                         }
                     }
                }
                .hero--platform {
@@ -123,6 +127,10 @@
                               .platform--card__image {
                                    height: 20rem;
                                    width: 100%;
+                                   img {
+                                        width: 100%;
+                                        height: 100%;
+                                   }
                               }
                               .platform--detail {
                                    display: flex;

@@ -1,60 +1,67 @@
 @import "../Variable/Variable";
 
-#newsletter {
-  transform: translateY(50%);
-}
-
-.newsletter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-
-  &__title {
-    font-family: montserrat-semibold;
-    font-size: 5rem;
+@media (min-width: 768px) {
+  #newsletter {
+    background-color: #f8fafb;
+    padding: 0 0 15rem 0;
   }
-
-  &__text {
-    font-family: montserrat-medium;
-    font-size: 2rem;
-  }
-
-  &__box {
+  .newsletter {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 70rem;
-    border-radius: 3rem;
-    padding: 0 0 0 2rem;
-  }
+    gap: 5rem;
+    background-color: #f8fafb;
+    padding: auto 0;
 
-  &__email {
-    outline: none;
-    border: none;
-    font-family: whitney-book;
-    font-size: 2rem;
-    border-radius: 3rem;
-    width: 90%;
-    padding: 0 0 0 2rem;
-  }
+    &__title {
+      font-family: montserrat-semibold;
+      font-size: 5rem;
+      line-height: 61px;
+    }
 
-  &__submit {
-    background-color: $neon__blue--clr;
-    color: $white--clr;
-    padding: 1rem 3rem;
-    border-radius: 3rem;
-    font-family: whitney-semibold;
-    font-size: 1.5rem;
-    cursor: pointer;
+    &__text {
+      font-family: montserrat-medium;
+      font-size: 2rem;
+    }
+
+    &__box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      width: 70rem;
+      border-radius: 3rem;
+      // padding: 1rem 0 1rem 2rem;
+    }
+
+    &__email {
+      outline: none;
+      border: none;
+      font-family: whitney-book;
+      font-size: 2rem;
+      border-radius: 3rem;
+      width: 90%;
+      padding: 0 0 0 2rem;
+      background-color: #f8fafb;
+    }
+
+    &__submit {
+      background-color: $neon__blue--clr;
+      color: $white--clr;
+      padding: 1.5rem 5rem;
+      border-radius: 3rem;
+      font-family: whitney-semibold;
+      font-size: 2rem;
+      cursor: pointer;
+    }
   }
 }
 
 @media (min-width: 600px) and (max-width: 767px) {
   #newsletter {
-    transform: translateY(50%);
+    background-color: #f8fafb;
+    padding: 0 0 10rem 0;
   }
 
   .newsletter {
@@ -108,7 +115,7 @@
 
 @media (max-width: 600px) {
   #newsletter {
-    transform: translateY(50%);
+    background-color: #f8fafb;
   }
 
   .newsletter {
@@ -130,32 +137,91 @@
 
     &__box {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: flex-start;
       align-items: center;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       width: 30rem;
       border-radius: 3rem;
-      padding: 0 0 0 2rem;
     }
 
     &__email {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       outline: none;
       border: none;
       font-family: whitney-book;
       font-size: 1.5rem;
-      border-radius: 3rem;
-      width: 90%;
-      // padding: 0 0 0 1rem;
+      border-radius: 1rem 1rem 0 0;
+      width: 100%;
+      padding: 1.5rem 3rem;
     }
 
     &__submit {
       background-color: $neon__blue--clr;
       color: $white--clr;
       padding: 1rem 2rem;
-      border-radius: 3rem;
+      border-radius: 0 0 1rem 1rem;
       font-family: whitney-semibold;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       cursor: pointer;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 315px) and (max-width: 599px) {
+  #newsletter {
+    background-color: #f8fafb;
+    padding:0 0 10rem 0;
+  }
+
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    &__title {
+      font-family: montserrat-semibold;
+      font-size: 1rem;
+    }
+
+    &__text {
+      font-family: montserrat-medium;
+      font-size: 1.2rem;
+      width: 70%;
+      text-align: center;
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 30rem;
+      border-radius: 3rem;
+    }
+
+    &__email {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      outline: none;
+      border: none;
+      font-family: whitney-book;
+      font-size: 1.4rem;
+      border-radius: 1rem 1rem 0 0;
+      width: 70%;
+      padding: 1.5rem 3rem;
+    }
+
+    &__submit {
+      background-color: $neon__blue--clr;
+      color: $white--clr;
+      padding: 1rem 2rem;
+      border-radius: 0 0 1rem 1rem;
+      font-family: whitney-semibold;
+      font-size: 1.3rem;
+      cursor: pointer;
+      width: 70%;
     }
   }
 }

@@ -622,909 +622,230 @@ a:focus {
   font-family: whitney-book-italic;
   src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
 }
-@media (min-width: 1200px) {
-  .swiper-wrapper {
-    width: 0px !important;
-  }
-  .swiper__container {
-    width: 100%;
-  }
-  #airlines {
-    background-image: url(../../Assets/5-airlines/backgroundAirlines.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .airlines {
-    transform: translateY(10%);
-    display: flex;
-    gap: 7rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .airlines__title {
-    font-family: montserrat-semibold;
-    font-size: 5rem;
-    text-align: center;
-  }
-  .airlines__link {
-    display: flex;
-    width: 30rem;
-    border-radius: 5rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    cursor: pointer;
-    transition: all 0.2s linear;
-  }
-  .airlines__link__img {
-    background-image: url(../../Assets/5-airlines/arrowRight.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 90%;
-    width: 10%;
-    height: 5rem;
-  }
-  .airlines__link:hover .airlines__link__img {
-    background-image: url(../../Assets/5-airlines/arrowWhite.svg);
-  }
-  .airlines__link:hover {
-    background-color: #1f51ff;
-  }
-  .airlines__link:hover p {
-    color: #fff;
-  }
-  .airlines__link p {
-    font-family: montserrat-semibold;
-    font-size: 2.5rem;
-    color: #1f51ff;
-  }
-  .airlines__items {
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
-  }
-  .airlines__items__box {
-    width: 30rem;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 20rem;
-    padding: 2rem 3rem;
-    background-color: #fff;
-    border-radius: 1rem;
-    border: 1px solid #c9c9c9;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
-    z-index: 1;
-    cursor: pointer;
-    transition: all 0.2s linear;
-  }
-  .airlines__items__box::after {
-    content: "View Route";
-    color: #fff;
-    background-color: #1f51ff;
-    width: 100%;
-    height: 5rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: whitney-semibold;
-    font-size: 1.8rem;
-    text-align: center;
-    border-radius: 0 0 1rem 1rem;
-    border: 1px solid #1f51ff;
-    padding: 1rem 0;
-    box-shadow: #1f51ff 0px 5px 10px 0px;
-    cursor: pointer;
-    display: none;
-    transition: all 0.2s linear;
-  }
-  .airlines__items__box:hover {
-    box-shadow: #1f51ff 0px 5px 10px 0px;
-    border-radius: 1rem 1rem 0 0;
-  }
-  .airlines__items__box:hover::after {
-    top: 100%;
-    display: block;
-  }
-  .airlines__items__box .comm {
-    position: absolute;
-    left: 100%;
-    border: 1px solid #1f51ff;
-    border-radius: 0 1rem 0 1rem;
-    color: #1f51ff;
-    position: absolute;
-    left: 85%;
-    top: -3%;
-    background-color: #fff;
-    z-index: 2;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .airlines__items__box .comm__percent p {
-    font-family: whitney-semibold;
-    font-size: 2rem;
-  }
-  .airlines__items__box .comm__word {
-    font-family: whitney-semibold;
-    font-size: 1rem;
-  }
-  .airlines__items__box .item__title {
-    display: flex;
-    gap: 2rem;
-  }
-  .airlines__items__box .item__title__img img {
-    width: 3rem;
-  }
-  .airlines__items__box .item__title__text {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .airlines__items__box .item__title__text .airline__name {
-    font-family: whitney-semibold;
-    font-size: 2rem;
-  }
-  .airlines__items__box .item__title__text .airline__country {
-    font-family: whitney-book;
-    font-size: 1.2rem;
-  }
-  .airlines__items__box .item__bottom {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .airlines__items__box .item__bottom__region {
-    display: flex;
-    gap: 1rem;
-  }
-  .airlines__items__box .item__bottom__region .jq {
-    color: #fff;
-    background-color: #1f51ff;
-    padding: 1px 5px;
-    font-family: montserrat-semibold;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-  }
-  .airlines__items__box .item__bottom__region .region {
-    font-family: montserrat-medium;
-    font-size: 1.2rem;
-    color: #989898;
-  }
-  .airlines__items__box .item__bottom__options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3px;
-    width: 30%;
-  }
+.swiper-wrapper {
+  width: 0px !important;
 }
-@media (min-width: 991px) and (max-width: 1199px) {
-  #airlines {
-    background-image: url(../../Assets/5-airlines/backgroundAirlines.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .airlines {
-    transform: translateY(10%);
-    display: flex;
-    gap: 7rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .airlines__title {
-    font-family: montserrat-semibold;
-    font-size: 5rem;
-    text-align: center;
-  }
-  .airlines__link {
-    display: flex;
-    width: 30rem;
-    border-radius: 5rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    cursor: pointer;
-    transition: all 0.2s linear;
-  }
-  .airlines__link__img {
-    background-image: url(../../Assets/5-airlines/arrowRight.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 90%;
-    width: 10%;
-    height: 5rem;
-  }
-  .airlines__link:hover .airlines__link__img {
-    background-image: url(../../Assets/5-airlines/arrowWhite.svg);
-  }
-  .airlines__link:hover {
-    background-color: #1f51ff;
-  }
-  .airlines__link:hover p {
-    color: #fff;
-  }
-  .airlines__link p {
-    font-family: montserrat-semibold;
-    font-size: 2.5rem;
-    color: #1f51ff;
-  }
-  .airlines__items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 5rem 0;
-  }
-  .airlines__items__box {
-    width: 30rem;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 20rem;
-    padding: 2rem 3rem;
-    background-color: #fff;
-    border-radius: 1rem;
-    border: 1px solid #c9c9c9;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
-    z-index: 1;
-    cursor: pointer;
-    transition: all 0.2s linear;
-    margin-top: 3rem;
-  }
-  .airlines__items__box::after {
-    content: "View Route";
-    color: #fff;
-    background-color: #1f51ff;
-    width: 100%;
-    height: 4rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: whitney-semibold;
-    font-size: 1.8rem;
-    text-align: center;
-    border-radius: 0 0 1rem 1rem;
-    border: 1px solid #1f51ff;
-    padding: 0.55rem 0;
-    box-shadow: #1f51ff 0px 5px 10px 0px;
-    cursor: pointer;
-    display: none;
-    transition: all 0.2s linear;
-  }
-  .airlines__items__box:hover {
-    box-shadow: #1f51ff 0px 5px 10px 0px;
-    border-radius: 1rem 1rem 0 0;
-  }
-  .airlines__items__box:hover::after {
-    top: 100%;
-    display: block;
-  }
-  .airlines__items__box .comm {
-    position: absolute;
-    left: 100%;
-    border: 1px solid #1f51ff;
-    border-radius: 0 1rem 0 1rem;
-    color: #1f51ff;
-    position: absolute;
-    left: 85%;
-    top: -3%;
-    background-color: #fff;
-    z-index: 2;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .airlines__items__box .comm__percent p {
-    font-family: whitney-semibold;
-    font-size: 2rem;
-  }
-  .airlines__items__box .comm__word {
-    font-family: whitney-semibold;
-    font-size: 1rem;
-  }
-  .airlines__items__box .item__title {
-    display: flex;
-    gap: 2rem;
-  }
-  .airlines__items__box .item__title__img img {
-    width: 3rem;
-  }
-  .airlines__items__box .item__title__text {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .airlines__items__box .item__title__text .airline__name {
-    font-family: whitney-semibold;
-    font-size: 2rem;
-  }
-  .airlines__items__box .item__title__text .airline__country {
-    font-family: whitney-book;
-    font-size: 1.2rem;
-  }
-  .airlines__items__box .item__bottom {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .airlines__items__box .item__bottom__region {
-    display: flex;
-    gap: 1rem;
-  }
-  .airlines__items__box .item__bottom__region .jq {
-    color: #fff;
-    background-color: #1f51ff;
-    padding: 1px 5px;
-    font-family: montserrat-semibold;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-  }
-  .airlines__items__box .item__bottom__region .region {
-    font-family: montserrat-medium;
-    font-size: 1.2rem;
-    color: #989898;
-  }
-  .airlines__items__box .item__bottom__options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3px;
-    width: 30%;
-  }
+
+.swiper__container {
+  width: 100%;
+  overflow-x: clip !important;
 }
-@media (min-width: 768px) and (max-width: 990px) {
-  #airlines {
-    background-image: url(../../Assets/5-airlines/backgroundAirlines.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .airlines {
-    transform: translateY(10%);
-    display: flex;
-    gap: 7rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .airlines__title {
-    font-family: montserrat-semibold;
-    font-size: 5rem;
-    text-align: center;
-  }
-  .airlines__link {
-    display: flex;
-    width: 30rem;
-    border-radius: 5rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    cursor: pointer;
-    transition: all 0.2s linear;
-  }
-  .airlines__link__img {
-    background-image: url(../../Assets/5-airlines/arrowRight.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 90%;
-    width: 10%;
-    height: 5rem;
-  }
-  .airlines__link:hover .airlines__link__img {
-    background-image: url(../../Assets/5-airlines/arrowWhite.svg);
-  }
-  .airlines__link:hover {
-    background-color: #1f51ff;
-  }
-  .airlines__link:hover p {
-    color: #fff;
-  }
-  .airlines__link p {
-    font-family: montserrat-semibold;
-    font-size: 2.5rem;
-    color: #1f51ff;
-  }
-  .airlines__items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 5rem 0;
-  }
-  .airlines__items__box {
-    width: 30rem;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 20rem;
-    padding: 2rem 3rem;
-    background-color: #fff;
-    border-radius: 1rem;
-    border: 1px solid #c9c9c9;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
-    z-index: 1;
-    cursor: pointer;
-    transition: all 0.2s linear;
-    margin-top: 3rem;
-  }
-  .airlines__items__box::after {
-    content: "View Route";
-    color: #fff;
-    background-color: #1f51ff;
-    width: 100%;
-    height: 4rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: whitney-semibold;
-    font-size: 1.8rem;
-    text-align: center;
-    border-radius: 0 0 1rem 1rem;
-    border: 1px solid #1f51ff;
-    padding: 0.55rem 0;
-    box-shadow: #1f51ff 0px 5px 10px 0px;
-    cursor: pointer;
-    display: none;
-    transition: all 0.2s linear;
-  }
-  .airlines__items__box:hover {
-    box-shadow: #1f51ff 0px 5px 10px 0px;
-    border-radius: 1rem 1rem 0 0;
-  }
-  .airlines__items__box:hover::after {
-    top: 100%;
-    display: block;
-  }
-  .airlines__items__box .comm {
-    position: absolute;
-    left: 100%;
-    border: 1px solid #1f51ff;
-    border-radius: 0 1rem 0 1rem;
-    color: #1f51ff;
-    position: absolute;
-    left: 85%;
-    top: -3%;
-    background-color: #fff;
-    z-index: 2;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .airlines__items__box .comm__percent p {
-    font-family: whitney-semibold;
-    font-size: 2rem;
-  }
-  .airlines__items__box .comm__word {
-    font-family: whitney-semibold;
-    font-size: 1rem;
-  }
-  .airlines__items__box .item__title {
-    display: flex;
-    gap: 2rem;
-  }
-  .airlines__items__box .item__title__img img {
-    width: 3rem;
-  }
-  .airlines__items__box .item__title__text {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .airlines__items__box .item__title__text .airline__name {
-    font-family: whitney-semibold;
-    font-size: 2rem;
-  }
-  .airlines__items__box .item__title__text .airline__country {
-    font-family: whitney-book;
-    font-size: 1.2rem;
-  }
-  .airlines__items__box .item__bottom {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .airlines__items__box .item__bottom__region {
-    display: flex;
-    gap: 1rem;
-  }
-  .airlines__items__box .item__bottom__region .jq {
-    color: #fff;
-    background-color: #1f51ff;
-    padding: 1px 5px;
-    font-family: montserrat-semibold;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-  }
-  .airlines__items__box .item__bottom__region .region {
-    font-family: montserrat-medium;
-    font-size: 1.2rem;
-    color: #989898;
-  }
-  .airlines__items__box .item__bottom__options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3px;
-    width: 30%;
-  }
+
+.swiper {
+  overflow: unset !important;
 }
-@media (min-width: 600px) and (max-width: 767px) {
-  #airlines {
-    background-image: url(../../Assets/5-airlines/backgroundAirlines.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .airlines {
-    transform: translateY(10%);
-    display: flex;
-    gap: 7rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .airlines__title {
-    font-family: montserrat-semibold;
-    font-size: 5rem;
-    text-align: center;
-  }
-  .airlines__link {
-    display: flex;
-    width: 30rem;
-    border-radius: 5rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    cursor: pointer;
-    transition: all 0.2s linear;
-  }
-  .airlines__link__img {
-    background-image: url(../../Assets/5-airlines/arrowRight.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 90%;
-    width: 10%;
-    height: 5rem;
-  }
-  .airlines__link:hover .airlines__link__img {
-    background-image: url(../../Assets/5-airlines/arrowWhite.svg);
-  }
-  .airlines__link:hover {
-    background-color: #1f51ff;
-  }
-  .airlines__link:hover p {
-    color: #fff;
-  }
-  .airlines__link p {
-    font-family: montserrat-semibold;
-    font-size: 2.5rem;
-    color: #1f51ff;
-  }
-  .airlines__items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 5rem 0;
-  }
-  .airlines__items__box {
-    width: 25rem;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 20rem;
-    padding: 2rem 3rem;
-    background-color: #fff;
-    border-radius: 1rem;
-    border: 1px solid #c9c9c9;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
-    z-index: 1;
-    cursor: pointer;
-    transition: all 0.2s linear;
-    margin-top: 3rem;
-  }
-  .airlines__items__box::after {
-    content: "View Route";
-    color: #fff;
-    background-color: #1f51ff;
-    width: 100%;
-    height: 4rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: whitney-semibold;
-    font-size: 1.8rem;
-    text-align: center;
-    border-radius: 0 0 1rem 1rem;
-    border: 1px solid #1f51ff;
-    padding: 0.55rem 0;
-    box-shadow: #1f51ff 0px 5px 10px 0px;
-    cursor: pointer;
-    display: none;
-    transition: all 0.2s linear;
-  }
-  .airlines__items__box:hover {
-    box-shadow: #1f51ff 0px 5px 10px 0px;
-    border-radius: 1rem 1rem 0 0;
-  }
-  .airlines__items__box:hover::after {
-    top: 100%;
-    display: block;
-  }
-  .airlines__items__box .comm {
-    position: absolute;
-    left: 100%;
-    border: 1px solid #1f51ff;
-    border-radius: 0 1rem 0 1rem;
-    color: #1f51ff;
-    position: absolute;
-    left: 85%;
-    top: -3%;
-    background-color: #fff;
-    z-index: 2;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .airlines__items__box .comm__percent p {
-    font-family: whitney-semibold;
-    font-size: 2rem;
-  }
-  .airlines__items__box .comm__word {
-    font-family: whitney-semibold;
-    font-size: 1rem;
-  }
-  .airlines__items__box .item__title {
-    display: flex;
-    gap: 2rem;
-  }
-  .airlines__items__box .item__title__img img {
-    width: 3rem;
-  }
-  .airlines__items__box .item__title__text {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .airlines__items__box .item__title__text .airline__name {
-    font-family: whitney-semibold;
-    font-size: 2rem;
-  }
-  .airlines__items__box .item__title__text .airline__country {
-    font-family: whitney-book;
-    font-size: 1.2rem;
-  }
-  .airlines__items__box .item__bottom {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .airlines__items__box .item__bottom__region {
-    display: flex;
-    gap: 1rem;
-  }
-  .airlines__items__box .item__bottom__region .jq {
-    color: #fff;
-    background-color: #1f51ff;
-    padding: 1px 5px;
-    font-family: montserrat-semibold;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-  }
-  .airlines__items__box .item__bottom__region .region {
-    font-family: montserrat-medium;
-    font-size: 1.2rem;
-    color: #989898;
-  }
-  .airlines__items__box .item__bottom__options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3px;
-    width: 30%;
-  }
+
+#airlines {
+  background-image: url(../../Assets/5-airlines/backgroundAirlines.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-@media (max-width: 600px) {
-  #airlines {
-    background-image: url(../../Assets/5-airlines/backgroundAirlines.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .airlines {
-    transform: translateY(10%);
-    display: flex;
-    gap: 7rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .airlines__title {
-    font-family: montserrat-semibold;
-    font-size: 5rem;
-    text-align: center;
-  }
-  .airlines__link {
-    display: flex;
-    width: 30rem;
-    border-radius: 5rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    cursor: pointer;
-    transition: all 0.2s linear;
-  }
-  .airlines__link__img {
-    background-image: url(../../Assets/5-airlines/arrowRight.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 90%;
-    width: 10%;
-    height: 5rem;
-  }
-  .airlines__link:hover .airlines__link__img {
-    background-image: url(../../Assets/5-airlines/arrowWhite.svg);
-  }
-  .airlines__link:hover {
-    background-color: #1f51ff;
-  }
-  .airlines__link:hover p {
-    color: #fff;
-  }
-  .airlines__link p {
-    font-family: montserrat-semibold;
-    font-size: 2.5rem;
-    color: #1f51ff;
-  }
-  .airlines__items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 5rem 0;
-  }
-  .airlines__items__box {
-    width: 25rem;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 20rem;
-    padding: 2rem 3rem;
-    background-color: #fff;
-    border-radius: 1rem;
-    border: 1px solid #c9c9c9;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
-    z-index: 1;
-    cursor: pointer;
-    transition: all 0.2s linear;
-    margin-top: 3rem;
-  }
-  .airlines__items__box::after {
-    content: "View Route";
-    color: #fff;
-    background-color: #1f51ff;
-    width: 100%;
-    height: 4rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: whitney-semibold;
-    font-size: 1.8rem;
-    text-align: center;
-    border-radius: 0 0 1rem 1rem;
-    border: 1px solid #1f51ff;
-    padding: 0.55rem 0;
-    box-shadow: #1f51ff 0px 5px 10px 0px;
-    cursor: pointer;
-    display: none;
-    transition: all 0.2s linear;
-  }
-  .airlines__items__box:hover {
-    box-shadow: #1f51ff 0px 5px 10px 0px;
-    border-radius: 1rem 1rem 0 0;
-  }
-  .airlines__items__box:hover::after {
-    top: 100%;
-    display: block;
-  }
-  .airlines__items__box .comm {
-    position: absolute;
-    left: 100%;
-    border: 1px solid #1f51ff;
-    border-radius: 0 1rem 0 1rem;
-    color: #1f51ff;
-    position: absolute;
-    left: 85%;
-    top: -3%;
-    background-color: #fff;
-    z-index: 2;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .airlines__items__box .comm__percent p {
-    font-family: whitney-semibold;
-    font-size: 2rem;
-  }
-  .airlines__items__box .comm__word {
-    font-family: whitney-semibold;
-    font-size: 1rem;
-  }
-  .airlines__items__box .item__title {
-    display: flex;
-    gap: 2rem;
-  }
-  .airlines__items__box .item__title__img img {
-    width: 3rem;
-  }
-  .airlines__items__box .item__title__text {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .airlines__items__box .item__title__text .airline__name {
-    font-family: whitney-semibold;
-    font-size: 2rem;
-  }
-  .airlines__items__box .item__title__text .airline__country {
-    font-family: whitney-book;
-    font-size: 1.2rem;
-  }
-  .airlines__items__box .item__bottom {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .airlines__items__box .item__bottom__region {
-    display: flex;
-    gap: 1rem;
-  }
-  .airlines__items__box .item__bottom__region .jq {
-    color: #fff;
-    background-color: #1f51ff;
-    padding: 1px 5px;
-    font-family: montserrat-semibold;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-  }
-  .airlines__items__box .item__bottom__region .region {
-    font-family: montserrat-medium;
-    font-size: 1.2rem;
-    color: #989898;
-  }
-  .airlines__items__box .item__bottom__options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3px;
-    width: 30%;
-  }
+
+.airlines {
+  transform: translateY(10%);
+  display: flex;
+  gap: 7rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.airlines__title {
+  font-family: montserrat-semibold;
+  font-size: 5rem;
+  text-align: center;
+}
+.airlines__link {
+  display: flex;
+  width: 30rem;
+  border-radius: 5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.airlines__link__img {
+  background-image: url(../../Assets/5-airlines/arrowRight.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+  width: 10%;
+  height: 5rem;
+}
+.airlines__link:hover .airlines__link__img {
+  background-image: url(../../Assets/5-airlines/arrowWhite.svg);
+}
+.airlines__link:hover {
+  background-color: #1f51ff;
+}
+.airlines__link:hover p {
+  color: #fff;
+}
+.airlines__link p {
+  font-family: montserrat-semibold;
+  font-size: 2.5rem;
+  color: #1f51ff;
+}
+.airlines__items {
+  display: block;
+  /*
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;*/
+}
+.airlines__items__box {
+  transition: all 0.2s ease-in-out !important;
+  height: auto !important;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20rem;
+  padding: 2rem 3rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 1px solid #c9c9c9;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.09);
+  z-index: 1;
+  cursor: pointer;
+}
+.airlines__items__box::after {
+  content: "View Route";
+  color: #fff;
+  background-color: #1f51ff;
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-family: whitney-semibold;
+  font-size: 1.8rem;
+  text-align: center;
+  border-radius: 0 0 1rem 1rem;
+  border: 1px solid #1f51ff;
+  padding: 1rem 0;
+  cursor: pointer;
+  display: block;
+  transition: all 0.2s linear;
+  opacity: 0;
+  outline: 0.1rem solid #1f51ff;
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+  box-shadow: 0rem 1rem 2rem -0.8rem transparent;
+}
+.airlines__items__box:hover {
+  box-shadow: 0rem 0rem 2rem -0.8rem #1f51ff;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+.airlines__items__box:hover::after {
+  transform: scaleY(1);
+  opacity: 1;
+  box-shadow: 0rem 1rem 2rem -0.7rem #1f51ff;
+}
+.airlines__items__box .comm {
+  position: absolute;
+  left: 100%;
+  border: 1px solid #1f51ff;
+  border-radius: 0 1rem 0 1rem;
+  color: #1f51ff;
+  position: absolute;
+  left: 85%;
+  top: -3%;
+  background-color: #fff;
+  z-index: 2;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.airlines__items__box .comm__percent p {
+  font-family: whitney-semibold;
+  font-size: 2rem;
+}
+.airlines__items__box .comm__word {
+  font-family: whitney-semibold;
+  font-size: 1rem;
+}
+.airlines__items__box .item__title {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.airlines__items__box .item__title__img {
+  width: 3rem;
+}
+.airlines__items__box .item__title__img img {
+  width: 3rem;
+  height: 3rem;
+}
+.airlines__items__box .item__title__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.airlines__items__box .item__title__text .airline__name {
+  font-family: whitney-semibold;
+  font-size: 2rem;
+}
+.airlines__items__box .item__title__text .airline__country {
+  font-family: whitney-book;
+  font-size: 1.2rem;
+}
+.airlines__items__box .item__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.airlines__items__box .item__bottom__region {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.airlines__items__box .item__bottom__region .jq {
+  color: #fff;
+  background-color: #1f51ff;
+  padding: 1px 5px;
+  font-family: montserrat-semibold;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+}
+.airlines__items__box .item__bottom__region .region {
+  font-family: montserrat-medium;
+  font-size: 1.2rem;
+  color: #989898;
+}
+.airlines__items__box .item__bottom__options {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.airlines__items__box .item__bottom__options .options {
+  width: 2rem;
+  height: 2rem;
+}
+
+.slider__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.slider__container .swiper__container {
+  width: 90%;
+  padding: 0 2rem 0 0;
+  margin-left: 2rem;
+}
+.slider__container .swiper-button-disabled {
+  opacity: 0 !important;
+  transition: all 0.3s ease-in;
+}
+
 .category {
   background-color: #F8FAFB;
 }

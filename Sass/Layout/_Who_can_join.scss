@@ -67,10 +67,12 @@ body {
             color: $neon__blue--clr;
             margin-top: 2rem;
             font-size: 1.5rem;
+            font-family: whitney-semibold;
         }
         .total__grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat( auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
             margin-top: 8rem;
         }
         .grid__items {

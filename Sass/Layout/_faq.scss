@@ -1,7 +1,6 @@
 @import "../Variable/Variable";
 
 @media (min-width: 1200px) {
-  
   .faq {
     display: flex;
     justify-content: space-evenly;
@@ -19,9 +18,9 @@
       height: 100%;
 
       &__title {
-        p {
+        h2 {
           font-family: montserrat-semibold;
-          font-size: 5rem;
+          font-size: 3.5rem;
         }
       }
 
@@ -89,9 +88,9 @@
       width: 40%;
 
       &__title {
-        p {
+        h2 {
           font-family: montserrat-semibold;
-          font-size: 5rem;
+          font-size: 3rem;
         }
       }
 
@@ -183,9 +182,9 @@
       height: 100%;
 
       &__title {
-        p {
+        h2 {
           font-family: montserrat-semibold;
-          font-size: 5rem;
+          font-size: 2.5rem;
         }
       }
 
@@ -253,9 +252,9 @@
       width: 40%;
 
       &__title {
-        p {
+        h2 {
           font-family: montserrat-semibold;
-          font-size: 5rem;
+          font-size: 2.5rem;
         }
       }
 
@@ -347,9 +346,9 @@
       height: 100%;
 
       &__title {
-        p {
+        h2 {
           font-family: montserrat-semibold;
-          font-size: 5rem;
+          font-size: 2.5rem;
         }
       }
 
@@ -417,9 +416,9 @@
       width: 40%;
 
       &__title {
-        p {
+        h2 {
           font-family: montserrat-semibold;
-          font-size: 5rem;
+          font-size: 2.5rem;
         }
       }
 
@@ -511,9 +510,9 @@
       height: 100%;
 
       &__title {
-        p {
+        h2 {
           font-family: montserrat-semibold;
-          font-size: 5rem;
+          font-size: 2.5rem;
         }
       }
 
@@ -581,9 +580,9 @@
       width: 40%;
 
       &__title {
-        p {
+        h2 {
           font-family: montserrat-semibold;
-          font-size: 5rem;
+          font-size: 2.5rem;
         }
       }
 
@@ -678,9 +677,9 @@
       height: 100%;
 
       &__title {
-        p {
+        h2 {
           font-family: montserrat-semibold;
-          font-size: 5rem;
+          font-size: 2.5rem;
         }
       }
 
@@ -755,9 +754,9 @@
       width: 80%;
 
       &__title {
-        p {
+        h2 {
           font-family: montserrat-semibold;
-          font-size: 5rem;
+          font-size: 2.5rem;
         }
       }
 

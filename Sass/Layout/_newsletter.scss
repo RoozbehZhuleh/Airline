@@ -16,7 +16,7 @@
 
     &__title {
       font-family: montserrat-semibold;
-      font-size: 5rem;
+      font-size: 2.5rem;
       line-height: 61px;
     }
 
@@ -61,7 +61,7 @@
 @media (min-width: 600px) and (max-width: 767px) {
   #newsletter {
     background-color: #f8fafb;
-    padding: 0 0 10rem 0;
+    padding: 8rem 0 10rem 0;
   }
 
   .newsletter {
@@ -73,7 +73,7 @@
 
     &__title {
       font-family: montserrat-semibold;
-      font-size: 5rem;
+      font-size: 2.5rem;
     }
 
     &__text {
@@ -183,12 +183,12 @@
 
     &__title {
       font-family: montserrat-semibold;
-      font-size: 1rem;
+      font-size: 2.5rem;
     }
 
     &__text {
       font-family: montserrat-medium;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       width: 70%;
       text-align: center;
     }

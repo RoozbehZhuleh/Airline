@@ -142,7 +142,8 @@ a:focus {
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
-    font-family: montserrat-bold;
+    font-family: montserrat-semibold;
+    font-size: 4.5rem;
   }
   #benefits .total {
     margin: 0 auto;
@@ -1001,6 +1002,7 @@ a:focus {
   width: max-content;
   overflow: hidden;
   background-color: white;
+  cursor: pointer;
 }
 .hero .hero__container .hero__wrapper .hero--book .left--side .left--side__container .hero--button:hover {
   background-color: #1f51ff;
@@ -1161,7 +1163,7 @@ a:focus {
   src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
 }
 #airlines .container {
-  margin-top: 0 !important;
+  margin-top: 8rem !important;
 }
 
 .swiper-wrapper {
@@ -1389,6 +1391,7 @@ a:focus {
 }
 
 .category {
+  padding: 5rem 0 5rem 0;
   margin-top: 5rem;
   background-color: #F8FAFB;
 }
@@ -1469,7 +1472,7 @@ a:focus {
 }
 #domestic .container h2 {
   margin-top: 2rem;
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: montserrat-semibold;
   position: relative;
   top: 3rem;
@@ -2552,7 +2555,7 @@ body {
   }
   #who_can_join h2 {
     text-align: center;
-    font-family: montserrat-bold;
+    font-family: montserrat-semibold;
     font-size: 4rem;
   }
   #who_can_join .blue-col {
@@ -2598,7 +2601,7 @@ body {
   }
   #who_can_join h2 {
     text-align: center;
-    font-family: montserrat-bold;
+    font-family: montserrat-semibold;
     font-size: 4rem;
   }
   #who_can_join .blue-col {
@@ -2644,7 +2647,7 @@ body {
   }
   #who_can_join h2 {
     text-align: center;
-    font-family: montserrat-bold;
+    font-family: montserrat-semibold;
     font-size: 4rem;
   }
   #who_can_join .blue-col {
@@ -2690,7 +2693,7 @@ body {
   }
   #who_can_join h2 {
     text-align: center;
-    font-family: montserrat-bold;
+    font-family: montserrat-semibold;
     font-size: 4rem;
   }
   #who_can_join .blue-col {
@@ -2736,7 +2739,7 @@ body {
   }
   #who_can_join h2 {
     text-align: center;
-    font-family: montserrat-bold;
+    font-family: montserrat-semibold;
     font-size: 4rem;
   }
   #who_can_join .blue-col {
@@ -2901,9 +2904,9 @@ body {
     width: 40%;
     height: 100%;
   }
-  .faq__items__title p {
+  .faq__items__title h2 {
     font-family: montserrat-semibold;
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
   .faq__items__text {
     margin: 0 0 3rem 0;
@@ -2960,9 +2963,9 @@ body {
     height: 100%;
     width: 40%;
   }
-  .faq .training__items__title p {
+  .faq .training__items__title h2 {
     font-family: montserrat-semibold;
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .faq .training__items__text {
     margin: 0 0 4rem 0;
@@ -3038,9 +3041,9 @@ body {
     width: 40%;
     height: 100%;
   }
-  .faq__items__title p {
+  .faq__items__title h2 {
     font-family: montserrat-semibold;
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
   .faq__items__text {
     margin: 0 0 3rem 0;
@@ -3097,9 +3100,9 @@ body {
     height: 100%;
     width: 40%;
   }
-  .faq .training__items__title p {
+  .faq .training__items__title h2 {
     font-family: montserrat-semibold;
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
   .faq .training__items__text {
     margin: 0 0 4rem 0;
@@ -3175,9 +3178,9 @@ body {
     width: 40%;
     height: 100%;
   }
-  .faq__items__title p {
+  .faq__items__title h2 {
     font-family: montserrat-semibold;
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
   .faq__items__text {
     margin: 0 0 3rem 0;
@@ -3234,9 +3237,9 @@ body {
     height: 100%;
     width: 40%;
   }
-  .faq .training__items__title p {
+  .faq .training__items__title h2 {
     font-family: montserrat-semibold;
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
   .faq .training__items__text {
     margin: 0 0 4rem 0;
@@ -3312,9 +3315,9 @@ body {
     width: 40%;
     height: 100%;
   }
-  .faq__items__title p {
+  .faq__items__title h2 {
     font-family: montserrat-semibold;
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
   .faq__items__text {
     margin: 0 0 3rem 0;
@@ -3371,9 +3374,9 @@ body {
     height: 100%;
     width: 40%;
   }
-  .faq .training__items__title p {
+  .faq .training__items__title h2 {
     font-family: montserrat-semibold;
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
   .faq .training__items__text {
     margin: 0 0 4rem 0;
@@ -3454,9 +3457,9 @@ body {
     width: 80%;
     height: 100%;
   }
-  .faq__items__title p {
+  .faq__items__title h2 {
     font-family: montserrat-semibold;
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
   .faq__items__text {
     margin: 0 0 3rem 0;
@@ -3519,9 +3522,9 @@ body {
     height: 100%;
     width: 80%;
   }
-  .faq .training__items__title p {
+  .faq .training__items__title h2 {
     font-family: montserrat-semibold;
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
   .faq .training__items__text {
     margin: 0 0 4rem 0;
@@ -3786,7 +3789,7 @@ body {
   }
   .newsletter__title {
     font-family: montserrat-semibold;
-    font-size: 5rem;
+    font-size: 2.5rem;
     line-height: 61px;
   }
   .newsletter__text {
@@ -3824,7 +3827,7 @@ body {
 @media (min-width: 600px) and (max-width: 767px) {
   #newsletter {
     background-color: #f8fafb;
-    padding: 0 0 10rem 0;
+    padding: 8rem 0 10rem 0;
   }
   .newsletter {
     display: flex;
@@ -3835,7 +3838,7 @@ body {
   }
   .newsletter__title {
     font-family: montserrat-semibold;
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
   .newsletter__text {
     font-family: montserrat-medium;
@@ -3931,11 +3934,11 @@ body {
   }
   .newsletter__title {
     font-family: montserrat-semibold;
-    font-size: 1rem;
+    font-size: 2.5rem;
   }
   .newsletter__text {
     font-family: montserrat-medium;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     width: 70%;
     text-align: center;
   }

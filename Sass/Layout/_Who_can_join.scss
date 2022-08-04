@@ -14,7 +14,7 @@
         }
         h2 {
             text-align: center;
-            font-family: montserrat-bold;
+            font-family: montserrat-semibold;
             font-size: 4rem;
             
         }
@@ -61,7 +61,7 @@
         }
         h2 {
             text-align: center;
-            font-family: montserrat-bold;
+            font-family: montserrat-semibold;
             font-size: 4rem;
             
         }
@@ -108,7 +108,7 @@
         }
         h2 {
             text-align: center;
-            font-family: montserrat-bold;
+            font-family: montserrat-semibold;
             font-size: 4rem;
             
         }
@@ -146,6 +146,7 @@
 
 @media (min-width: 601px) and (max-width: 767px) {
     #who_can_join {
+<<<<<<< HEAD
                     text-align: center;
                     margin-top: 5rem;
                     
@@ -159,6 +160,37 @@
                         font-family: montserrat-semibold;
                         margin-top: 2rem !important;
                     }
+=======
+        width: 98%;
+        margin: 0 auto;
+        .total_container {
+            padding: 5rem;
+        }
+        h2 {
+            text-align: center;
+            font-family: montserrat-semibold;
+            font-size: 4rem;
+            
+        }
+        .blue-col {
+            color: $neon__blue--clr;
+            margin-top: 2rem;
+            font-size: 1.5rem;
+        }
+        .total__grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 8rem;
+        }
+        .grid__items {
+            @include flex(column,none,center,2rem);
+            
+            .grid__items__top {
+                text-align: center;
+                span {
+                    font-size: 2rem;
+                    font-family: montserrat-bold;
+>>>>>>> e3329944e8072da20f224b3b4e8ef54ed1666675
                 }
                .total__grid {
                 grid-template-columns: 1fr;
@@ -205,6 +237,7 @@
 
 @media (max-width: 600px) {
     #who_can_join {
+<<<<<<< HEAD
         .total{
                     h2 {
                         font-size: 2.5rem !important;
@@ -212,6 +245,37 @@
                     .blue-col {
                         font-size: 1.2rem !important;
                     }
+=======
+        width: 98%;
+        margin: 0 auto;
+        .total_container {
+            padding: 5rem;
+        }
+        h2 {
+            text-align: center;
+            font-family: montserrat-semibold;
+            font-size: 4rem;
+            
+        }
+        .blue-col {
+            color: $neon__blue--clr;
+            margin-top: 2rem;
+            font-size: 1.5rem;
+        }
+        .total__grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 8rem;
+        }
+        .grid__items {
+            @include flex(column,none,center,2rem);
+            
+            .grid__items__top {
+                text-align: center;
+                span {
+                    font-size: 2rem;
+                    font-family: montserrat-bold;
+>>>>>>> e3329944e8072da20f224b3b4e8ef54ed1666675
                 }
                .total__grid {
                 grid-template-columns: 1fr;

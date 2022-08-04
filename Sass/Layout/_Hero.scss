@@ -61,6 +61,7 @@
                                    width: max-content;
                                    overflow: hidden;
                                    background-color: white;
+                                   cursor: pointer;
                                    &:hover{
                                         background-color: $neon__blue--clr;
                                         &::before {

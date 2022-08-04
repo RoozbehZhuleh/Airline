@@ -13,7 +13,8 @@
          h2 {
             text-align: center;
             @include font(3rem,bold);
-            font-family: montserrat-bold;
+            font-family: montserrat-semibold;
+            font-size: 4.5rem;
          }
          .total {
             @include marginXY(0, auto);

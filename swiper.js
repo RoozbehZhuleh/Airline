@@ -7,17 +7,20 @@
   // init Swiper:
   const swiper = new Swiper('.swiper', {
   direction: "horizontal",
-  slidesPerView: 4,
+  slidesPerView: 1,
     spaceBetween: 30,
 navigation: {
 nextEl: ".swiper-button-next",
 prevEl: ".swiper-button-prev",
 },
 breakpoints : {
-  400:{
-    slidesPerView: 1,
+  600:{
+    slidesPerView: 2,
   },
-  800 : {
+  900:{
+    slidesPerView: 3,
+  },
+  1300 : {
     slidesPerView: 4,
   }
 }

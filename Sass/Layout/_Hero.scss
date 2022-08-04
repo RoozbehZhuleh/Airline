@@ -1,10 +1,22 @@
+@media screen and (max-width : 990px) {
+     .hero--book {
+          grid-template-columns: 1fr !important;
+          gap: 4rem !important;
+          .left--side__container {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               text-align: center !important;
+          }
+     }
+}
 .hero{
      background: 0;
-     background-image: url("../../Assets/1-home/background.svg");
+     background-image: url("../../Assets/1-home/bg-kiri.svg");
      background-repeat: no-repeat;
      background-size: cover;
      background-position: bottom;
-     padding-bottom: 4rem;
+     padding: 0 4% 5rem 4%;
      .hero__container{
           .hero__header {
                display: flex;
@@ -21,7 +33,7 @@
                margin-top: 4rem;
                .hero--book {
                     display: grid;
-                    grid-template-columns: repeat(auto-fit , minmax(42rem , 1fr));
+                    grid-template-columns: repeat(auto-fit , minmax(1rem , 1fr));
                     align-items: center;
                     .left--side , .right--side {
                          height: 100%;

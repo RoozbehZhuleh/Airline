@@ -1,10 +1,9 @@
 @import "../Variable/Variable";
-  // .swiper{
-  //   width: 90%;
-  //   height:100%;
-  //   padding: 10rem;
-  // }
-
+  #airlines{
+    .container {
+      margin-top: 0 !important;
+    }
+  }
     .swiper-wrapper{
       width: 0px !important;
     }
@@ -33,7 +32,7 @@
 
     &__title {
       font-family: montserrat-semibold;
-      font-size: 5rem;
+      font-size: 2.5rem;
       text-align: center;
     }
 
@@ -69,7 +68,7 @@
 
       p {
         font-family: montserrat-semibold;
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: $neon__blue--clr;
       }
     }

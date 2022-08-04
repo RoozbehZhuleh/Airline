@@ -910,14 +910,10 @@ a:focus {
   text-align: center;
 }
 
-body {
-  background-image: none;
-  font-family: montserrat;
-}
-
 .container {
   width: 98%;
   margin: 0 auto;
+  margin-top: 10rem;
 }
 .container h2 {
   margin-top: 2rem;
@@ -939,6 +935,7 @@ body {
 }
 .total .img_container img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -999,7 +996,6 @@ body {
 .turkey_total {
   grid-column: 3/4;
   grid-row: 2/3;
-  margin-top: -13rem;
 }
 
 .european_total {
@@ -1014,58 +1010,6 @@ body {
   margin-top: -13rem;
 }
 
-@media screen and (max-width: 768px) {
-  .total {
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-  .china_total {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .japan_total {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  .us_total {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  .russia_total {
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-  .korea_total {
-    grid-column: 1/2;
-    grid-row: 5/6;
-  }
-  .turkey_total {
-    grid-column: 1/2;
-    grid-row: 6/7;
-  }
-  .european_total {
-    grid-column: 1/2;
-    grid-row: 7/8;
-  }
-  .asia_total {
-    grid-column: 1/2;
-    grid-row: 8/-1;
-  }
-  .img_container img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    padding: 0 1rem;
-  }
-  .text {
-    margin-top: 1rem;
-    font-size: 2rem;
-  }
-}
 @font-face {
   font-family: montserrat-bold;
   src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);

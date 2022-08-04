@@ -2665,8 +2665,9 @@ body {
   }
   #who_can_join .total__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin-top: 8rem;
+    gap: 3rem;
   }
   #who_can_join .grid__items {
     display: flex;
@@ -2711,8 +2712,9 @@ body {
   }
   #who_can_join .total__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin-top: 8rem;
+    gap: 3rem;
   }
   #who_can_join .grid__items {
     display: flex;
@@ -2754,11 +2756,13 @@ body {
     color: #1f51ff;
     margin-top: 2rem;
     font-size: 1.5rem;
+    font-family: whitney-semibold;
   }
   #who_can_join .total__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin-top: 8rem;
+    gap: 3rem;
   }
   #who_can_join .grid__items {
     display: flex;
@@ -2777,10 +2781,6 @@ body {
   #who_can_join .grid__items .grid__items__bottom {
     background: url(/Assets/9-join/circle.svg) no-repeat;
     background-position: top;
-  }
-  #who_can_join .grid__items .grid__items__bottom img {
-    width: 100%;
-    height: 100%;
   }
 }
 .footer {

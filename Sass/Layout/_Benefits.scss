@@ -1,271 +1,870 @@
-
 @import '../Reset/Reset';
 @import '../Variable/Variable';
 
 
 
-#benefits {
-    background-color: $black--clr;
-    background: url(/Assets/2-benefits/backgoundKiri.svg) no-repeat;
-    background-position: left;
-    background-size: contain;
-    @include paddingXY(4rem,0);
-     h2 {
-        text-align: center;
-        @include font(3rem,bold);
-        font-family: montserrat-bold;
-     }
-     .total {
-        @include marginXY(0, auto);
-        max-width: 120rem;
-        display: grid;
-        grid-template-columns: 3fr 10rem 3fr;
-        grid-template-rows: repeat(4, 20rem);
-        margin-top: 20rem;
-        gap: 4rem;
-        .number {
-            color: $neon__blue--clr;
-            @include font(5rem,bold);
-            font-family: whitney-semibold;
-        }
-        .total__text {
-            @include flex(row,none,flex-start,1.5rem);
-            font-family: whitney-bold;
-        }
-       
-        .total__text__01 {
-            grid-row: 1/2;
-            grid-column: 1/2;
-            position: relative;
-            align-items: center;
-            justify-self: end;
-            align-self: center;
-            height: 100%;
-            .text__title {
+@media screen and (min-width: 1200px) {
+    #benefits {
+        background-color: $black--clr;
+        background: url(/Assets/2-benefits/backgoundKiri.svg) no-repeat;
+        background-position: left;
+        background-size: contain;
+        @include paddingXY(4rem,0);
+         h2 {
+            text-align: center;
+            @include font(3rem,bold);
+            font-family: montserrat-bold;
+         }
+         .total {
+            @include marginXY(0, auto);
+            max-width: 120rem;
+            display: grid;
+            grid-template-columns: 3fr 10rem 3fr;
+            grid-template-rows: repeat(4, 20rem);
+            margin-top: 20rem;
+            gap: 4rem;
+            .number {
+                color: $neon__blue--clr;
+                @include font(5rem,bold);
+                font-family: whitney-semibold;
+            }
+            .total__text {
+                @include flex(row,none,flex-start,1.5rem);
+                font-family: whitney-bold;
+            }
+           
+            .total__text__01 {
+                grid-row: 1/2;
+                grid-column: 1/2;
                 position: relative;
-                width: 100%;
-                &::before {
-                    position: absolute;
-                    display: table;
-                    clear: both;
-                    content: "";
-                    top: 0 ; 
-                    left: calc(100% + 4rem);
-                    transform: translate(0%,0%);
-                    width: 2rem;
-                    height: 2rem;
-                    background-image: url('../../Assets/2-benefits/Ellipse1.svg');
-                    background-size: cover;
-                    z-index: +32;
-                }
-                &::after {
-                    position: absolute;
-                    display: table;
-                    clear: both;
-                    content: '';
-                    top: calc(-1rem);
-                    left: calc(100% + 3rem);
-                    transform: translate(0%,0%);
-                    width: 4rem;
-                    height: 4rem;
-                    background-image: url('../../Assets/2-benefits/Ellipse2.svg');
-                    background-size: cover;
-                    z-index: +31;
+                align-items: center;
+                justify-self: end;
+                align-self: center;
+                height: 100%;
+                .text__title {
+                    position: relative;
+                    width: 100%;
+                    &::before {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: "";
+                        top: 0 ; 
+                        left: calc(100% + 4rem);
+                        transform: translate(0%,0%);
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse1.svg');
+                        background-size: cover;
+                        z-index: +32;
+                    }
+                    &::after {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: '';
+                        top: calc(-1rem);
+                        left: calc(100% + 3rem);
+                        transform: translate(0%,0%);
+                        width: 4rem;
+                        height: 4rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse2.svg');
+                        background-size: cover;
+                        z-index: +31;
+                    }
                 }
             }
-        }
-        .total__text__02 {
-            grid-row: 2/3;
-            grid-column: 3/-1;
-            justify-self: start;
-            align-self: center;
-            align-items: center;
-            align-self: center;
-            height: 100%;
-            position: relative;
-            .text__title {
+            .total__text__02 {
+                grid-row: 2/3;
+                grid-column: 3/-1;
+                justify-self: start;
+                align-self: center;
+                align-items: center;
+                align-self: center;
+                height: 100%;
                 position: relative;
-                width: 100%;
-                &::before {
-                    position: absolute;
-                    display: table;
-                    clear: both;
-                    content: "";
-                    top: 0 ; 
-                    right: calc(100% + 13.5rem);
-                    transform: translate(0%,0%);
-                    width: 2rem;
-                    height: 2rem;
-                    background-image: url('../../Assets/2-benefits/Ellipse1.svg');
-                    background-size: cover;
-                    z-index: +32;
-                }
-                &::after {
-                    position: absolute;
-                    display: table;
-                    clear: both;
-                    content: '';
-                    top: calc(-1rem);
-                    right: calc(100% + 12.5rem);
-                    transform: translate(0%,0%);
-                    width: 4rem;
-                    height: 4rem;
-                    background-image: url('../../Assets/2-benefits/Ellipse2.svg');
-                    background-size: cover;
-                    z-index: +31;
+                .text__title {
+                    position: relative;
+                    width: 100%;
+                    &::before {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: "";
+                        top: 0 ; 
+                        right: calc(100% + 13.5rem);
+                        transform: translate(0%,0%);
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse1.svg');
+                        background-size: cover;
+                        z-index: +32;
+                    }
+                    &::after {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: '';
+                        top: calc(-1rem);
+                        right: calc(100% + 12.5rem);
+                        transform: translate(0%,0%);
+                        width: 4rem;
+                        height: 4rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse2.svg');
+                        background-size: cover;
+                        z-index: +31;
+                    }
                 }
             }
-        }
-        .total__text__03 {
-            grid-row: 3/4;
-            grid-column: 1/2;
-            align-items: center;
-            justify-self: end;
-            align-self: center;
-            height: 100%;
-            position: relative;
-            .text__title {
+            .total__text__03 {
+                grid-row: 3/4;
+                grid-column: 1/2;
+                align-items: center;
+                justify-self: end;
+                align-self: center;
+                height: 100%;
                 position: relative;
-                width: 100%;
-                &::before {
-                    position: absolute;
-                    display: table;
-                    clear: both;
-                    content: "";
-                    top: 0 ; 
-                    left: calc(100% + 3rem);
-                    transform: translate(0%,0%);
-                    width: 2rem;
-                    height: 2rem;
-                    background-image: url('../../Assets/2-benefits/Ellipse1.svg');
-                    background-size: cover;
-                    z-index: +32;
-                }
-                &::after {
-                    position: absolute;
-                    display: table;
-                    clear: both;
-                    content: '';
-                    top: calc(-1rem);
-                    left: calc(100% + 2rem);
-                    transform: translate(0%,0%);
-                    width: 4rem;
-                    height: 4rem;
-                    background-image: url('../../Assets/2-benefits/Ellipse2.svg');
-                    background-size: cover;
-                    z-index: +31;
+                .text__title {
+                    position: relative;
+                    width: 100%;
+                    &::before {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: "";
+                        top: 0 ; 
+                        left: calc(100% + 3rem);
+                        transform: translate(0%,0%);
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse1.svg');
+                        background-size: cover;
+                        z-index: +32;
+                    }
+                    &::after {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: '';
+                        top: calc(-1rem);
+                        left: calc(100% + 2rem);
+                        transform: translate(0%,0%);
+                        width: 4rem;
+                        height: 4rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse2.svg');
+                        background-size: cover;
+                        z-index: +31;
+                    }
                 }
             }
-        }
-        .total__text__04 {
-            grid-row: 4/-1;
-            grid-column: 3/-1;
-            justify-self: start;
-            align-self: center;
-            align-items: center;
-            align-self: center;
-            height: 100%;
-            position: relative;
-            .text__title {
+            .total__text__04 {
+                grid-row: 4/-1;
+                grid-column: 3/-1;
+                justify-self: start;
+                align-self: center;
+                align-items: center;
+                align-self: center;
+                height: 100%;
                 position: relative;
-                width: 100%;
-                &::before {
-                    position: absolute;
-                    display: table;
-                    clear: both;
-                    content: "";
-                    top: 0 ; 
-                    right: calc(100% + 13.5rem);
-                    transform: translate(0%,0%);
-                    width: 2rem;
-                    height: 2rem;
-                    background-image: url('../../Assets/2-benefits/Ellipse1.svg');
-                    background-size: cover;
-                    z-index: +32;
+                .text__title {
+                    position: relative;
+                    width: 100%;
+                    &::before {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: "";
+                        top: 0 ; 
+                        right: calc(100% + 13.5rem);
+                        transform: translate(0%,0%);
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse1.svg');
+                        background-size: cover;
+                        z-index: +32;
+                    }
+                    &::after {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: '';
+                        top: calc(-1rem);
+                        right: calc(100% + 12.5rem);
+                        transform: translate(0%,0%);
+                        width: 4rem;
+                        height: 4rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse2.svg');
+                        background-size: cover;
+                        z-index: +31;
+                    }
                 }
-                &::after {
-                    position: absolute;
-                    display: table;
-                    clear: both;
-                    content: '';
-                    top: calc(-1rem);
-                    right: calc(100% + 12.5rem);
-                    transform: translate(0%,0%);
-                    width: 4rem;
-                    height: 4rem;
-                    background-image: url('../../Assets/2-benefits/Ellipse2.svg');
-                    background-size: cover;
-                    z-index: +31;
-                }
             }
-        }
-        .total__img__01 {
-            grid-row: 1/2;
-            grid-column: 3/-1;
-            align-self: center;
-            justify-content: flex-start !important;
-            height: 100%;
-        }
-        .total__img__02 {
-            grid-row: 2/3;
-            grid-column: 1/2;
-            justify-self: end;
-            align-self: center;
-            height: 100%;
-        }
-        .total__img__03 {
-            grid-row: 3/4;
-            grid-column: 3/-1;
-            justify-content: flex-start !important;
-            height: 100%;
-        }
-        .total__img__04 {
-            grid-row: 4/-1;
-            grid-column: 1/2;
-            height: 100%;
-        }
-        
-        
-        .text__title {
-            @include flex(column,none ,none ,1rem);
-            h3 {
-                font-family: whitney-book;
-                @include font(2.1rem,bold);
+            .total__img__01 {
+                grid-row: 1/2;
+                grid-column: 3/-1;
+                align-self: center;
+                justify-content: flex-start !important;
+                height: 100%;
             }
-            p {
-                color: $gray__60--clr;
-                font-size: 1.5rem;
-                font-family: whitney;
+            .total__img__02 {
+                grid-row: 2/3;
+                grid-column: 1/2;
+                justify-self: end;
+                align-self: center;
+                height: 100%;
             }
-        }
-        .first-col {
-            align-items: flex-end;
-        }
-       
-        .total__img {
-            width: 100%;
-            @include flex(row,flex-end,none,none)
-        }
-        .vector_img {
-            width: 25rem;
-        }
-        .vector__1 {
-            justify-self: flex-start;
-        }
-        
+            .total__img__03 {
+                grid-row: 3/4;
+                grid-column: 3/-1;
+                justify-content: flex-start !important;
+                height: 100%;
+            }
+            .total__img__04 {
+                grid-row: 4/-1;
+                grid-column: 1/2;
+                height: 100%;
+            }
             
             
-    
-            .yellow_line {
-                justify-self: inherit;
-                grid-column: 2/3;
-                grid-row: 1/-1;
-                position: relative;
-                z-index: 30;
+            .text__title {
+                @include flex(column,none ,none ,1rem);
+                h3 {
+                    font-family: whitney-book;
+                    @include font(2.1rem,bold);
+                }
+                p {
+                    color: $gray__60--clr;
+                    font-size: 1.5rem;
+                    font-family: whitney-book;
+                }
+            }
+            .first-col {
+                align-items: flex-end;
+            }
+           
+            .total__img {
+                width: 100%;
+                @include flex(row,flex-end,none,none)
+            }
+            .vector_img {
+                width: 25rem;
+            }
+            .vector__1 {
+                justify-self: flex-start;
+            }
+            
+                
+                
+        
+                .yellow_line {
+                    justify-self: inherit;
+                    grid-column: 2/3;
+                    grid-row: 1/-1;
+                    position: relative;
+                    z-index: 30;
+            }
+           
+        
         }
-       
-    
     }
 }
 
 
+@media (min-width: 991px) and (max-width: 1199px) {
+    #benefits {
+        background-color: $black--clr;
+        background: url(/Assets/2-benefits/backgoundKiri.svg) no-repeat;
+        background-position: left;
+        background-size: contain;
+        @include paddingXY(4rem,0);
+         h2 {
+            text-align: center;
+            @include font(3rem,bold);
+            font-family: montserrat-bold;
+         }
+         .total {
+            @include marginXY(0, auto);
+            max-width: 120rem;
+            display: grid;
+            grid-template-columns: 3fr 10rem 3fr;
+            grid-template-rows: repeat(4, 20rem);
+            margin-top: 20rem;
+            gap: 4rem;
+            .number {
+                color: $neon__blue--clr;
+                @include font(5rem,bold);
+                font-family: whitney-semibold;
+            }
+            .total__text {
+                @include flex(row,none,flex-start,1.5rem);
+                font-family: whitney-bold;
+            }
+           
+            .total__text__01 {
+                grid-row: 1/2;
+                grid-column: 1/2;
+                position: relative;
+                align-items: center;
+                justify-self: end;
+                align-self: center;
+                height: 100%;
+                .text__title {
+                    position: relative;
+                    width: 100%;
+                    &::before {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: "";
+                        top: 0 ; 
+                        left: calc(100% + 4rem);
+                        transform: translate(0%,0%);
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse1.svg');
+                        background-size: cover;
+                        z-index: +32;
+                    }
+                    &::after {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: '';
+                        top: calc(-1rem);
+                        left: calc(100% + 3rem);
+                        transform: translate(0%,0%);
+                        width: 4rem;
+                        height: 4rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse2.svg');
+                        background-size: cover;
+                        z-index: +31;
+                    }
+                }
+            }
+            .total__text__02 {
+                grid-row: 2/3;
+                grid-column: 3/-1;
+                justify-self: start;
+                align-self: center;
+                align-items: center;
+                align-self: center;
+                height: 100%;
+                position: relative;
+                .text__title {
+                    position: relative;
+                    width: 100%;
+                    &::before {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: "";
+                        top: 0 ; 
+                        right: calc(100% + 13.5rem);
+                        transform: translate(0%,0%);
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse1.svg');
+                        background-size: cover;
+                        z-index: +32;
+                    }
+                    &::after {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: '';
+                        top: calc(-1rem);
+                        right: calc(100% + 12.5rem);
+                        transform: translate(0%,0%);
+                        width: 4rem;
+                        height: 4rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse2.svg');
+                        background-size: cover;
+                        z-index: +31;
+                    }
+                }
+            }
+            .total__text__03 {
+                grid-row: 3/4;
+                grid-column: 1/2;
+                align-items: center;
+                justify-self: end;
+                align-self: center;
+                height: 100%;
+                position: relative;
+                .text__title {
+                    position: relative;
+                    width: 100%;
+                    &::before {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: "";
+                        top: 0 ; 
+                        left: calc(100% + 3rem);
+                        transform: translate(0%,0%);
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse1.svg');
+                        background-size: cover;
+                        z-index: +32;
+                    }
+                    &::after {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: '';
+                        top: calc(-1rem);
+                        left: calc(100% + 2rem);
+                        transform: translate(0%,0%);
+                        width: 4rem;
+                        height: 4rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse2.svg');
+                        background-size: cover;
+                        z-index: +31;
+                    }
+                }
+            }
+            .total__text__04 {
+                grid-row: 4/-1;
+                grid-column: 3/-1;
+                justify-self: start;
+                align-self: center;
+                align-items: center;
+                align-self: center;
+                height: 100%;
+                position: relative;
+                .text__title {
+                    position: relative;
+                    width: 100%;
+                    &::before {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: "";
+                        top: 0 ; 
+                        right: calc(100% + 13.5rem);
+                        transform: translate(0%,0%);
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse1.svg');
+                        background-size: cover;
+                        z-index: +32;
+                    }
+                    &::after {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: '';
+                        top: calc(-1rem);
+                        right: calc(100% + 12.5rem);
+                        transform: translate(0%,0%);
+                        width: 4rem;
+                        height: 4rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse2.svg');
+                        background-size: cover;
+                        z-index: +31;
+                    }
+                }
+            }
+            .total__img__01 {
+                grid-row: 1/2;
+                grid-column: 3/-1;
+                align-self: center;
+                justify-content: flex-start !important;
+                height: 100%;
+            }
+            .total__img__02 {
+                grid-row: 2/3;
+                grid-column: 1/2;
+                justify-self: end;
+                align-self: center;
+                height: 100%;
+            }
+            .total__img__03 {
+                grid-row: 3/4;
+                grid-column: 3/-1;
+                justify-content: flex-start !important;
+                height: 100%;
+            }
+            .total__img__04 {
+                grid-row: 4/-1;
+                grid-column: 1/2;
+                height: 100%;
+            }
+            
+            
+            .text__title {
+                @include flex(column,none ,none ,1rem);
+                h3 {
+                    font-family: whitney-book;
+                    @include font(2.1rem,bold);
+                }
+                p {
+                    color: $gray__60--clr;
+                    font-size: 1.5rem;
+                    font-family: whitney-book;
+                }
+            }
+            .first-col {
+                align-items: flex-end;
+            }
+           
+            .total__img {
+                width: 100%;
+                @include flex(row,flex-end,none,none)
+            }
+            .vector_img {
+                width: 25rem;
+            }
+            .vector__1 {
+                justify-self: flex-start;
+            }
+            
+                
+                
+        
+                .yellow_line {
+                    justify-self: inherit;
+                    grid-column: 2/3;
+                    grid-row: 1/-1;
+                    position: relative;
+                    z-index: 30;
+            }
+           
+        
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    #benefits {
+        background-color: $black--clr;
+        background: url(/Assets/2-benefits/backgoundKiri.svg) no-repeat;
+        background-position: left;
+        background-size: contain;
+        @include paddingXY(4rem,0);
+         h2 {
+            text-align: center;
+            @include font(3rem,bold);
+            font-family: montserrat-bold;
+         }
+         .total {
+            @include marginXY(0, auto);
+            max-width: 120rem;
+            display: grid;
+            grid-template-columns: 3fr 10rem 3fr;
+            grid-template-rows: repeat(4, 20rem);
+            margin-top: 20rem;
+            gap: 4rem;
+            .number {
+                color: $neon__blue--clr;
+                @include font(5rem,bold);
+                font-family: whitney-semibold;
+            }
+            .total__text {
+                @include flex(row,none,flex-start,1.5rem);
+                font-family: whitney-bold;
+            }
+           
+            .total__text__01 {
+                grid-row: 1/2;
+                grid-column: 1/2;
+                position: relative;
+                align-items: center;
+                justify-self: end;
+                align-self: center;
+                height: 100%;
+                .text__title {
+                    position: relative;
+                    width: 100%;
+                    &::before {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: "";
+                        top: 0 ; 
+                        left: calc(100% + 4rem);
+                        transform: translate(0%,0%);
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse1.svg');
+                        background-size: cover;
+                        z-index: +32;
+                    }
+                    &::after {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: '';
+                        top: calc(-1rem);
+                        left: calc(100% + 3rem);
+                        transform: translate(0%,0%);
+                        width: 4rem;
+                        height: 4rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse2.svg');
+                        background-size: cover;
+                        z-index: +31;
+                    }
+                }
+            }
+            .total__text__02 {
+                grid-row: 2/3;
+                grid-column: 3/-1;
+                justify-self: start;
+                align-self: center;
+                align-items: center;
+                align-self: center;
+                height: 100%;
+                position: relative;
+                .text__title {
+                    position: relative;
+                    width: 100%;
+                    &::before {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: "";
+                        top: 0 ; 
+                        right: calc(100% + 13.5rem);
+                        transform: translate(0%,0%);
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse1.svg');
+                        background-size: cover;
+                        z-index: +32;
+                    }
+                    &::after {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: '';
+                        top: calc(-1rem);
+                        right: calc(100% + 12.5rem);
+                        transform: translate(0%,0%);
+                        width: 4rem;
+                        height: 4rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse2.svg');
+                        background-size: cover;
+                        z-index: +31;
+                    }
+                }
+            }
+            .total__text__03 {
+                grid-row: 3/4;
+                grid-column: 1/2;
+                align-items: center;
+                justify-self: end;
+                align-self: center;
+                height: 100%;
+                position: relative;
+                .text__title {
+                    position: relative;
+                    width: 100%;
+                    &::before {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: "";
+                        top: 0 ; 
+                        left: calc(100% + 3rem);
+                        transform: translate(0%,0%);
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse1.svg');
+                        background-size: cover;
+                        z-index: +32;
+                    }
+                    &::after {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: '';
+                        top: calc(-1rem);
+                        left: calc(100% + 2rem);
+                        transform: translate(0%,0%);
+                        width: 4rem;
+                        height: 4rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse2.svg');
+                        background-size: cover;
+                        z-index: +31;
+                    }
+                }
+            }
+            .total__text__04 {
+                grid-row: 4/-1;
+                grid-column: 3/-1;
+                justify-self: start;
+                align-self: center;
+                align-items: center;
+                align-self: center;
+                height: 100%;
+                position: relative;
+                .text__title {
+                    position: relative;
+                    width: 100%;
+                    &::before {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: "";
+                        top: 0 ; 
+                        right: calc(100% + 13.5rem);
+                        transform: translate(0%,0%);
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse1.svg');
+                        background-size: cover;
+                        z-index: +32;
+                    }
+                    &::after {
+                        position: absolute;
+                        display: table;
+                        clear: both;
+                        content: '';
+                        top: calc(-1rem);
+                        right: calc(100% + 12.5rem);
+                        transform: translate(0%,0%);
+                        width: 4rem;
+                        height: 4rem;
+                        background-image: url('../../Assets/2-benefits/Ellipse2.svg');
+                        background-size: cover;
+                        z-index: +31;
+                    }
+                }
+            }
+            .total__img__01 {
+                grid-row: 1/2;
+                grid-column: 3/-1;
+                align-self: center;
+                justify-content: flex-start !important;
+                height: 100%;
+            }
+            .total__img__02 {
+                grid-row: 2/3;
+                grid-column: 1/2;
+                justify-self: end;
+                align-self: center;
+                height: 100%;
+            }
+            .total__img__03 {
+                grid-row: 3/4;
+                grid-column: 3/-1;
+                justify-content: flex-start !important;
+                height: 100%;
+            }
+            .total__img__04 {
+                grid-row: 4/-1;
+                grid-column: 1/2;
+                height: 100%;
+            }
+            
+            
+            .text__title {
+                @include flex(column,none ,none ,1rem);
+                h3 {
+                    font-family: whitney-book;
+                    @include font(2.1rem,bold);
+                }
+                p {
+                    color: $gray__60--clr;
+                    font-size: 1.5rem;
+                    font-family: whitney-book;
+                }
+            }
+            .first-col {
+                align-items: flex-end;
+            }
+           
+            .total__img {
+                width: 100%;
+                @include flex(row,flex-end,none,none)
+            }
+            .vector_img {
+                width: 25rem;
+            }
+            .vector__1 {
+                justify-self: flex-start;
+            }
+            
+                
+                
+        
+                .yellow_line {
+                    justify-self: inherit;
+                    grid-column: 2/3;
+                    grid-row: 1/-1;
+                    position: relative;
+                    z-index: 30;
+            }
+           
+        
+        }
+    }
+}
+
+
+
+// @media (min-width: 600px) and (max-width: 767px) {
+//     #benefits .total {
+//         @include flex(column,center,center,4rem);
+//         margin-top: 5rem;
+//         .total__img, .total__text {
+//             grid-template-columns: 1/3 !important;
+//             display: block !important;
+            
+//         }
+//         .total__img {
+//             width: auto;
+//         }
+//         .text__title::before, .text__title::after {
+//             display: none !important;
+//         }
+//         .total__text__01 {
+//             grid-row: 1/2;
+//             justify-content: center !important;
+//         }
+//         .total__img__01 {
+//             grid-row: 2/3;
+//         }
+//         .total__text__02 {
+//             grid-row: 3/4;
+//         }
+//         .total__img__02 {
+//             grid-row: 4/5;
+//         }
+//         .total__text__03 {
+//             grid-row: 5/6;
+//         }
+//         .total__img__03 {
+//             grid-row: 6/7;
+//         }
+//         .total__text__04 {
+//             grid-row: 7/8;
+//         }
+//         .total__img__04 {
+//             grid-row: 8/-1;
+//         }
+//         .yellow_line {
+//             display: none;
+//         }
+//     }
+
+// }
+
+
+
+
+
+
+
+
+
+
+// @media (min-width: 601px) and (max-width: 767px) {
+
+// }
+
+
+// @media (max-width: 600px) {
+
+// }

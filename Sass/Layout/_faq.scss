@@ -1,10 +1,7 @@
 @import "../Variable/Variable";
 
 @media (min-width: 1200px) {
-  #faq {
-    transform: translateY(40%);
-  }
-
+  
   .faq {
     display: flex;
     justify-content: space-evenly;
@@ -166,7 +163,7 @@
 
 @media (min-width: 991px) and (max-width: 1199px) {
   #faq {
-    transform: translateY(40%);
+    // transform: translateY(40%);
   }
 
   .faq {
@@ -330,7 +327,7 @@
 
 @media (min-width: 768px) and (max-width: 990px) {
   #faq {
-    transform: translateY(40%);
+    // transform: translateY(40%);
   }
 
   .faq {
@@ -494,7 +491,7 @@
 
 @media (min-width: 600px) and (max-width: 767px) {
   #faq {
-    transform: translateY(40%);
+    // transform: translateY(40%);
   }
 
   .faq {
@@ -658,7 +655,7 @@
 
 @media (min-width: 315px) and (max-width: 599px) {
   #faq {
-    transform: translateY(5%);
+    // transform: translateY(5%);
     padding: 0 0 5rem 0;
   }
 
@@ -832,7 +829,7 @@
 
 @media (max-width: 314px) {
   #faq {
-    transform: translateY(5%);
+    // transform: translateY(5%);
     padding: 0 0 5rem 0;
   }
 

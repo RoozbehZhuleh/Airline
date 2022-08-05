@@ -13,7 +13,7 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Style.css">
-    <script src="./faq.js" defer></script>
+    <script src="./style.js" defer></script>
 </head>
 
 <body>
@@ -112,6 +112,8 @@
             </div>
         </div>
     </section>
+
+    <!-- benefits -->
     <section id="benefits">
     
         <h2 class="nav_title">Benefits:</h2>
@@ -193,6 +195,100 @@
 
     </section>
     
+    <!-- features -->
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Style.css">
+        <title>features</title>
+    </head>
+    
+    <body>
+        <section id="features">
+            <div class="container">
+                <div class="features">
+                    <div class="features__title">
+                        <p>Features:</p>
+                    </div>
+                    <div class="features__items">
+                        <div class="features__items__1">
+                            <div class="advanced-search features__item">
+                                <div class="advanced-search__title">
+                                    <p>Advanced search</p>
+                                </div>
+                                <div class="advanced-search__img">
+                                    <img src="./Assets/3-features/advancedSearch.svg" alt="">
+                                </div>
+                                <div class="advanced-search__text">
+                                    <p>
+                                        Advanced search & filtering by routes, airlines, destinations, price, commission,
+                                        and many other criteria allows you to
+                                        easily find the right flight, hotel & tour for your customer
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="invoices features__item">
+                                <div class="invoices__title ">
+                                    <p>Send Invoices</p>
+                                </div>
+                                <div class="invoices__img">
+                                    <img src="./Assets/3-features/sendInvoices.svg" alt="">
+                                </div>
+                                <div class="invoices__text">
+                                    <p>
+                                        You can send custom invoices under your company name to your customers and track
+                                        payments.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features__items__2">
+                            <div class="automatic-sales features__item">
+                                <div class="automatic-sales__title">
+                                    <p>Automatic Sales Reports</p>
+                                </div>
+                                <div class="automatic-sales__img">
+                                    <img src="./Assets/3-features/automaticSalesReport.svg" alt="">
+                                </div>
+                                <div class="automatic-sales__text">
+                                    <p>
+                                        Automatically generated, highly customizable reports to analyze your employees’
+                                        sales, activity, bookings,
+                                        searching
+                                        history, etc.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="custom features__item">
+                                <div class="custom__title ">
+                                    <p>Custom Level of Access</p>
+                                </div>
+                                <div class="custom__img">
+                                    <img src="./Assets/3-features/customLevel.svg" alt="">
+                                </div>
+                                <div class="custom__text">
+                                    <p>
+                                        Automatically generated, highly customizable reports to analyze your employees’
+                                        sales, activity, bookings, searching
+                                        history, etc.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    
+    </html>
+
+    <!-- ailrines -->
     <section id="airlines">
         <div class="container">
             <div class="airlines">
@@ -457,6 +553,9 @@
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
+
+                    <div class="swiper-pagination"></div>
+
                 </div>
             </div>
         </div>
@@ -826,6 +925,9 @@
             </div>
         </div>
     </section>
+    <button onclick="goToTop" class="back-to-top hidden">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
 </body>
 
 </html>

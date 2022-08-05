@@ -202,7 +202,7 @@ body {
         width: 98%;
         margin: 0 auto;
         .total_container {
-            padding: 5rem;
+            padding: 5rem; 
         }
         h2 {
             text-align: center;
@@ -218,7 +218,7 @@ body {
         }
         .total__grid {
             display: grid;
-            grid-template-columns: repeat( auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
             margin-top: 8rem;
             gap: 3rem;
         }

@@ -61,17 +61,17 @@
                               background-size: 4rem ;
                               width: 3rem;
                               height: 3rem;
-                              background-image: url('../../Assets/15-contact/location.svg');
+                              background-image: url('./Assets/15-contact/location.svg');
                               background-position: center;
                               background-size: cover;
                               background-repeat: no-repeat;
                          }
                     }
                     .phone::before{
-                         background-image: url('../../Assets/15-contact/phone.svg');
+                         background-image: url('./Assets/15-contact/phone.svg');
                     }
                     .mail::before {
-                         background-image: url('../../Assets/15-contact/mail.svg');
+                         background-image: url('./Assets/15-contact/mail.svg');
                     }
                }
                .socialmedia {

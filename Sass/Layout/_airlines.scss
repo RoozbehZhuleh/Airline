@@ -23,7 +23,7 @@
 
     
   #airlines {
-    background-image: url(../../Assets/5-airlines/backgroundAirlines.svg);
+    background-image: url(./Assets/5-airlines/backgroundAirlines.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -54,7 +54,7 @@
       transition: all 0.2s linear;
 
       &__img {
-        background-image: url(../../Assets/5-airlines/arrowRight.svg);
+        background-image: url(./Assets/5-airlines/arrowRight.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 90%;
@@ -63,7 +63,7 @@
       }
 
       &:hover .airlines__link__img {
-        background-image: url(../../Assets/5-airlines/arrowWhite.svg);
+        background-image: url(./Assets/5-airlines/arrowWhite.svg);
       }
       &:hover {
         background-color: $neon__blue--clr;

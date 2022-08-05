@@ -42,27 +42,27 @@ a:focus {
 
 @font-face {
   font-family: montserrat-bold;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
 }
 @font-face {
   font-family: montserrat-semibold;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
 }
 @font-face {
   font-family: montserrat-medium;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
 }
 @font-face {
   font-family: whitney-semibold;
-  src: url(../../Assets/fonts/whitney/whitneysemibold.otf);
+  src: url(./Assets/fonts/whitney/whitneysemibold.otf);
 }
 @font-face {
   font-family: whitney-book;
-  src: url(../../Assets/fonts/whitney/whitneybook.otf);
+  src: url(./Assets/fonts/whitney/whitneybook.otf);
 }
 @font-face {
   font-family: whitney-book-italic;
-  src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+  src: url(./Assets/fonts/whitney/whitneybookitalic.otf);
 }
 *,
 *::after,
@@ -108,27 +108,27 @@ a:focus {
 
 @font-face {
   font-family: montserrat-bold;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
 }
 @font-face {
   font-family: montserrat-semibold;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
 }
 @font-face {
   font-family: montserrat-medium;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
 }
 @font-face {
   font-family: whitney-semibold;
-  src: url(../../Assets/fonts/whitney/whitneysemibold.otf);
+  src: url(./Assets/fonts/whitney/whitneysemibold.otf);
 }
 @font-face {
   font-family: whitney-book;
-  src: url(../../Assets/fonts/whitney/whitneybook.otf);
+  src: url(./Assets/fonts/whitney/whitneybook.otf);
 }
 @font-face {
   font-family: whitney-book-italic;
-  src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+  src: url(./Assets/fonts/whitney/whitneybookitalic.otf);
 }
 @media screen and (min-width: 1200px) {
   #benefits {
@@ -1362,7 +1362,7 @@ a:focus {
 }
 .hero {
   background: 0;
-  background-image: url("../../Assets/1-home/bg-kiri.svg");
+  background-image: url("./Assets/1-home/bg-kiri.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -1387,7 +1387,8 @@ a:focus {
   grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
   align-items: center;
 }
-.hero .hero__container .hero__wrapper .hero--book .left--side, .hero .hero__container .hero__wrapper .hero--book .right--side {
+.hero .hero__container .hero__wrapper .hero--book .left--side,
+.hero .hero__container .hero__wrapper .hero--book .right--side {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -1406,8 +1407,6 @@ a:focus {
   border-radius: 100rem;
   transition: all 0.3s ease-in-out;
   position: relative;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   overflow: hidden;
   background-color: white;
@@ -1448,8 +1447,7 @@ a:focus {
 }
 .hero .hero__container .hero__wrapper .hero--book .right--side {
   height: 30rem;
-  -webkit-animation: flow 6s linear infinite;
-          animation: flow 6s linear infinite;
+  animation: flow 6s linear infinite;
 }
 .hero .hero__container .hero__wrapper .hero--book .right--side img {
   width: 100%;
@@ -1537,18 +1535,6 @@ a:focus {
   font-family: whitney-semibold;
 }
 
-@-webkit-keyframes flow {
-  0% {
-    transform: translateY(-3%);
-  }
-  50% {
-    transform: translateY(3%);
-  }
-  100% {
-    transform: translateY(-3%);
-  }
-}
-
 @keyframes flow {
   0% {
     transform: translateY(-3%);
@@ -1562,27 +1548,27 @@ a:focus {
 }
 @font-face {
   font-family: montserrat-bold;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
 }
 @font-face {
   font-family: montserrat-semibold;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
 }
 @font-face {
   font-family: montserrat-medium;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
 }
 @font-face {
   font-family: whitney-semibold;
-  src: url(../../Assets/fonts/whitney/whitneysemibold.otf);
+  src: url(./Assets/fonts/whitney/whitneysemibold.otf);
 }
 @font-face {
   font-family: whitney-book;
-  src: url(../../Assets/fonts/whitney/whitneybook.otf);
+  src: url(./Assets/fonts/whitney/whitneybook.otf);
 }
 @font-face {
   font-family: whitney-book-italic;
-  src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+  src: url(./Assets/fonts/whitney/whitneybookitalic.otf);
 }
 #airlines .container {
   margin-top: 8rem !important;
@@ -1607,7 +1593,7 @@ a:focus {
 }
 
 #airlines {
-  background-image: url(../../Assets/5-airlines/backgroundAirlines.svg);
+  background-image: url(./Assets/5-airlines/backgroundAirlines.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1637,7 +1623,7 @@ a:focus {
   transition: all 0.2s linear;
 }
 .airlines__link__img {
-  background-image: url(../../Assets/5-airlines/arrowRight.svg);
+  background-image: url(./Assets/5-airlines/arrowRight.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 90%;
@@ -1645,7 +1631,7 @@ a:focus {
   height: 5rem;
 }
 .airlines__link:hover .airlines__link__img {
-  background-image: url(../../Assets/5-airlines/arrowWhite.svg);
+  background-image: url(./Assets/5-airlines/arrowWhite.svg);
 }
 .airlines__link:hover {
   background-color: #1f51ff;
@@ -1829,7 +1815,7 @@ a:focus {
 .category {
   padding: 5rem 0 5rem 0;
   margin-top: 5rem;
-  background-color: #F8FAFB;
+  background-color: #f8fafb;
 }
 .category .category__title {
   display: flex;
@@ -1846,6 +1832,13 @@ a:focus {
 .category .category__container .categor__card__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+@media screen and (max-width: 600px) {
+  .category .category__container .categor__card__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .category .category__container .categor__card__container .category__card {
   padding: 1rem;
@@ -1927,8 +1920,7 @@ a:focus {
   #domestic .totaldom .img_container img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   #domestic .totaldom .img_container span {
     position: absolute;
@@ -2026,8 +2018,7 @@ a:focus {
   #domestic .totaldom .img_container img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   #domestic .totaldom .img_container span {
     position: absolute;
@@ -2098,8 +2089,7 @@ a:focus {
   #domestic .totaldom .img_container img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   #domestic .totaldom .img_container span {
     position: absolute;
@@ -2170,8 +2160,7 @@ a:focus {
   #domestic .totaldom .img_container img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   #domestic .totaldom .img_container span {
     position: absolute;
@@ -2242,8 +2231,7 @@ a:focus {
   #domestic .totaldom .img_container img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   #domestic .totaldom .img_container span {
     position: absolute;
@@ -2281,33 +2269,33 @@ a:focus {
 }
 @font-face {
   font-family: montserrat-bold;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
 }
 @font-face {
   font-family: montserrat-semibold;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
 }
 @font-face {
   font-family: montserrat-medium;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
 }
 @font-face {
   font-family: whitney-semibold;
-  src: url(../../Assets/fonts/whitney/whitneysemibold.otf);
+  src: url(./Assets/fonts/whitney/whitneysemibold.otf);
 }
 @font-face {
   font-family: whitney-book;
-  src: url(../../Assets/fonts/whitney/whitneybook.otf);
+  src: url(./Assets/fonts/whitney/whitneybook.otf);
 }
 @font-face {
   font-family: whitney-book-italic;
-  src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+  src: url(./Assets/fonts/whitney/whitneybookitalic.otf);
 }
 @media screen and (min-width: 1200px) {
   #features {
     padding: 0 0 5rem 0;
     margin: 2rem 0 0 0;
-    background-image: url("../../Assets/3-features/backgroundFeatures.svg");
+    background-image: url("./Assets/3-features/backgroundFeatures.svg");
     background-repeat: no-repeat;
     background-position: 0rem 20rem;
     background-size: cover;
@@ -2327,7 +2315,7 @@ a:focus {
   }
   #features .features__items {
     z-index: 1;
-    background-image: url("../../Assets/3-features/lineFeatures.svg");
+    background-image: url("./Assets/3-features/lineFeatures.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -2492,6 +2480,8 @@ a:focus {
     left: 3rem;
     top: 3rem;
     background: rgb(147, 247, 255);
+    background: -moz-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
+    background: -webkit-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     background: linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93f7ff",endColorstr="#1f51ff",GradientType=1);
     border-radius: 2.5rem;
@@ -2502,7 +2492,7 @@ a:focus {
   #features {
     padding: 0 0 5rem 0;
     margin: 2rem 0 0 0;
-    background-image: url("../../Assets/3-features/backgroundFeatures.svg");
+    background-image: url("./Assets/3-features/backgroundFeatures.svg");
     background-repeat: no-repeat;
     background-position: 0rem 20rem;
     background-size: cover;
@@ -2522,7 +2512,7 @@ a:focus {
   }
   #features .features__items {
     z-index: 1;
-    background-image: url("../../Assets/3-features/lineFeatures.svg");
+    background-image: url("./Assets/3-features/lineFeatures.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -2687,6 +2677,8 @@ a:focus {
     left: 2.5rem;
     top: 2.5rem;
     background: rgb(147, 247, 255);
+    background: -moz-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
+    background: -webkit-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     background: linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93f7ff",endColorstr="#1f51ff",GradientType=1);
     border-radius: 2.5rem;
@@ -2697,7 +2689,7 @@ a:focus {
   #features {
     padding: 0 0 5rem 0;
     margin: 2rem 0 0 0;
-    background-image: url("../../Assets/3-features/backgroundFeatures.svg");
+    background-image: url("./Assets/3-features/backgroundFeatures.svg");
     background-repeat: no-repeat;
     background-position: 0rem 20rem;
     background-size: cover;
@@ -2717,7 +2709,7 @@ a:focus {
   }
   #features .features__items {
     z-index: 1;
-    background-image: url("../../Assets/3-features/lineFeatures.svg");
+    background-image: url("./Assets/3-features/lineFeatures.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -2875,6 +2867,8 @@ a:focus {
     left: 2.5rem;
     top: 2.5rem;
     background: rgb(147, 247, 255);
+    background: -moz-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
+    background: -webkit-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     background: linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93f7ff",endColorstr="#1f51ff",GradientType=1);
     border-radius: 2.5rem;
@@ -2885,7 +2879,7 @@ a:focus {
   #features {
     padding: 0 0 5rem 0;
     margin: 2rem 0 0 0;
-    background-image: url("../../Assets/3-features/backgroundFeatures.svg");
+    background-image: url("./Assets/3-features/backgroundFeatures.svg");
     background-repeat: no-repeat;
     background-position: 0rem 20rem;
     background-size: cover;
@@ -2905,7 +2899,7 @@ a:focus {
   }
   #features .features__items {
     z-index: 1;
-    background-image: url("../../Assets/3-features/lineFeatures.svg");
+    background-image: url("./Assets/3-features/lineFeatures.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -3063,6 +3057,8 @@ a:focus {
     left: 2.5rem;
     top: 2.5rem;
     background: rgb(147, 247, 255);
+    background: -moz-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
+    background: -webkit-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     background: linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93f7ff",endColorstr="#1f51ff",GradientType=1);
     border-radius: 2.5rem;
@@ -3073,7 +3069,7 @@ a:focus {
   #features {
     padding: 0 0 5rem 0;
     margin: 2rem 0 0 0;
-    background-image: url("../../Assets/3-features/backgroundFeatures.svg");
+    background-image: url("./Assets/3-features/backgroundFeatures.svg");
     background-repeat: no-repeat;
     background-position: 0rem 20rem;
     background-size: cover;
@@ -3093,7 +3089,7 @@ a:focus {
   }
   #features .features__items {
     z-index: 1;
-    background-image: url("../../Assets/2-benefits/Line.svg");
+    background-image: url("./Assets/2-benefits/Line.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -3251,6 +3247,8 @@ a:focus {
     left: 1.5rem;
     top: 1.5rem;
     background: rgb(147, 247, 255);
+    background: -moz-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
+    background: -webkit-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     background: linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93f7ff",endColorstr="#1f51ff",GradientType=1);
     border-radius: 2.5rem;
@@ -3563,16 +3561,16 @@ body {
   background-size: 4rem;
   width: 3rem;
   height: 3rem;
-  background-image: url("../../Assets/15-contact/location.svg");
+  background-image: url("./Assets/15-contact/location.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .footer .footer__container .footer--right .contact__container .phone::before {
-  background-image: url("../../Assets/15-contact/phone.svg");
+  background-image: url("./Assets/15-contact/phone.svg");
 }
 .footer .footer__container .footer--right .contact__container .mail::before {
-  background-image: url("../../Assets/15-contact/mail.svg");
+  background-image: url("./Assets/15-contact/mail.svg");
 }
 .footer .footer__container .footer--right .socialmedia {
   display: flex;
@@ -3608,27 +3606,27 @@ body {
 
 @font-face {
   font-family: montserrat-bold;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
 }
 @font-face {
   font-family: montserrat-semibold;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
 }
 @font-face {
   font-family: montserrat-medium;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
 }
 @font-face {
   font-family: whitney-semibold;
-  src: url(../../Assets/fonts/whitney/whitneysemibold.otf);
+  src: url(./Assets/fonts/whitney/whitneysemibold.otf);
 }
 @font-face {
   font-family: whitney-book;
-  src: url(../../Assets/fonts/whitney/whitneybook.otf);
+  src: url(./Assets/fonts/whitney/whitneybook.otf);
 }
 @font-face {
   font-family: whitney-book-italic;
-  src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+  src: url(./Assets/fonts/whitney/whitneybookitalic.otf);
 }
 @media (min-width: 1200px) {
   .faq {
@@ -4494,27 +4492,27 @@ body {
 
 @font-face {
   font-family: montserrat-bold;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
 }
 @font-face {
   font-family: montserrat-semibold;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
 }
 @font-face {
   font-family: montserrat-medium;
-  src: url(../../Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
+  src: url(./Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
 }
 @font-face {
   font-family: whitney-semibold;
-  src: url(../../Assets/fonts/whitney/whitneysemibold.otf);
+  src: url(./Assets/fonts/whitney/whitneysemibold.otf);
 }
 @font-face {
   font-family: whitney-book;
-  src: url(../../Assets/fonts/whitney/whitneybook.otf);
+  src: url(./Assets/fonts/whitney/whitneybook.otf);
 }
 @font-face {
   font-family: whitney-book-italic;
-  src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+  src: url(./Assets/fonts/whitney/whitneybookitalic.otf);
 }
 @media (min-width: 768px) {
   #newsletter {

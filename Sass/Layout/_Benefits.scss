@@ -919,8 +919,8 @@
                         display: table;
                         clear: both;
                         content: "";
-                        top: 0 ; 
-                        left: calc(100% + 6rem);
+                        top: 1rem ; 
+                        left: calc(100% + 1rem);
                         transform: translate(0%,0%);
                         width: 2rem;
                         height: 2rem;
@@ -933,8 +933,8 @@
                         display: table;
                         clear: both;
                         content: '';
-                        top: calc(-1rem);
-                        left: calc(100% + 5rem);
+                        top: 0;
+                        left: calc(100% + 0.1rem);
                         transform: translate(0%,0%);
                         width: 4rem;
                         height: 4rem;
@@ -962,7 +962,7 @@
                         clear: both;
                         content: "";
                         top: 1rem ; 
-                        right: calc(100% + 12rem);
+                        right: calc(100% + 8.5rem);
                         transform: translate(0%,0%);
                         width: 2rem;
                         height: 2rem;
@@ -976,7 +976,7 @@
                         clear: both;
                         content: '';
                         top: 0;
-                        right: calc(100% + 11.1rem);
+                        right: calc(100% + 7.5rem);
                         transform: translate(0%,0%);
                         width: 4rem;
                         height: 4rem;
@@ -1003,7 +1003,7 @@
                         clear: both;
                         content: "";
                         top: 1rem ; 
-                        left: calc(100% + 4rem);
+                        left: calc(100% + 3rem);
                         transform: translate(0%,0%);
                         width: 2rem;
                         height: 2rem;
@@ -1017,7 +1017,7 @@
                         clear: both;
                         content: '';
                         top: 0;
-                        left: calc(100% + 3rem);
+                        left: calc(100% + 2rem);
                         transform: translate(0%,0%);
                         width: 4rem;
                         height: 4rem;
@@ -1044,8 +1044,8 @@
                         display: table;
                         clear: both;
                         content: "";
-                        top: 3rem ; 
-                        right: calc(100% + 11.8rem);
+                        top: 6rem ; 
+                        right: calc(100% + 8.5rem);
                         transform: translate(0%,0%);
                         width: 2rem;
                         height: 2rem;
@@ -1058,8 +1058,8 @@
                         display: table;
                         clear: both;
                         content: '';
-                        top: calc(2rem);
-                        right: calc(100% + 10.8rem);
+                        top: calc(5rem);
+                        right: calc(100% + 7.5rem);
                         transform: translate(0%,0%);
                         width: 4rem;
                         height: 4rem;
@@ -1144,6 +1144,144 @@
 }
 
 
-// @media (max-width: 600px) {
-
-// }
+@media (max-width: 600px) {
+    #benefits {
+        background-color: $black--clr;
+        background: url(/Assets/2-benefits/backgoundKiri.svg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        @include paddingXY(4rem,0);
+         h2 {
+            text-align: center;
+            @include font(3rem,bold);
+            font-family: montserrat-bold;
+         }
+         .total {
+            max-width: 768px;
+            @include marginXY(0, auto);
+            max-width: 120rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4rem;
+            margin-top: 5rem;
+            padding: 0 5rem;
+            .number {
+                color: $neon__blue--clr;
+                @include font(5rem,bold);
+                font-family: whitney-semibold;
+            }
+            .total__text {
+                @include flex(row,none,flex-start,1.5rem);
+                font-family: whitney-bold;
+            }
+           
+            .total__text__01 {
+               
+                position: relative;
+                align-items: center;
+                justify-self: center;
+                align-self: center;
+                height: 100%;
+                .text__title {
+                    position: relative;
+                    width: 100%;
+                   
+                }
+            }
+            .total__text__02 {
+                
+                justify-self: start;
+                align-self: center;
+                align-items: center;
+                align-self: center;
+                height: 100%;
+                position: relative;
+                .text__title {
+                    position: relative;
+                    width: 100%;
+                
+                }
+            }
+            .total__text__03 {
+                
+                align-items: center;
+                justify-self: end;
+                align-self: center;
+                height: 100%;
+                position: relative;
+                .text__title {
+                    position: relative;
+                    width: 100%;
+                   
+                }
+            }
+            .total__text__04 {
+                
+                justify-self: start;
+                align-self: center;
+                align-items: center;
+                align-self: center;
+                height: 100%;
+                position: relative;
+                .text__title {
+                    position: relative;
+                    width: 100%;
+                }
+            }
+            .total__img__01, .total__img__02, .total__img__03, .total__img__04 {
+                
+                
+                justify-content: center !important;
+                height: 100%;
+            }
+          
+           
+            
+            
+            .text__title {
+                @include flex(column,none ,none ,1rem);
+                h3 {
+                    font-family: whitney-semibold;
+                    @include font(2.1rem,bold);
+                }
+                p {
+                    color: $gray__60--clr;
+                    font-size: 1.5rem;
+                    font-family: whitney-book;
+                }
+            }
+            .first-col {
+                align-items: flex-end;
+            }
+           
+            .total__img {
+                width: 100%;
+                @include flex(row,flex-end,none,none)
+            }
+            .vector_img {
+                width: 25rem;
+            }
+            .vector__1 {
+                justify-self: flex-start;
+            }
+            
+                
+                
+        
+                  
+        //     .yellow_line {
+        //         background: url(/Assets/2-benefits/Line.svg) no-repeat center;
+        //         background-position: center;
+        //         background-size: 7rem;
+        //         justify-self: inherit;
+        //         grid-column: 2/3;
+        //         grid-row: 1/-1;
+        //         position: relative;
+        //         margin-top: -10rem;
+        // }
+           
+        
+        }
+    }
+}

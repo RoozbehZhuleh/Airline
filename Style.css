@@ -187,7 +187,7 @@ a:focus {
     clear: both;
     content: "";
     top: 0;
-    left: calc(100% + 4rem);
+    left: calc(100% + 6rem);
     transform: translate(0%, 0%);
     width: 2rem;
     height: 2rem;
@@ -201,7 +201,7 @@ a:focus {
     clear: both;
     content: "";
     top: -1rem;
-    left: calc(100% + 3rem);
+    left: calc(100% + 5rem);
     transform: translate(0%, 0%);
     width: 4rem;
     height: 4rem;
@@ -228,8 +228,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: 0;
-    right: calc(100% + 13.5rem);
+    top: 1rem;
+    right: calc(100% + 12rem);
     transform: translate(0%, 0%);
     width: 2rem;
     height: 2rem;
@@ -242,8 +242,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: -1rem;
-    right: calc(100% + 12.5rem);
+    top: 0;
+    right: calc(100% + 11.1rem);
     transform: translate(0%, 0%);
     width: 4rem;
     height: 4rem;
@@ -269,8 +269,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: 0;
-    left: calc(100% + 3rem);
+    top: 1rem;
+    left: calc(100% + 4rem);
     transform: translate(0%, 0%);
     width: 2rem;
     height: 2rem;
@@ -283,8 +283,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: -1rem;
-    left: calc(100% + 2rem);
+    top: 0;
+    left: calc(100% + 3rem);
     transform: translate(0%, 0%);
     width: 4rem;
     height: 4rem;
@@ -311,8 +311,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: 0;
-    right: calc(100% + 13.5rem);
+    top: 3rem;
+    right: calc(100% + 11.8rem);
     transform: translate(0%, 0%);
     width: 2rem;
     height: 2rem;
@@ -325,8 +325,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: -1rem;
-    right: calc(100% + 12.5rem);
+    top: 2rem;
+    right: calc(100% + 10.8rem);
     transform: translate(0%, 0%);
     width: 4rem;
     height: 4rem;
@@ -394,11 +394,14 @@ a:focus {
     justify-self: flex-start;
   }
   #benefits .total .yellow_line {
+    background: url(/Assets/2-benefits/Line.svg) no-repeat center;
+    background-position: center;
+    background-size: 8rem;
     justify-self: inherit;
     grid-column: 2/3;
     grid-row: 1/-1;
     position: relative;
-    z-index: 30;
+    margin-top: -25rem;
   }
 }
 @media (min-width: 991px) and (max-width: 1199px) {
@@ -457,7 +460,7 @@ a:focus {
     clear: both;
     content: "";
     top: 0;
-    left: calc(100% + 4rem);
+    left: calc(100% + 6rem);
     transform: translate(0%, 0%);
     width: 2rem;
     height: 2rem;
@@ -471,7 +474,7 @@ a:focus {
     clear: both;
     content: "";
     top: -1rem;
-    left: calc(100% + 3rem);
+    left: calc(100% + 5rem);
     transform: translate(0%, 0%);
     width: 4rem;
     height: 4rem;
@@ -498,8 +501,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: 0;
-    right: calc(100% + 13.5rem);
+    top: 1rem;
+    right: calc(100% + 12rem);
     transform: translate(0%, 0%);
     width: 2rem;
     height: 2rem;
@@ -512,8 +515,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: -1rem;
-    right: calc(100% + 12.5rem);
+    top: 0;
+    right: calc(100% + 11.1rem);
     transform: translate(0%, 0%);
     width: 4rem;
     height: 4rem;
@@ -539,8 +542,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: 0;
-    left: calc(100% + 3rem);
+    top: 1rem;
+    left: calc(100% + 4rem);
     transform: translate(0%, 0%);
     width: 2rem;
     height: 2rem;
@@ -553,8 +556,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: -1rem;
-    left: calc(100% + 2rem);
+    top: 0;
+    left: calc(100% + 3rem);
     transform: translate(0%, 0%);
     width: 4rem;
     height: 4rem;
@@ -581,8 +584,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: 0;
-    right: calc(100% + 13.5rem);
+    top: 3rem;
+    right: calc(100% + 11.8rem);
     transform: translate(0%, 0%);
     width: 2rem;
     height: 2rem;
@@ -595,8 +598,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: -1rem;
-    right: calc(100% + 12.5rem);
+    top: 2rem;
+    right: calc(100% + 10.8rem);
     transform: translate(0%, 0%);
     width: 4rem;
     height: 4rem;
@@ -664,11 +667,14 @@ a:focus {
     justify-self: flex-start;
   }
   #benefits .total .yellow_line {
+    background: url(/Assets/2-benefits/Line.svg) no-repeat center;
+    background-position: center;
+    background-size: 8rem;
     justify-self: inherit;
     grid-column: 2/3;
     grid-row: 1/-1;
     position: relative;
-    z-index: 30;
+    margin-top: -25rem;
   }
 }
 @media (min-width: 768px) and (max-width: 990px) {
@@ -727,7 +733,7 @@ a:focus {
     clear: both;
     content: "";
     top: 0;
-    left: calc(100% + 4rem);
+    left: calc(100% + 6rem);
     transform: translate(0%, 0%);
     width: 2rem;
     height: 2rem;
@@ -741,7 +747,7 @@ a:focus {
     clear: both;
     content: "";
     top: -1rem;
-    left: calc(100% + 3rem);
+    left: calc(100% + 5rem);
     transform: translate(0%, 0%);
     width: 4rem;
     height: 4rem;
@@ -768,8 +774,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: 0;
-    right: calc(100% + 13.5rem);
+    top: 1rem;
+    right: calc(100% + 12rem);
     transform: translate(0%, 0%);
     width: 2rem;
     height: 2rem;
@@ -782,8 +788,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: -1rem;
-    right: calc(100% + 12.5rem);
+    top: 0;
+    right: calc(100% + 11.1rem);
     transform: translate(0%, 0%);
     width: 4rem;
     height: 4rem;
@@ -809,8 +815,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: 0;
-    left: calc(100% + 3rem);
+    top: 1rem;
+    left: calc(100% + 4rem);
     transform: translate(0%, 0%);
     width: 2rem;
     height: 2rem;
@@ -823,8 +829,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: -1rem;
-    left: calc(100% + 2rem);
+    top: 0;
+    left: calc(100% + 3rem);
     transform: translate(0%, 0%);
     width: 4rem;
     height: 4rem;
@@ -851,8 +857,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: 0;
-    right: calc(100% + 13.5rem);
+    top: 3rem;
+    right: calc(100% + 11.8rem);
     transform: translate(0%, 0%);
     width: 2rem;
     height: 2rem;
@@ -865,8 +871,8 @@ a:focus {
     display: table;
     clear: both;
     content: "";
-    top: -1rem;
-    right: calc(100% + 12.5rem);
+    top: 2rem;
+    right: calc(100% + 10.8rem);
     transform: translate(0%, 0%);
     width: 4rem;
     height: 4rem;
@@ -934,11 +940,14 @@ a:focus {
     justify-self: flex-start;
   }
   #benefits .total .yellow_line {
+    background: url(/Assets/2-benefits/Line.svg) no-repeat center;
+    background-position: center;
+    background-size: 8rem;
     justify-self: inherit;
     grid-column: 2/3;
     grid-row: 1/-1;
     position: relative;
-    z-index: 30;
+    margin-top: -25rem;
   }
 }
 @media screen and (max-width: 990px) {

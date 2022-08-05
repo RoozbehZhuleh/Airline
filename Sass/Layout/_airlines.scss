@@ -16,7 +16,10 @@
       overflow: unset !important;
     }
 
-    
+    .swiper-pagination{
+    position: absolute;
+    top: 22rem !important;
+    }
 
     
   #airlines {
@@ -264,8 +267,6 @@
     display: none;
   }
 
-  .swiper-pagination{
-      margin-top: 20rem !important;
-    }
+  
 
 }

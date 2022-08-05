@@ -1179,6 +1179,11 @@ a:focus {
   overflow: unset !important;
 }
 
+.swiper-pagination {
+  position: absolute;
+  top: 22rem !important;
+}
+
 #airlines {
   background-image: url(../../Assets/5-airlines/backgroundAirlines.svg);
   background-size: cover;
@@ -1397,9 +1402,6 @@ a:focus {
 @media (max-width: 600px) {
   .swiper-button-prev, .swiper-button-next {
     display: none;
-  }
-  .swiper-pagination {
-    margin-top: 20rem !important;
   }
 }
 .category {

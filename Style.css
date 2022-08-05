@@ -1282,8 +1282,6 @@ a:focus {
   border-radius: 100rem;
   transition: all 0.3s ease-in-out;
   position: relative;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   overflow: hidden;
   background-color: white;
@@ -1324,8 +1322,7 @@ a:focus {
 }
 .hero .hero__container .hero__wrapper .hero--book .right--side {
   height: 30rem;
-  -webkit-animation: flow 6s linear infinite;
-          animation: flow 6s linear infinite;
+  animation: flow 6s linear infinite;
 }
 .hero .hero__container .hero__wrapper .hero--book .right--side img {
   width: 100%;
@@ -1411,18 +1408,6 @@ a:focus {
   color: white;
   margin-top: 3rem;
   font-family: whitney-semibold;
-}
-
-@-webkit-keyframes flow {
-  0% {
-    transform: translateY(-3%);
-  }
-  50% {
-    transform: translateY(3%);
-  }
-  100% {
-    transform: translateY(-3%);
-  }
 }
 
 @keyframes flow {
@@ -1688,6 +1673,18 @@ a:focus {
   transition: all 0.3s ease-in;
 }
 
+.swiper-button-disabled {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .swiper-button-prev, .swiper-button-next {
+    display: none;
+  }
+  .swiper-pagination {
+    margin-top: 20rem !important;
+  }
+}
 .category {
   padding: 5rem 0 5rem 0;
   margin-top: 5rem;
@@ -1789,8 +1786,7 @@ a:focus {
   #domestic .totaldom .img_container img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   #domestic .totaldom .img_container span {
     position: absolute;
@@ -1888,8 +1884,7 @@ a:focus {
   #domestic .totaldom .img_container img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   #domestic .totaldom .img_container span {
     position: absolute;
@@ -1960,8 +1955,7 @@ a:focus {
   #domestic .totaldom .img_container img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   #domestic .totaldom .img_container span {
     position: absolute;
@@ -2032,8 +2026,7 @@ a:focus {
   #domestic .totaldom .img_container img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   #domestic .totaldom .img_container span {
     position: absolute;
@@ -2104,8 +2097,7 @@ a:focus {
   #domestic .totaldom .img_container img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   #domestic .totaldom .img_container span {
     position: absolute;
@@ -2354,6 +2346,8 @@ a:focus {
     left: 3rem;
     top: 3rem;
     background: rgb(147, 247, 255);
+    background: -moz-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
+    background: -webkit-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     background: linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93f7ff",endColorstr="#1f51ff",GradientType=1);
     border-radius: 2.5rem;
@@ -2549,6 +2543,8 @@ a:focus {
     left: 2.5rem;
     top: 2.5rem;
     background: rgb(147, 247, 255);
+    background: -moz-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
+    background: -webkit-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     background: linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93f7ff",endColorstr="#1f51ff",GradientType=1);
     border-radius: 2.5rem;
@@ -2737,6 +2733,8 @@ a:focus {
     left: 2.5rem;
     top: 2.5rem;
     background: rgb(147, 247, 255);
+    background: -moz-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
+    background: -webkit-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     background: linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93f7ff",endColorstr="#1f51ff",GradientType=1);
     border-radius: 2.5rem;
@@ -2925,6 +2923,8 @@ a:focus {
     left: 2.5rem;
     top: 2.5rem;
     background: rgb(147, 247, 255);
+    background: -moz-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
+    background: -webkit-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     background: linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93f7ff",endColorstr="#1f51ff",GradientType=1);
     border-radius: 2.5rem;
@@ -3113,6 +3113,8 @@ a:focus {
     left: 1.5rem;
     top: 1.5rem;
     background: rgb(147, 247, 255);
+    background: -moz-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
+    background: -webkit-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     background: linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93f7ff",endColorstr="#1f51ff",GradientType=1);
     border-radius: 2.5rem;
@@ -3443,6 +3445,29 @@ body {
 .footer .footer__container .footer--right .socialmedia .socail {
   width: 4rem;
   height: 4rem;
+}
+
+.back-to-top {
+  border: none;
+  border-radius: 100%;
+  padding: 2rem;
+  background-color: #c9c9c9;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.2s linear;
+  opacity: 0.7;
+}
+.back-to-top:hover {
+  background-color: #1f51ff;
+  color: #fff;
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
 }
 
 @font-face {
@@ -4187,7 +4212,7 @@ body {
     width: 80%;
     height: 100%;
   }
-  .faq__items__title p {
+  .faq__items__title h2 {
     font-family: montserrat-semibold;
     font-size: 3rem;
   }
@@ -4255,7 +4280,7 @@ body {
     height: 100%;
     width: 80%;
   }
-  .faq .training__items__title p {
+  .faq .training__items__title h2 {
     font-family: montserrat-semibold;
     font-size: 3rem;
   }

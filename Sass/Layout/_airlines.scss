@@ -15,6 +15,10 @@
     .swiper{
       overflow: unset !important;
     }
+
+    
+
+    
   #airlines {
     background-image: url(../../Assets/5-airlines/backgroundAirlines.svg);
     background-size: cover;
@@ -249,4 +253,19 @@
     opacity: 0 !important;
     transition: all .3s ease-in;
   }
+}
+
+.swiper-button-disabled{
+  display: none !important;
+}
+
+@media (max-width:600px){
+  .swiper-button-prev, .swiper-button-next{
+    display: none;
+  }
+
+  .swiper-pagination{
+      margin-top: 20rem !important;
+    }
+
 }

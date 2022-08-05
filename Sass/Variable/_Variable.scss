@@ -1,7 +1,7 @@
 $white--clr: #fff;
 $black--clr: #000000;
 $neon__blue--clr: #1f51ff;
-$smoth__blue--clr : #F8FAFB ; 
+$smoth__blue--clr: #f8fafb;
 $gray__80--clr: #464646;
 $gray__60--clr: #989898;
 $gray__30--clr: #c9c9c9;
@@ -11,65 +11,63 @@ $primary__orange--clr: #fc6334;
 
 //fonts
 @font-face {
-    font-family: montserrat-bold;
-    src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
+  font-family: montserrat-bold;
+  src: url(./Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
 }
 @font-face {
-    font-family: montserrat-semibold;
-    src: url(../../Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
-    // src: url(/Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
+  font-family: montserrat-semibold;
+  src: url(./Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
+  // src: url(/Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
 }
 @font-face {
-    font-family: montserrat-medium;
-    src: url(../../Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
+  font-family: montserrat-medium;
+  src: url(./Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
 }
 @font-face {
-    font-family: whitney-semibold;
-    src: url(../../Assets/fonts/whitney/whitneysemibold.otf);
+  font-family: whitney-semibold;
+  src: url(./Assets/fonts/whitney/whitneysemibold.otf);
 }
 @font-face {
-    font-family: whitney-book;
-    src: url(../../Assets/fonts/whitney/whitneybook.otf);
+  font-family: whitney-book;
+  src: url(./Assets/fonts/whitney/whitneybook.otf);
 }
 @font-face {
-    font-family: whitney-book-italic;
-    src: url(../../Assets/fonts/whitney/whitneybookitalic.otf);
+  font-family: whitney-book-italic;
+  src: url(./Assets/fonts/whitney/whitneybookitalic.otf);
 }
 
-@mixin flex ($direction,$justify,$align,$gap) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-    gap: $gap;
+@mixin flex($direction, $justify, $align, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
 }
-@mixin paddingT($pl,$pt,$pr,$pd) {
-    padding-left: $pl;
-    padding-top: $pt;
-    padding-right: $pr;
-    padding-bottom: $pd;
+@mixin paddingT($pl, $pt, $pr, $pd) {
+  padding-left: $pl;
+  padding-top: $pt;
+  padding-right: $pr;
+  padding-bottom: $pd;
 }
-@mixin paddingXY ($paddingX,$paddingY){
-    padding: $paddingX $paddingY;
+@mixin paddingXY($paddingX, $paddingY) {
+  padding: $paddingX $paddingY;
 }
-@mixin marginT($ml,$mt,$mr,$md) {
-    margin-left: $ml;
-    margin-top: $mt;
-    margin-right: $mr;
-    margin-bottom: $md;
+@mixin marginT($ml, $mt, $mr, $md) {
+  margin-left: $ml;
+  margin-top: $mt;
+  margin-right: $mr;
+  margin-bottom: $md;
 }
-@mixin marginXY ($marginX,$marginY){
-    margin: $marginX $marginY;
-}
-
-@mixin font ($fontsize,$fontweight) {
-    font-size: $fontsize;
-    font-weight: $fontweight;
+@mixin marginXY($marginX, $marginY) {
+  margin: $marginX $marginY;
 }
 
-@mixin size ($width,$height) {
-    width: $width;
-    height: $height;
+@mixin font($fontsize, $fontweight) {
+  font-size: $fontsize;
+  font-weight: $fontweight;
 }
 
-
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}

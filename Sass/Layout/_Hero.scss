@@ -1,213 +1,214 @@
-@media screen and (max-width : 990px) {
-     .hero--book {
-          grid-template-columns: 1fr !important;
-          gap: 4rem !important;
-          .left--side__container {
-               display: flex;
-               flex-direction: column;
-               align-items: center;
-               text-align: center !important;
-          }
-     }
+@media screen and (max-width: 990px) {
+  .hero--book {
+    grid-template-columns: 1fr !important;
+    gap: 4rem !important;
+    .left--side__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center !important;
+    }
+  }
 }
-.hero{
-     background: 0;
-     background-image: url("../../Assets/1-home/bg-kiri.svg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: bottom;
-     padding: 0 4% 5rem 4%;
-     .hero__container{
-          .hero__header {
-               display: flex;
-               align-items: center;
-               justify-content: center;
-               padding: 2rem 0;
-               img {
-                    width: 10rem;
-               }
+.hero {
+  background: 0;
+  background-image: url("./Assets/1-home/bg-kiri.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 0 4% 5rem 4%;
+  .hero__container {
+    .hero__header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 0;
+      img {
+        width: 10rem;
+      }
+    }
+    .hero__wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: 4rem;
+      .hero--book {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+        align-items: center;
+        .left--side,
+        .right--side {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .left--side {
+          .left--side__container {
+            .hero--title {
+              p {
+                font-size: 4rem;
+                font-weight: 700;
+                font-family: montserrat-bold;
+              }
+            }
+            .hero--button {
+              margin-top: 4rem;
+              border: 0.2rem solid $neon__blue--clr;
+              padding: 1rem 3rem;
+              border-radius: 100rem;
+              transition: all 0.3s ease-in-out;
+              position: relative;
+              width: max-content;
+              overflow: hidden;
+              background-color: white;
+              cursor: pointer;
+              &:hover {
+                background-color: $neon__blue--clr;
+                &::before {
+                  transform: scaleX(1);
+                  transform-origin: left;
+                }
+                button {
+                  color: $white--clr;
+                }
+              }
+
+              button {
+                position: inherit;
+                color: $neon__blue--clr;
+                z-index: +1;
+                font-size: 1.5rem;
+                font-weight: 375;
+                font-family: whitney-semibold;
+                transition: all 0.3s ease-in-out;
+              }
+              &::before {
+                width: 100%;
+                height: 100%;
+                background-color: $neon__blue--clr;
+                content: "";
+                clear: both;
+                position: absolute;
+                transform: scaleX(0);
+                transform-origin: right;
+                top: 0;
+                right: 0;
+                transition: transform 0.5s cubic-bezier(0.03, 1.51, 0.44, 0.82);
+                border: 1rem solid $neon__blue--clr;
+              }
+            }
           }
-          .hero__wrapper {
-               display: flex;
-               flex-direction: column;
-               margin-top: 4rem;
-               .hero--book {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit , minmax(1rem , 1fr));
-                    align-items: center;
-                    .left--side , .right--side {
-                         height: 100%;
-                         display: flex;
-                         flex-direction: column;
-                         align-items: center;
-                         justify-content: center;
-                    }
-                    .left--side {
-                         .left--side__container {
-                              .hero--title {
-                                   p {
-                                        font-size: 4rem;
-                                        font-weight: 700;
-                                        font-family: montserrat-bold;
-                                   }
-                              }
-                              .hero--button {
-                                   margin-top: 4rem;
-                                   border: .2rem solid $neon__blue--clr;
-                                   padding: 1rem 3rem;
-                                   border-radius: 100rem;
-                                   transition: all .3s ease-in-out;
-                                   position: relative;
-                                   width: max-content;
-                                   overflow: hidden;
-                                   background-color: white;
-                                   cursor: pointer;
-                                   &:hover{
-                                        background-color: $neon__blue--clr;
-                                        &::before {
-                                             transform: scaleX(1);
-                                             transform-origin: left;
-                                        }
-                                        button {
-                                             color: $white--clr;
-                                        }
-                                   }
-                                   
-                                   button {
-                                        position: inherit;
-                                        color: $neon__blue--clr;
-                                        z-index: +1;
-                                        font-size: 1.5rem;
-                                        font-weight: 375;
-                                        font-family: whitney-semibold;
-                                        transition: all .3s ease-in-out;
-                                   }
-                                   &::before {
-                                        width: 100%;
-                                        height: 100%;
-                                        background-color: $neon__blue--clr ; 
-                                        content: "";
-                                        clear: both;
-                                        position: absolute;
-                                        transform: scaleX(0);
-                                        transform-origin: right;
-                                        top: 0;
-                                        right: 0;
-                                        transition: transform 0.5s cubic-bezier(0.03, 1.51, 0.44, 0.82);
-                                        border: 1rem solid $neon__blue--clr;
-                                   }
-                              }
-                         }
-                    }
-                    .right--side {
-                         height: 30rem;
-                         animation: flow 6s linear infinite ;  
-                         img {
-                              width: 100%;
-                              height: 100%;
-                         }
-                    }
-               }
-               .hero--platform {
-                    margin-top: 10rem;
-                    .platform--title {
-                         display: flex;
-                         justify-content: center;
-                         text-align: center;
-                         color: white;
-                         font-family: montserrat-semibold;
-                    }
-                    .platform__container {
-                         display: flex;
-                         gap: 4rem;
-                         justify-content: center;
-                         align-items: flex-start;
-                         flex-wrap: wrap;
-                         margin-top: 3rem;
-                         .platform--card {
-                              width: 25rem;
-                              background-color: white;
-                              border-radius: 3rem;
-                              padding: 4rem 2rem;
-                              box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.253);
-                              transition: all .3s ease-in-out;
-                              transform: translate(0,0%);
-                              cursor: pointer;
-                              &:hover {
-                                   box-shadow: 1rem 1.5rem 1rem rgba(0, 0, 0, 0.253);
-                                   transform: translate(0,-1%);
-                              }
-                              .platform--card__image {
-                                   height: 20rem;
-                                   width: 100%;
-                                   img {
-                                        width: 100%;
-                                        height: 100%;
-                                   }
-                              }
-                              .platform--detail {
-                                   display: flex;
-                                   flex-direction: column;
-                                   align-items: center;
-                                   gap: 2rem;
-                                   margin-top: 1rem;
-                                   .platform--card__name {
-                                        p{
-                                             font-size: 2.5rem;
-                                             font-family: whitney-semibold;
-                                        }
-                                   }
-                                   .platform--card__description {
-                                        p{
-                                             font-size: 2rem;
-                                             font-family: whitney-semibold;
-                                        }
-                                   }
-                              }
-                         }
-                         .flight {
-                              .platform--card__description {
-                                   color: $primary__orange--clr;
-                              }
-                         }
-                         .hotels {
-                              margin-top: 3rem;
-                              .platform--card__description {
-                                   color: $neon__blue--clr;
-                              }
-                         }
-                         .tours {
-                              .platform--card__description {
-                                   color: $primary__orange--clr;    
-                              }
-                         }
-                    }
-               }
+        }
+        .right--side {
+          height: 30rem;
+          animation: flow 6s linear infinite;
+          img {
+            width: 100%;
+            height: 100%;
           }
-          .hero__description {
-               display: flex;
-               align-items: center;
-               justify-content: center;
-               text-align: center;
-               margin-top: 4rem;
-               padding-bottom: 10rem;
-               p {
-                    font-size: 2.3rem;
-                    color: white;
-                    margin-top: 3rem;
-                    font-family: whitney-semibold;
-               }
+        }
+      }
+      .hero--platform {
+        margin-top: 10rem;
+        .platform--title {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          color: white;
+          font-family: montserrat-semibold;
+        }
+        .platform__container {
+          display: flex;
+          gap: 4rem;
+          justify-content: center;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          margin-top: 3rem;
+          .platform--card {
+            width: 25rem;
+            background-color: white;
+            border-radius: 3rem;
+            padding: 4rem 2rem;
+            box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.253);
+            transition: all 0.3s ease-in-out;
+            transform: translate(0, 0%);
+            cursor: pointer;
+            &:hover {
+              box-shadow: 1rem 1.5rem 1rem rgba(0, 0, 0, 0.253);
+              transform: translate(0, -1%);
+            }
+            .platform--card__image {
+              height: 20rem;
+              width: 100%;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .platform--detail {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 2rem;
+              margin-top: 1rem;
+              .platform--card__name {
+                p {
+                  font-size: 2.5rem;
+                  font-family: whitney-semibold;
+                }
+              }
+              .platform--card__description {
+                p {
+                  font-size: 2rem;
+                  font-family: whitney-semibold;
+                }
+              }
+            }
           }
-     }
+          .flight {
+            .platform--card__description {
+              color: $primary__orange--clr;
+            }
+          }
+          .hotels {
+            margin-top: 3rem;
+            .platform--card__description {
+              color: $neon__blue--clr;
+            }
+          }
+          .tours {
+            .platform--card__description {
+              color: $primary__orange--clr;
+            }
+          }
+        }
+      }
+    }
+    .hero__description {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 4rem;
+      padding-bottom: 10rem;
+      p {
+        font-size: 2.3rem;
+        color: white;
+        margin-top: 3rem;
+        font-family: whitney-semibold;
+      }
+    }
+  }
 }
 @keyframes flow {
-     0%{
-          transform: translateY(-3%);
-     }
-     50%{
-          transform: translateY(3%);
-     }
-     100%{
-          transform: translateY(-3%);
-     }
+  0% {
+    transform: translateY(-3%);
+  }
+  50% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(-3%);
+  }
 }

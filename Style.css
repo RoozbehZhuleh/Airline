@@ -367,7 +367,7 @@ a:focus {
     gap: 1rem;
   }
   #benefits .total .text__title h3 {
-    font-family: whitney-book;
+    font-family: whitney-semibold;
     font-size: 2.1rem;
     font-weight: bold;
   }
@@ -640,7 +640,7 @@ a:focus {
     gap: 1rem;
   }
   #benefits .total .text__title h3 {
-    font-family: whitney-book;
+    font-family: whitney-semibold;
     font-size: 2.1rem;
     font-weight: bold;
   }
@@ -913,7 +913,7 @@ a:focus {
     gap: 1rem;
   }
   #benefits .total .text__title h3 {
-    font-family: whitney-book;
+    font-family: whitney-semibold;
     font-size: 2.1rem;
     font-weight: bold;
   }
@@ -1823,7 +1823,7 @@ a:focus {
 
 @media (max-width: 600px) {
   .swiper-button-prev, .swiper-button-next {
-    display: none;
+    opacity: 0 !important;
   }
 }
 .category {

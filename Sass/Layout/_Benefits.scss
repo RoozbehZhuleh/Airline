@@ -230,7 +230,7 @@
             .text__title {
                 @include flex(column,none ,none ,1rem);
                 h3 {
-                    font-family: whitney-book;
+                    font-family: whitney-semibold;
                     @include font(2.1rem,bold);
                 }
                 p {
@@ -500,7 +500,7 @@
             .text__title {
                 @include flex(column,none ,none ,1rem);
                 h3 {
-                    font-family: whitney-book;
+                    font-family: whitney-semibold;
                     @include font(2.1rem,bold);
                 }
                 p {
@@ -770,7 +770,7 @@
             .text__title {
                 @include flex(column,none ,none ,1rem);
                 h3 {
-                    font-family: whitney-book;
+                    font-family: whitney-semibold;
                     @include font(2.1rem,bold);
                 }
                 p {

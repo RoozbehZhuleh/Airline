@@ -999,6 +999,8 @@ a:focus {
   border-radius: 100rem;
   transition: all 0.3s ease-in-out;
   position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   overflow: hidden;
   background-color: white;
@@ -1039,7 +1041,8 @@ a:focus {
 }
 .hero .hero__container .hero__wrapper .hero--book .right--side {
   height: 30rem;
-  animation: flow 6s linear infinite;
+  -webkit-animation: flow 6s linear infinite;
+          animation: flow 6s linear infinite;
 }
 .hero .hero__container .hero__wrapper .hero--book .right--side img {
   width: 100%;
@@ -1125,6 +1128,18 @@ a:focus {
   color: white;
   margin-top: 3rem;
   font-family: whitney-semibold;
+}
+
+@-webkit-keyframes flow {
+  0% {
+    transform: translateY(-3%);
+  }
+  50% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(-3%);
+  }
 }
 
 @keyframes flow {
@@ -1457,102 +1472,392 @@ a:focus {
   text-align: center;
 }
 
-#domestic {
-  padding-bottom: 2rem;
-  margin-top: 12rem;
+@media screen and (min-width: 1200px) {
+  #domestic {
+    padding-bottom: 2rem;
+    margin-top: 12rem;
+  }
+  #domestic .container {
+    width: 98%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem 4rem;
+    border-radius: 5rem;
+    background-color: white;
+    box-shadow: 0rem 0rem 1rem 1rem #f2f8ff;
+  }
+  #domestic .container h2 {
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-family: montserrat-semibold;
+    position: relative;
+    top: 3rem;
+  }
+  #domestic .totaldom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    margin-top: 10rem;
+    gap: 2rem;
+  }
+  #domestic .totaldom .img_container {
+    position: relative;
+  }
+  #domestic .totaldom .img_container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #domestic .totaldom .img_container span {
+    position: absolute;
+    right: -0.5rem;
+    top: -0.5rem;
+    color: #f2f8ff;
+    padding: 0.5rem;
+    background-color: #1f51ff;
+    border-radius: 0 1rem 0 1rem;
+    font-family: montserrat-medium;
+  }
+  #domestic .totaldom .img_container .cheap {
+    background-color: #fc6334;
+  }
+  #domestic .totaldom .text {
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: montserrat-medium;
+    display: flex;
+    justify-content: flex-end;
+    margin: 1.5rem 0;
+  }
+  #domestic .totaldom .text-right {
+    text-align: right;
+  }
+  #domestic .totaldom .china_total {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #domestic .totaldom .japan_total {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: -4rem;
+  }
+  #domestic .totaldom .us_total {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #domestic .totaldom .russia_total {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  #domestic .totaldom .korea_total {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-top: -3rem;
+  }
+  #domestic .totaldom .turkey_total {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  #domestic .totaldom .european_total {
+    grid-column: 4/-1;
+    grid-row: 1/2;
+    margin-top: -13rem;
+  }
+  #domestic .totaldom .asia_total {
+    grid-column: 4/-1;
+    grid-row: 2/3;
+    margin-top: -13rem;
+  }
 }
-#domestic .container {
-  width: 98%;
-  margin: 0 auto;
-  background-color: white;
-  padding: 2rem 4rem;
-  border-radius: 5rem;
-  background-color: white;
-  box-shadow: 0rem 0rem 1rem 1rem #f2f8ff;
+@media (min-width: 991px) and (max-width: 1199px) {
+  #domestic {
+    padding-bottom: 2rem;
+    margin-top: 12rem;
+  }
+  #domestic .container {
+    width: 98%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem 4rem;
+    border-radius: 5rem;
+    background-color: white;
+    box-shadow: 0rem 0rem 1rem 1rem #f2f8ff;
+  }
+  #domestic .container h2 {
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-family: montserrat-semibold;
+    position: relative;
+    top: 3rem;
+    text-align: center;
+  }
+  #domestic .totaldom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
+    grid-template-rows: 1fr 1fr;
+    margin-top: 10rem;
+    gap: 2rem;
+  }
+  #domestic .totaldom .img_container {
+    position: relative;
+  }
+  #domestic .totaldom .img_container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #domestic .totaldom .img_container span {
+    position: absolute;
+    right: -0.5rem;
+    top: -0.5rem;
+    color: #f2f8ff;
+    padding: 0.5rem;
+    background-color: #1f51ff;
+    border-radius: 0 1rem 0 1rem;
+    font-family: montserrat-medium;
+  }
+  #domestic .totaldom .img_container .cheap {
+    background-color: #fc6334;
+  }
+  #domestic .totaldom .text {
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: montserrat-medium;
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+  #domestic .totaldom .text-right {
+    text-align: center;
+  }
+  #domestic .totaldom .china_total {
+    margin-top: 4rem;
+  }
+  #domestic .totaldom .japan_total {
+    margin-top: 1rem;
+  }
+  #domestic .totaldom .european_total {
+    margin-top: 1.5rem;
+  }
 }
-#domestic .container h2 {
-  margin-top: 2rem;
-  font-size: 4rem;
-  font-family: montserrat-semibold;
-  position: relative;
-  top: 3rem;
+@media (min-width: 768px) and (max-width: 990px) {
+  #domestic {
+    padding-bottom: 2rem;
+    margin-top: 12rem;
+  }
+  #domestic .container {
+    width: 98%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem 4rem;
+    border-radius: 5rem;
+    background-color: white;
+    box-shadow: 0rem 0rem 1rem 1rem #f2f8ff;
+  }
+  #domestic .container h2 {
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-family: montserrat-semibold;
+    position: relative;
+    top: 3rem;
+    text-align: center;
+  }
+  #domestic .totaldom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
+    grid-template-rows: 1fr 1fr;
+    margin-top: 10rem;
+    gap: 2rem;
+  }
+  #domestic .totaldom .img_container {
+    position: relative;
+  }
+  #domestic .totaldom .img_container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #domestic .totaldom .img_container span {
+    position: absolute;
+    right: -0.5rem;
+    top: -0.5rem;
+    color: #f2f8ff;
+    padding: 0.5rem;
+    background-color: #1f51ff;
+    border-radius: 0 1rem 0 1rem;
+    font-family: montserrat-medium;
+  }
+  #domestic .totaldom .img_container .cheap {
+    background-color: #fc6334;
+  }
+  #domestic .totaldom .text {
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: montserrat-medium;
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+  #domestic .totaldom .text-right {
+    text-align: center;
+  }
+  #domestic .totaldom .china_total {
+    margin-top: 4rem;
+  }
+  #domestic .totaldom .japan_total {
+    margin-top: 1rem;
+  }
+  #domestic .totaldom .european_total {
+    margin-top: 1.5rem;
+  }
 }
-#domestic .totaldom {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr;
-  margin-top: 10rem;
-  gap: 2rem;
+@media (min-width: 601px) and (max-width: 767px) {
+  #domestic {
+    padding-bottom: 2rem;
+    margin-top: 12rem;
+  }
+  #domestic .container {
+    width: 98%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem 4rem;
+    border-radius: 5rem;
+    background-color: white;
+    box-shadow: 0rem 0rem 1rem 1rem #f2f8ff;
+  }
+  #domestic .container h2 {
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-family: montserrat-semibold;
+    position: relative;
+    top: 3rem;
+    text-align: center;
+  }
+  #domestic .totaldom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
+    grid-template-rows: 1fr 1fr;
+    margin-top: 10rem;
+    gap: 2rem;
+  }
+  #domestic .totaldom .img_container {
+    position: relative;
+  }
+  #domestic .totaldom .img_container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #domestic .totaldom .img_container span {
+    position: absolute;
+    right: -0.5rem;
+    top: -0.5rem;
+    color: #f2f8ff;
+    padding: 0.5rem;
+    background-color: #1f51ff;
+    border-radius: 0 1rem 0 1rem;
+    font-family: montserrat-medium;
+  }
+  #domestic .totaldom .img_container .cheap {
+    background-color: #fc6334;
+  }
+  #domestic .totaldom .text {
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: montserrat-medium;
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+  #domestic .totaldom .text-right {
+    text-align: center;
+  }
+  #domestic .totaldom .china_total {
+    margin-top: 4rem;
+  }
+  #domestic .totaldom .japan_total {
+    margin-top: 1rem;
+  }
+  #domestic .totaldom .european_total {
+    margin-top: 1.5rem;
+  }
 }
-#domestic .totaldom .img_container {
-  position: relative;
+@media (max-width: 600px) {
+  #domestic {
+    padding-bottom: 2rem;
+    margin-top: 12rem;
+  }
+  #domestic .container {
+    width: 98%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem 4rem;
+    border-radius: 5rem;
+    background-color: white;
+    box-shadow: 0rem 0rem 1rem 1rem #f2f8ff;
+  }
+  #domestic .container h2 {
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-family: montserrat-semibold;
+    position: relative;
+    top: 3rem;
+    text-align: center;
+  }
+  #domestic .totaldom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
+    grid-template-rows: 1fr 1fr;
+    margin-top: 10rem;
+    gap: 2rem;
+  }
+  #domestic .totaldom .img_container {
+    position: relative;
+  }
+  #domestic .totaldom .img_container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #domestic .totaldom .img_container span {
+    position: absolute;
+    right: -0.5rem;
+    top: -0.5rem;
+    color: #f2f8ff;
+    padding: 0.5rem;
+    background-color: #1f51ff;
+    border-radius: 0 1rem 0 1rem;
+    font-family: montserrat-medium;
+  }
+  #domestic .totaldom .img_container .cheap {
+    background-color: #fc6334;
+  }
+  #domestic .totaldom .text {
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: montserrat-medium;
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+  #domestic .totaldom .text-right {
+    text-align: center;
+  }
+  #domestic .totaldom .china_total {
+    margin-top: 4rem;
+  }
+  #domestic .totaldom .japan_total {
+    margin-top: 1rem;
+  }
+  #domestic .totaldom .european_total {
+    margin-top: 1.5rem;
+  }
 }
-#domestic .totaldom .img_container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-#domestic .totaldom .img_container span {
-  position: absolute;
-  right: -0.5rem;
-  top: -0.5rem;
-  color: #f2f8ff;
-  padding: 0.5rem;
-  background-color: #1f51ff;
-  border-radius: 0 1rem 0 1rem;
-  font-family: montserrat-medium;
-}
-#domestic .totaldom .img_container .cheap {
-  background-color: #fc6334;
-}
-#domestic .totaldom .text {
-  font-size: 2.2rem;
-  font-weight: 500;
-  font-family: montserrat-medium;
-  display: flex;
-  justify-content: flex-end;
-  margin: 1.5rem 0;
-}
-#domestic .totaldom .text-right {
-  text-align: right;
-}
-#domestic .totaldom .china_total {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-#domestic .totaldom .japan_total {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  margin-top: -4rem;
-}
-#domestic .totaldom .us_total {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-#domestic .totaldom .russia_total {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-#domestic .totaldom .korea_total {
-  grid-column: 3/4;
-  grid-row: 1/2;
-  margin-top: -3rem;
-}
-#domestic .totaldom .turkey_total {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-#domestic .totaldom .european_total {
-  grid-column: 4/-1;
-  grid-row: 1/2;
-  margin-top: -13rem;
-}
-#domestic .totaldom .asia_total {
-  grid-column: 4/-1;
-  grid-row: 2/3;
-  margin-top: -13rem;
-}
-
 @font-face {
   font-family: montserrat-bold;
   src: url(../../Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
@@ -1766,8 +2071,6 @@ a:focus {
     left: 3rem;
     top: 3rem;
     background: rgb(147, 247, 255);
-    background: -moz-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
-    background: -webkit-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     background: linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93f7ff",endColorstr="#1f51ff",GradientType=1);
     border-radius: 2.5rem;
@@ -1963,8 +2266,6 @@ a:focus {
     left: 2.5rem;
     top: 2.5rem;
     background: rgb(147, 247, 255);
-    background: -moz-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
-    background: -webkit-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     background: linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93f7ff",endColorstr="#1f51ff",GradientType=1);
     border-radius: 2.5rem;
@@ -2153,8 +2454,6 @@ a:focus {
     left: 2.5rem;
     top: 2.5rem;
     background: rgb(147, 247, 255);
-    background: -moz-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
-    background: -webkit-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     background: linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93f7ff",endColorstr="#1f51ff",GradientType=1);
     border-radius: 2.5rem;
@@ -2343,8 +2642,6 @@ a:focus {
     left: 2.5rem;
     top: 2.5rem;
     background: rgb(147, 247, 255);
-    background: -moz-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
-    background: -webkit-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     background: linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93f7ff",endColorstr="#1f51ff",GradientType=1);
     border-radius: 2.5rem;
@@ -2533,8 +2830,6 @@ a:focus {
     left: 1.5rem;
     top: 1.5rem;
     background: rgb(147, 247, 255);
-    background: -moz-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
-    background: -webkit-linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     background: linear-gradient(144deg, rgb(147, 247, 255) 0%, rgb(119, 207, 255) 61%, rgb(31, 81, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93f7ff",endColorstr="#1f51ff",GradientType=1);
     border-radius: 2.5rem;
@@ -2608,10 +2903,12 @@ body {
     color: #1f51ff;
     margin-top: 2rem;
     font-size: 1.5rem;
+    font-family: whitney-semibold;
   }
   #who_can_join .total__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
     margin-top: 8rem;
   }
   #who_can_join .grid__items {
@@ -2654,11 +2951,13 @@ body {
     color: #1f51ff;
     margin-top: 2rem;
     font-size: 1.5rem;
+    font-family: whitney-semibold;
   }
   #who_can_join .total__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin-top: 8rem;
+    gap: 3rem;
   }
   #who_can_join .grid__items {
     display: flex;
@@ -2700,11 +2999,13 @@ body {
     color: #1f51ff;
     margin-top: 2rem;
     font-size: 1.5rem;
+    font-family: whitney-semibold;
   }
   #who_can_join .total__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin-top: 8rem;
+    gap: 3rem;
   }
   #who_can_join .grid__items {
     display: flex;
@@ -2746,11 +3047,13 @@ body {
     color: #1f51ff;
     margin-top: 2rem;
     font-size: 1.5rem;
+    font-family: whitney-semibold;
   }
   #who_can_join .total__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-top: 8rem;
+    gap: 3rem;
   }
   #who_can_join .grid__items {
     display: flex;
@@ -2769,10 +3072,6 @@ body {
   #who_can_join .grid__items .grid__items__bottom {
     background: url(/Assets/9-join/circle.svg) no-repeat;
     background-position: top;
-  }
-  #who_can_join .grid__items .grid__items__bottom img {
-    width: 100%;
-    height: 100%;
   }
 }
 .footer {

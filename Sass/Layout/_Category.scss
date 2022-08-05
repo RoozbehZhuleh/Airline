@@ -16,6 +16,11 @@
           .categor__card__container {
                display: grid;
                grid-template-columns: repeat(auto-fit ,minmax(30rem,1fr));
+@media screen and (max-width : 600px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+               }
                .category__card {
                     padding: 1rem;
                     display: flex;

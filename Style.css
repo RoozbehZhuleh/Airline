@@ -1359,6 +1359,9 @@ a:focus {
     align-items: center;
     text-align: center !important;
   }
+  .hotels {
+    margin-top: 0 !important;
+  }
 }
 .hero {
   background: 0;

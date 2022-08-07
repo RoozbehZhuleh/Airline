@@ -1839,6 +1839,7 @@ a:focus {
   text-align: center;
   font-family: montserrat-semibold;
   font-size: 2.5rem;
+  margin-top: 1.5rem 0;
 }
 .category .category__container {
   margin-top: 2rem;
@@ -1846,7 +1847,9 @@ a:focus {
 }
 .category .category__container .categor__card__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+  padding: 0 4rem;
 }
 @media screen and (max-width: 600px) {
   .category .category__container .categor__card__container {
@@ -1860,16 +1863,25 @@ a:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.category .category__container .categor__card__container .category__card:hover {
+  gap: 0rem;
+}
+.category .category__container .categor__card__container .category__card:hover .category__image {
+  scale: 0.9;
 }
 .category .category__container .categor__card__container .category__card .category__image {
   padding: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 .category .category__container .categor__card__container .category__card .category__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 1rem;
 }
 .category .category__container .categor__card__container .category__card .category__wrapper .category__title {
   position: relative;

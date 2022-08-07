@@ -1872,6 +1872,7 @@ a:focus {
 }
 .category .category__container .categor__card__container .category__card:hover {
   gap: 0rem;
+  margin-bottom: 2rem;
 }
 .category .category__container .categor__card__container .category__card:hover .category__image {
   scale: 0.9;

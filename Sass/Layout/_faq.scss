@@ -1,5 +1,7 @@
 @import "../Variable/Variable";
-
+.accordion__item__text{
+  padding: 0 3rem;
+}
 @media (min-width: 1200px) {
   .faq {
     display: flex;

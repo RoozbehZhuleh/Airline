@@ -3674,6 +3674,10 @@ body {
   font-family: whitney-book-italic;
   src: url(./Assets/fonts/whitney/whitneybookitalic.otf);
 }
+.accordion__item__text {
+  padding: 0 3rem;
+}
+
 @media (min-width: 1200px) {
   .faq {
     display: flex;

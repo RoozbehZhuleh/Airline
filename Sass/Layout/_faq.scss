@@ -2,6 +2,9 @@
 .accordion__item__text{
   padding: 0 3rem;
 }
+.accordion__item__button{
+  align-items: center;
+}
 @media (min-width: 1200px) {
   .faq {
     display: flex;

@@ -3630,7 +3630,10 @@ body {
 .back-to-top {
   border: none;
   border-radius: 100%;
-  padding: 2rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  font-size: 2.5rem;
+  font-family: montserrat-bold;
   background-color: #c9c9c9;
   position: fixed;
   right: 1rem;

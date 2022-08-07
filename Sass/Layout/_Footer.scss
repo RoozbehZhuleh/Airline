@@ -89,7 +89,10 @@
 .back-to-top{
      border: none;
      border-radius: 100%;
-     padding: 2rem;
+     width: 4.5rem;
+     height: 4.5rem;
+     font-size: 2.5rem;
+     font-family: montserrat-bold;
      background-color: $gray__30--clr;
      position: fixed;
      right: 1rem;

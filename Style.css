@@ -4544,30 +4544,10 @@ body {
   transform: scaleY(1) !important;
 }
 
-@font-face {
-  font-family: montserrat-bold;
-  src: url(./Assets/fonts/montserrat/static/Montserrat-Bold.ttf);
+#newsletter {
+  margin-top: 1.5rem;
 }
-@font-face {
-  font-family: montserrat-semibold;
-  src: url(./Assets/fonts/montserrat/static/Montserrat-SemiBold.ttf);
-}
-@font-face {
-  font-family: montserrat-medium;
-  src: url(./Assets/fonts/montserrat/static/Montserrat-Medium.ttf);
-}
-@font-face {
-  font-family: whitney-semibold;
-  src: url(./Assets/fonts/whitney/whitneysemibold.otf);
-}
-@font-face {
-  font-family: whitney-book;
-  src: url(./Assets/fonts/whitney/whitneybook.otf);
-}
-@font-face {
-  font-family: whitney-book-italic;
-  src: url(./Assets/fonts/whitney/whitneybookitalic.otf);
-}
+
 @media (min-width: 768px) {
   #newsletter {
     background-color: #f8fafb;
